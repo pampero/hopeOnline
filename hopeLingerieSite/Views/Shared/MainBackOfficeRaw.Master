@@ -1,0 +1,118 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage<dynamic>" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+
+	<TITLE>Lounge - Hope</TITLE>
+     <% Html.DevExpress().RenderStyleSheets(Page,
+           new StyleSheet { ExtensionSuite = ExtensionSuite.GridView },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+    
+  
+    <script src="<%: Url.Content("~/Scripts/jquery-1.4.4.min.js") %>" type="text/javascript"></script>
+    <% Html.DevExpress().RenderScripts(Page,
+           new Script { ExtensionSuite = ExtensionSuite.GridView },
+           new Script { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new Script { ExtensionSuite = ExtensionSuite.Editors },
+           new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/> 
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+	<meta name="robots" content="INDEX, FOLLOW" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Expires" content="-1">
+    <META http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <link href="../../Content/imgs/favicon.gif" type="image/x-icon" rel="shortcut icon">
+    <link href="../../Content/styles/style.css" rel="stylesheet" type="text/css" media="screen"  />
+
+	<meta http-equiv="imagetoolbar" content="no" />
+	<META NAME="itemName" CONTENT=" Lounge">
+	<META NAME="itemId" CONTENT="">
+	<meta Name="msnbot" CONTENT="NOODP">
+
+	<script src="/Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "/Account/GetUser",
+                data: $(this).serializeArray(),
+                success: function (data) {
+                    parent.$("#identificacao").text(data.Value);
+                }
+            });
+        });
+
+        function fConfirm() {
+            if (confirm('Está seguro que desea eliminar el item seleccionado?'))
+                return true;
+            else
+                return false;
+        }
+
+        function OnComboRequiredValidation(s, e) {
+
+            if (s.GetValue() == null)
+                e.isValid = false;
+
+            if (s.GetValue() == "0")
+                e.isValid = false;
+        }
+
+       function OnRequiredValidation(s, e) {
+           
+           if (e.value == null)
+               e.isValid = false;
+           var name = String(e.value);
+           if (name == "")
+               e.isValid = false;
+       }
+
+    </script>
+</head>
+
+<body>
+    
+	<div id="header_bg">
+		<div class="loginDisplay">
+            <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                <LoggedInTemplate>
+                    Bienvenido <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!&nbsp;
+                    [ <%: Html.ActionLink("Salir", "Logoff", "Account") %> ]
+                </LoggedInTemplate>
+            </asp:LoginView>
+        </div>
+        <div id="header_container">
+			<div class="divLogo">
+					<img src="/Content/imgs/LogoBack.png" id="Logo" alt="" AlternateText="Hope" />
+			</div>
+            <% 
+                Html.RenderPartial("MenuBackOfficePartialView");
+            %>
+
+		</div>
+	</div>
+	<div id="body_bg">
+		<div id="body_container">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		</div>
+	</div>
+
+</body>
+
+</html>

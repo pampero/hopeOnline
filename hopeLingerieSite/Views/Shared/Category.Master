@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Main.Master" Inherits="System.Web.Mvc.ViewMasterPage<dynamic>" %>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="HeaderContent" runat="server">
+    <link rel="stylesheet" type="text/css" href="/Content/styles/main1.css" media="screen" />
+</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <hr />
+    <% Html.RenderPartial("TopBannerPartialView"); %>
+    <!-- COLUMNA DE NAVEGACION PRINCIPAL (IZQUIERDA) -->
+    <div id="main_navigation_container">
+        <% Html.RenderPartial("CategoryPartialView"); %>
+       <!--<% Html.RenderPartial("EmailMarketingPartialView"); %>-->
+        <div class="banner" id="banner_barra_navegacao">
+            <div class='bannerLateralEsquerda'>
+            </div>
+        </div>
+    </div>
+    <!-- FIN COLUMNA DE NAVEGACION PRINCIPAL (IZQUIERDA) -->
+    <div id="main_content_container">
+         <% Html.RenderPartial("BreadCrumbPartialView"); %>
+        <div class="head_content">
+           <% Html.RenderPartial("Pager"); %>
+        </div>
+        <!-- CONTENIDO INTERNO (CENTRO) -->
+        <div id="main_content">
+            <div id="lstProdutosCategorias">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <!-- FIN DE CONTENIDO INTERNO (CENTRO) -->
+         <% Html.RenderPartial("Pager"); %>
+    </div>
+</asp:Content>

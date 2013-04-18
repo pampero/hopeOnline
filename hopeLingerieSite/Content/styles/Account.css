@@ -1,0 +1,1087 @@
+h2#tit_presente
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_mensagens_presentes.gif) 0 0 no-repeat;
+}
+div.presente_container
+{
+}
+div.presente_container p
+{
+    font-size: 12px;
+}
+div.presente_container p.bt_continuar
+{
+    text-align: right !important;
+    margin: 35px 0 0 0;
+}
+div.presente_container ul.lista_presente
+{
+    margin-top: 35px;
+}
+div.presente_container ul.lista_presente li
+{
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #AAA;
+    overflow: hidden;
+    height: 100%;
+}
+div.presente_container ul.lista_presente li.fst
+{
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+}
+div.presente_container ul.lista_presente li p.msgpresente_foto
+{
+    float: left;
+    display: inline;
+    margin: 0 15px 0 0;
+}
+div.presente_container ul.lista_presente li p.msgpresente_foto img
+{
+    height: 100px;
+    width: 100px;
+}
+div.presente_container ul.lista_presente li div.txt_container
+{
+    float: left;
+    display: inline;
+}
+div.presente_container ul.lista_presente li h3
+{
+    font-size: 12px;
+}
+div.presente_container ul.lista_presente li h3 a:link, div.presente_container ul.lista_presente li h3 a:hover, div.presente_container ul.lista_presente li h3 a:visited, div.presente_container ul.lista_presente li h3 a:active
+{
+}
+div.presente_container ul.lista_presente li p.mensagem
+{
+    margin: 10px 0;
+}
+div.presente_container ul.lista_presente li dl
+{
+}
+div.presente_container ul.lista_presente li dl dt
+{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+div.presente_container ul.lista_presente li dl dd
+{
+    margin: 0 0 8px 8px;
+}
+div.presente_container ul.lista_presente li dl dd label
+{
+    font-size: 12px;
+}
+div.presente_container ul.lista_presente li div.txt_mensagem_container
+{
+    float: right;
+    display: inline;
+}
+div.presente_container ul.lista_presente li div.txt_mensagem_container textarea
+{
+    color: #4D453E;
+    font-size: 13px;
+    padding: 3px 3px;
+    height: 84px;
+    width: 410px;
+}
+h2#tit_login
+{
+    background: url(/content/imgs/tit_login.gif) 0 0 no-repeat;
+}
+
+div.box_login
+{
+    float: left;
+    display: inline;
+    width: 210px;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+div.box_login.containerLogin
+{
+    padding-left: 0;
+}
+div.box_login.containerCadastro
+{
+    background: url(/content/imgs/account/bg_barra_v_1.gif) 0 0 no-repeat;
+}
+div.box_login h3.titulo
+{
+    margin: 5px 0 16px 0;
+}
+div.box_login h3#tit_ja_cadastrado
+{
+    background: url(/content/imgs/account/tit_ja_cadastrado.gif) 0 0 no-repeat;
+}
+div.box_login h3#tit_quero_cadastrar
+{
+    background: url(/content/imgs/account/tit_quero_cadastrar.gif) 0 0 no-repeat;
+}
+div.box_login fieldset.form_container div.fld_container
+{
+    margin: 7px 0;
+}
+div.box_login fieldset.form_container div.fld_container label
+{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+div.box_login fieldset.form_container div.fld_container input.fldEmail
+{
+    width: 202px;
+}
+div.box_login fieldset.form_container div.fld_container input.fldLogin, div.box_login fieldset.form_container div.fld_container input.fldCep
+{
+    width: 113px;
+}
+div.box_login fieldset.form_container div.fld_container .bt_continuar
+{
+    position: relative;
+    top: 5px;
+}
+div.box_login dl.menuSenha.fst
+{
+    margin: 6px 0;
+}
+div.box_login dl.menuSenha dt
+{
+    color: #444;
+    font-weight: bold;
+}
+div.box_login dl.menuSenha dd a:link, div.box_login dl.menuSenha dd a:hover, div.box_login dl.menuSenha dd a:visited, div.box_login dl.menuSenha dd a:active
+{
+    color: #666;
+    text-decoration: none;
+}
+div.box_login p.pass_disclaimer
+{
+    color: #444;
+}
+h2#tit_cadastrese
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_cadastrese.gif) 0 0 no-repeat;
+}
+h2#tit_meu_cadastro
+{
+    background: url(/content/imgs/tit_meucadastro.gif) 0 0 no-repeat;
+}
+dl.cadastro_tipo dt.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_tipo_cadastro.gif) 0 0 no-repeat;
+}
+dl.cadastro_dados_gerais dt.box_titulo
+{
+    background: url(/content/imgs/tit_dados_gerais.gif) 0 0 no-repeat;
+}
+dl.cadastro_endereco_contato dt.box_titulo
+{
+    background: url(/content/imgs/tit_endereco_entrega.gif) 0 0 no-repeat;
+}
+dl.cadastro_dados_adicionais dt.box_titulo
+{
+    background: url(/content/imgs/tit_dados_adicionais.gif) 0 0 no-repeat;
+}
+dl.cadastro_dados_acesso dt.box_titulo
+{
+    background: url(/content/imgs/tit_dados_acesso.gif) 0 0 no-repeat;
+}
+div.cadastro_container div.box_968_container
+{
+    margin-bottom: 10px;
+}
+div.cadastro_container dl.box_itens dd
+{
+    font-size: 12px;
+    height: 20px;
+    padding: 0 0 4px 0;
+}
+div.cadastro_container dl.box_itens dd label
+{
+    font-size: 12px;
+    color: #444;
+    float: left;
+    display: inline;
+    width: 170px;
+    text-align: right !important;
+    margin-right: 8px;
+    padding-top: 2px;
+}
+div.cadastro_container p.requiredFields_text
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #88147E;
+    margin: 25px 0 0 40px;
+}
+div.cadastro_container p.btSalvar_container
+{
+    text-align: right !important;
+    margin: -20px 0 0 0;
+}
+div#box_cadastro_menu dl
+{
+    overflow: hidden;
+    height: 100%;
+    text-align: center !important;
+}
+div#box_cadastro_menu dl dd
+{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+div#box_cadastro_menu dl dd.fst
+{
+    margin-left: 0;
+}
+div#box_cadastro_menu dl dd a:link, div#box_cadastro_menu dl dd a:hover, div#box_cadastro_menu dl dd a:visited, div#box_cadastro_menu dl dd a:active
+{
+    background: url(/content/imgs/account/ico_bullet_1.gif) 0 3px no-repeat;
+    padding-left: 14px;
+}
+div#box_cadastro_menu dl dd a:hover
+{
+    color: #666;
+}
+dl.cadastro_tipo dd
+{
+    float: left;
+    display: inline;
+    margin-right: 60px;
+}
+dl.cadastro_tipo dd.radioTipoCadastroCont.fst
+{
+    margin-left: 180px;
+}
+.cadastro dl.cadastro_tipo dd.radioTipoCadastroCont.fst
+{
+    margin-left: 0;
+}
+dl.cadastro_tipo dd label
+{
+    float: none !important;
+    padding-top: 0 !important;
+}
+dl.cadastro_dados_gerais dd.fldIECont
+{
+    float: left;
+    display: inline;
+    margin-right: 18px;
+}
+dl.cadastro_dados_gerais dd.fldIsentoCont label
+{
+    float: none !important;
+    padding-top: 0 !important;
+}
+dl.cadastro_dados_gerais dd label#chkIsento_container
+{
+    display: inline;
+    float: none;
+    width: auto;
+}
+dl.cadastro_dados_gerais dd.fldNomeCont, dl.cadastro_dados_gerais dd.fldCpfCont, dl.cadastro_dados_gerais dd.fldRazaoSocialCont, dl.cadastro_dados_gerais dd.fldCnpjCont, dl.cadastro_dados_gerais dd.fldIECont
+{
+    float: left;
+    display: inline;
+    width: 434px;
+}
+dl.cadastro_endereco_contato dd.fldEnderecoCont, dl.cadastro_endereco_contato dd.fldComplementoCont, dl.cadastro_endereco_contato dd.fldCidadeCont, dl.cadastro_endereco_contato dd.fldTelefone1Cont, dl.cadastro_endereco_contato dd.fldTelefone3Cont
+{
+    float: left;
+    display: inline;
+    width: 434px;
+}
+dl.cadastro_dados_adicionais dd.fldNewsletterCont label
+{
+    float: none !important;
+    padding-top: 0 !important;
+}
+dl.cadastro_imagem_seguranca dd.ImagemSeguranca
+{
+    height: 27px;
+}
+dl.cadastro_imagem_seguranca dd.ImagemSeguranca img, dl.cadastro_imagem_seguranca dd.ImagemSeguranca a, dl.cadastro_imagem_seguranca dd.ImagemSeguranca input
+{
+    float: left;
+    display: inline;
+}
+dl.cadastro_imagem_seguranca dd.ImagemSeguranca a
+{
+    margin: 0 8px;
+}
+dl.box_itens dd input.fldNome, dl.box_itens dd input.fldSobrenome, dl.box_itens dd input.fldRazaoSocial, dl.box_itens dd input.fldNomeFantasia, dl.box_itens dd input.fldEndereco, dl.box_itens dd input.fldComplemento, dl.box_itens dd input.fldCidade, dl.box_itens dd input.fldEmail
+{
+    width: 180px;
+}
+dl.box_itens dd input.fldCpf, dl.box_itens dd input.fldCnpj, dl.box_itens dd input.fldIM, dl.box_itens dd input.fldIE, dl.box_itens dd input.fldPassword, dl.box_itens dd input.fldConfirmPassword
+{
+    width: 150px;
+}
+dl.box_itens dd input.fldDiaNascimento, dl.box_itens dd input.fldMesNascimento, dl.box_itens dd input.fldTelefone1_ddd, dl.box_itens dd input.fldTelefone2_ddd, dl.box_itens dd input.fldTelefone3_ddd, dl.box_itens dd input.fldCelular_ddd, dl.box_itens dd input.fldFax_ddd
+{
+    width: 120px;
+}
+dl.box_itens dd input.fldTelefone1_num, dl.box_itens dd input.fldTelefone2_num, dl.box_itens dd input.fldTelefone3_num, dl.box_itens dd input.fldCelular_num, dl.box_itens dd input.fldFax_num
+{
+    width: 102px;
+}
+dl.box_itens dd input.fldTelefone1_ramal, dl.box_itens dd input.fldTelefone2_ramal, dl.box_itens dd input.fldTelefone3_ramal
+{
+    width: 46px;
+}
+dl.box_itens dd input.fldAnoNascimento
+{
+    width: 40px;
+}
+dl.box_itens dd select.fldSexo
+{
+    width: 130px;
+}
+dl.box_itens dd input.fldCep
+{
+    width: 70px;
+}
+dl.box_itens dd select.fldTipoEndereco, dl.box_itens dd select.fldTipoLogradouro
+{
+    width: 140px;
+}
+dl.box_itens dd input.fldNumero
+{
+    width: 56px;
+}
+dl.box_itens dd input.fldBairro
+{
+    width: 144px;
+}
+dl.box_itens dd select.fldEstado, dl.box_itens dd select.fldPais
+{
+    width: 60px;
+}
+dl.box_itens dd input.fldReferencia
+{
+    width: 686px;
+}
+dl.box_itens dd input.fldCodigoSeguranca
+{
+    width: 150px;
+}
+h2#tit_cadastro_enderecos
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_cadastro_enderecos_entrega.gif) 0 0 no-repeat;
+}
+dl.cadastro_endereco_contato dt.box_titulo#tit_inserir_editar
+{
+    background: url(/Content/imgs/account/tit_inserir_editar_endereco.gif) 0 0 no-repeat;
+}
+dl.endereco_entrega
+{
+    margin-bottom: 24px;
+}
+dl.endereco_entrega dt, dl.endereco_entrega dd
+{
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 10px;
+}
+dl.endereco_relacionado dt.box_titulo
+{
+    background: url("/content/imgs/tit_endereco_entrega.gif") no-repeat scroll 0 0 transparent;
+}
+dl.endereco_relacionado dd
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_barra_v_2.gif) 0 0 no-repeat;
+    float: left;
+    display: inline;
+    margin: -10px 0 15px 47px !important;
+    padding: 10px 0 0 47px !important;
+    width: 220px;
+    height: auto !important;
+}
+dl.endereco_relacionado dd.fst
+{
+    background: none;
+    margin-left: 0 !important;
+    clear: left;
+}
+dl.endereco_relacionado dd p, dl.endereco_relacionado dd ul li
+{
+    font-size: 12px;
+    color: #444;
+    margin: 0;
+}
+dl.endereco_relacionado dd p.userName
+{
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+dl.endereco_relacionado dd p.endereco
+{
+    line-height: 18px;
+}
+dl.endereco_relacionado dd ul.lstOpcoes
+{
+    margin: 24px 0;
+    overflow: hidden;
+    height: 100%;
+}
+dl.endereco_relacionado dd ul.lstOpcoes li
+{
+    float: left;
+    display: inline;
+    margin-left: 20px;
+    font-weight: bold;
+}
+dl.endereco_relacionado dd ul.lstOpcoes li.fst
+{
+    margin-left: 0;
+}
+dl.endereco_relacionado dd ul.lstOpcoes li a:link, dl.endereco_relacionado dd ul.lstOpcoes li a:hover, dl.endereco_relacionado dd ul.lstOpcoes li a:visited, dl.endereco_relacionado dd ul.lstOpcoes li a:active
+{
+    background: url(/content/imgs/account/ico_bullet_1.gif) 0 3px no-repeat;
+    padding-left: 14px;
+    color: #666;
+}
+dl.endereco_relacionado dd ul.lstOpcoes li a:hover
+{
+    color: #AAA;
+}
+dl.endereco_relacionado dd p.bt_usar_endereco
+{
+    margin: 18px 0 12px 0;
+    text-align: center !important;
+}
+div.cadastro_container p.btSalvar_container_end1
+{
+    text-align: right !important;
+    margin: -20px 0 0 0;
+}
+h2#tit_servico_entrega
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_selecao_servico_entrega.gif) 0 0 no-repeat;
+}
+table.listaServico
+{
+    width: 410px;
+    margin: 0 20px;
+}
+table.listaServico tr td
+{
+    font-size: 12px;
+    color: #444;
+    padding: 10px;
+}
+table.listaServico tr td span
+{
+    font-size: 12px;
+    color: #444;
+}
+table.listaServico tr td.td_item
+{
+    text-align: right !important;
+    padding-right: 25px;
+    width: 30%;
+    font-weight: bold;
+}
+table.listaServico tr td.td_valor select.fldServico
+{
+    width: 250px;
+}
+table.listaServico tr td.td_mensagem span
+{
+    font-size: 12px;
+    text-align: center !important;
+    color: #444;
+}
+table.listaServico tr td.td_botoes
+{
+    text-align: right !important;
+    padding: 14px 0 0 0;
+    border-top: 1px solid #AAA;
+}
+table.listaProdutos
+{
+    width: 928px;
+    margin: 0 20px;
+}
+table.listaProdutos tr th, table.listaProdutos tr td
+{
+    font-size: 12px;
+    color: #444;
+    padding: 10px;
+    text-align: center !important;
+}
+table.listaProdutos tr th
+{
+    font-weight: bold;
+    border-bottom: 1px solid #AAA;
+}
+table.listaProdutos tr th.th_Produto, table.listaProdutos tr td.td_Produto
+{
+    text-align: left !important;
+}
+table.listaProdutos tr td.td_Servico select.fldServico
+{
+    width: 150px;
+}
+table.listaProdutos tr td.td_botoes
+{
+    text-align: right !important;
+    border-top: 1px solid #AAA;
+}
+table.listaProdutos tr td.td_mensagem span
+{
+    font-size: 12px;
+    text-align: center !important;
+    color: #444;
+}
+table.listaProdutos tr th.th_Qtde
+{
+    width: 32px;
+}
+table.listaProdutos tr th.th_Presente
+{
+    width: 55px;
+}
+table.listaProdutos tr th.th_ValorUnitario
+{
+    width: 110px;
+}
+table.listaProdutos tr th.th_SubTotal
+{
+    width: 110px;
+}
+table.listaProdutos tr th.th_Servico
+{
+    width: 150px;
+}
+table.listaProdutos tr th.th_Valor
+{
+    width: 80px;
+}
+table.listaProdutos tr th.th_Prazo
+{
+    width: 80px;
+}
+div.pagamento_container .box_968_container
+{
+    margin-bottom: 10px;
+}
+dl.fechamento_endereco_entrega dt.box_titulo
+{
+    background: url("/content/imgs/tit_endereco_entrega.gif") no-repeat scroll 0 0 transparent
+}
+dl.fechamento_nfp dt.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_nfp.gif) 0 0 no-repeat;
+}
+dl.fechamento_contacorrente p.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_pagamento_contacorrente.gif) 24px 0 no-repeat;
+}
+dd.fechamento_cartaocredito p.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_pagamento_cartaocredito.gif) 0 0 no-repeat;
+}
+dd.fechamento_boleto p.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_boleto.gif) 0 0 no-repeat;
+}
+dd.fechamento_debito p.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_debitoonline.gif) 0 0 no-repeat;
+}
+dd.fechamento_pay p.box_titulo
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_paypal.gif) 0 0 no-repeat;
+}
+dd.fechamento_pay ul li.fst
+{
+    color: #122a44;
+    font-weight: bold;
+    font-size: 12px;
+    background: none;
+    padding: 0;
+}
+dd.fechamento_pay ul li
+{
+    background: url(http://www.hopeonline.com.br/imagens/bullet.gif) 0 0 no-repeat;
+    padding-left: 20px;
+    margin-bottom: 9px;
+}
+dd.fechamento_pay ul li.lst
+{
+    background: none;
+    padding: 0;
+}
+dd.fechamento_pay ul li.lst a
+{
+    color: #b58357 !important;
+    font-style: italic;
+    text-decoration: underline !important;
+}
+dl.forma_pagamento dt#tit_opcoes_pagamento
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/tit_opcoes_pagamento.gif) 0 0 no-repeat;
+    margin: 20px 0 30px 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 21px;
+}
+.box_itens dd, .box_itens label, .box_itens p
+{
+    font-size: 12px;
+    color: #444;
+}
+dd.fechamento_cartaocredito div.block1
+{
+    float: left;
+    display: inline;
+    width: 644px;
+    overflow: hidden;
+    height: 100%;
+}
+dl.fechamento_contacorrente div.block1, dd.fechamento_boleto div.block1, dd.fechamento_debito div.block1
+{
+    float: left;
+    display: inline;
+    width: 604px;
+    overflow: hidden;
+    height: 100%;
+}
+dd.fechamento_pay div.block1
+{
+    float: left;
+    display: inline;
+    width: 604px;
+    overflow: hidden;
+    height: 100%;
+}
+dd.fechamento_pay div.block2
+{
+    float: left;
+    display: inline;
+    width: 295px;
+}
+dd.fechamento_cartaocredito div.block2
+{
+    float: left;
+    display: inline;
+    width: 255px;
+    padding-left: 20px;
+    border-left: 1px dotted #646464;
+}
+dl.fechamento_contacorrente div.block2, dd.fechamento_boleto div.block2, dd.fechamento_debito div.block2
+{
+    float: left;
+    display: inline;
+    width: 295px;
+}
+div.block2 p.bt_enviar_container
+{
+    text-align: right !important;
+    margin: 16px 0 0 0;
+}
+div.block1 p.logo_container
+{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    clear: both;
+}
+div.block1 p.logo_container input, div.block1 p.logo_container label
+{
+    float: left;
+    display: inline;
+}
+div.block1 p.logo_container input
+{
+    margin-top: 6px;
+}
+div.block1 p.logo_container label
+{
+    margin-left: 8px;
+}
+dl.fechamento_endereco_entrega dd p
+{
+    line-height: 18px;
+    margin: 0;
+}
+dl.fechamento_endereco_entrega dd p.userName
+{
+    font-weight: bold;
+    margin: 24px 0 12px 0;
+}
+dl.fechamento_endereco_entrega dd p.bt_container
+{
+    text-align: right !important;
+    margin-top: 12px;
+}
+dl.fechamento_endereco_entrega dd p.bt_container a:link, dl.fechamento_endereco_entrega dd p.bt_container a:hover, dl.fechamento_endereco_entrega dd p.bt_container a:visited, dl.fechamento_endereco_entrega dd p.bt_container a:active
+{
+    background: url(/content/imgs/account/ico_bullet_1.gif) 0 3px no-repeat;
+    padding-left: 14px;
+    margin-left: 20px;
+    color: #666 !important;
+    font-weight: bold;
+}
+dl.fechamento_endereco_entrega dd p.bt_container a:hover
+{
+    color: #AAA !important;
+}
+dl.fechamento_nfp dd div.bg
+{
+    height: 22px;
+    line-height: 22px;
+}
+dl.fechamento_nfp dd div.bg label
+{
+    padding: 0 16px 0 8px;
+}
+dl.fechamento_nfp dd div.bg label, dl.fechamento_nfp dd div.bg input
+{
+    float: left;
+    display: inline;
+}
+dl.fechamento_nfp dd div.bg input.nb
+{
+    margin-top: 5px;
+}
+dl.fechamento_contacorrente dd p.box_titulo
+{
+    text-indent: 0;
+}
+dl.fechamento_contacorrente dd p.box_titulo input
+{
+    float: left;
+    display: inline;
+    margin-top: 2px;
+}
+dl.fechamento_contacorrente dd p.box_titulo label
+{
+    float: left;
+    display: inline;
+    width: 260px;
+    height: 21px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+dl.fechamento_contacorrente dd div.block1 p.logo_container input
+{
+    margin-top: 2px;
+}
+dl.fechamento_contacorrente dd div.block2 dl dt
+{
+    border: none;
+}
+dd.fechamento_cartaocredito div.block1 div.cards
+{
+    float: left;
+    display: inline;
+    width: 227px;
+    padding-right: 24px;
+}
+dd.fechamento_cartaocredito div.block1 div.cards p.logo_container
+{
+    border-bottom: 1px dotted #646464;
+    padding-bottom: 10px;
+}
+dd.fechamento_cartaocredito div.block1 div.cards p.logo_container a#lnkDuvida
+{
+    display: block;
+    clear: left;
+    margin: 8px 0 0 24px;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo
+{
+    float: left;
+    display: inline;
+    width: 360px;
+    padding-left: 25px;
+    border-left: 1px dotted #646464;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container
+{
+    margin: 0 0 10px 0 !important;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container#numero_cartao_container
+{
+    float: left;
+    width: 190px;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container label
+{
+    display: block;
+    margin-bottom: 6px;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container input.fld_cpf_cnpj, dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container input.fld_card_number, dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container input.fld_cod_seg
+{
+    width: 150px;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container input.fld_nome
+{
+    width: 342px;
+}
+dd.fechamento_cartaocredito div.block1 div.cardInfo p.fld_container input.fld_data_validade
+{
+    width: 30px;
+}
+div.debito_online_container div.block1, div.debito_online_container div.block2
+{
+    padding-top: 24px;
+}
+dl.detalhe_pagamento dt
+{
+    border-bottom: 1px dotted #646464;
+    font-size: 12px;
+    color: #444;
+    margin: 8px 0;
+    padding-bottom: 4px;
+}
+dl.detalhe_pagamento dd
+{
+    margin-bottom: 8px;
+}
+dl.detalhe_pagamento dd label, dl.detalhe_pagamento dd label span
+{
+    font-size: 12px;
+    color: #444;
+}
+dl.detalhe_pagamento dd label del
+{
+    text-decoration: none;
+}
+dl.detalhe_pagamento dd label strong
+{
+    color: #88147E !important;
+}
+dl.detalhe_pagamento dd label span.price1
+{
+}
+dl.detalhe_pagamento dd label span.price2
+{
+    color: #999;
+    padding-left: 5px;
+}
+div#body_container
+{
+    background: none;
+    padding-bottom: 30px;
+}
+div#body_container
+{
+}
+div#main_content a:link, div#main_content a:hover, div#main_content a:visited, div#main_content a:active
+{
+    color: #777;
+    text-decoration: none;
+}
+div#main_content del
+{
+    color: #666;
+}
+div#main_content input, div#main_content select, div#main_content textarea
+{
+    font-size: 12px;
+    border: 1px solid #E2E2E2;
+    padding: 2px;
+}
+div#main_content input.nb, div#main_content span.nb input
+{
+    border: none !important;
+    padding: 0 !important;
+    background: none !important;
+}
+h2.titulo, h3.titulo
+{
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 21px;
+}
+h2.titulo
+{
+    margin: 0 0 25px;
+}
+.box_itens
+{
+    overflow: hidden;
+    height: 100%;
+    padding: 0 24px;
+}
+.box_itens .box_titulo
+{
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 21px;
+    margin-bottom: 24px;
+}
+span.validacao
+{
+    color: #88147E !important;
+    font-size: 10px !important;
+    padding: 5px 0 0 10px;
+    position: absolute;
+}
+span.erro
+{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #FF000C;
+}
+.box_esq
+{
+    float: left;
+    display: inline;
+}
+.box_dir
+{
+    float: right;
+    display: inline;
+}
+div.box_240_container
+{
+    width: 240px;
+    margin: 0 auto;
+}
+div.box_240_container div.box_240_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_240_container div.box_240_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_mid.gif) 0 0 repeat-y;
+}
+div.box_240_container div.box_240_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_300_container
+{
+    width: 300px;
+    margin: 0 auto;
+}
+div.box_300_container div.box_300_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_300_container div.box_300_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_mid.gif) 0 0 repeat-y;
+}
+div.box_300_container div.box_300_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_450_container
+{
+    width: 450px;
+    margin: 0 auto;
+}
+div.box_450_container div.box_450_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_450_container div.box_450_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_mid.gif) 0 0 repeat-y;
+}
+div.box_450_container div.box_450_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_626_container
+{
+    width: 626px;
+    margin: 0 auto;
+}
+div.box_626_container div.box_626_top
+{
+    background: url(/content/imgs/account/bg_box_626_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_626_container div.box_626_mid
+{
+    background: url(/content/imgs/account/bg_box_626_mid.gif) 0 0 repeat-y;
+}
+div.box_626_container div.box_626_bot
+{
+    background: url(/content/imgs/account/bg_box_626_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_680_container
+{
+    width: 680px;
+    margin: 0 auto;
+}
+div.box_680_container div.box_680_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_680_container div.box_680_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_mid.gif) 0 0 repeat-y;
+}
+div.box_680_container div.box_680_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_968_container
+{
+    width: 968px;
+    margin: 0 auto;
+}
+div.box_968_container div.box_968_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_top.gif) 0 0 no-repeat;
+    padding-top: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+div.box_968_container div.box_968_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_mid.gif) 0 0 repeat-y;
+}
+div.box_968_container div.box_968_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_bot.gif) 0 0 no-repeat;
+    height: 20px;
+}
+div.box_968_container div.box_tb_top
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_top.gif) 0 0 no-repeat;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 10px;
+}
+div.box_968_container div.box_tb_mid
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_mid.gif) 0 0 repeat-y;
+}
+div.box_968_container div.box_tb_bot
+{
+    background: url(http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_bot.gif) 0 0 no-repeat;
+    height: 10px;
+}

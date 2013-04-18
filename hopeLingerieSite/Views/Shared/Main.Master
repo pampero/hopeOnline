@@ -1,0 +1,219 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage<dynamic>" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<TITLE>Hope</TITLE>
+    <% Html.DevExpress().RenderStyleSheets(Page,
+           new StyleSheet { ExtensionSuite = ExtensionSuite.GridView },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+           new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+    
+    <script src="<%: Url.Content("~/Scripts/jquery-1.4.4.min.js") %>" type="text/javascript"></script>
+    <% Html.DevExpress().RenderScripts(Page,
+           new Script { ExtensionSuite = ExtensionSuite.GridView },
+           new Script { ExtensionSuite = ExtensionSuite.HtmlEditor },
+           new Script { ExtensionSuite = ExtensionSuite.Editors },
+           new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
+    ); %>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/> 	
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="copyright" content="Hope Argentina - Tienda virtual" />
+	<meta name="robots" content="INDEX, FOLLOW" />
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+	<link href="/Content/imgs/favicon.gif" type="image/x-icon" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="/Content/styles/Styles.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/Content/styles/Institucional.css" media="screen" />
+
+    <script src="/Scripts/MicrosoftAjax.js" type="text/javascript"></script>
+    <script src="/Scripts/MicrosoftMvcAjax.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="iso-8859-1" src="/Scripts/funcoes.js"></script>
+    <asp:ContentPlaceHolder ID="HeaderContent" runat="server" />
+    
+    
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "/Account/GetUser",
+                data: $(this).serializeArray(),
+                success: function (data) {
+                   // parent.$("#identificacao").text(data.Value);
+                    if (data.Value == "¿Nuevo usuario?") {
+                        $("#clickSalir").attr("style", "display:none");
+                     //   $("#clickAqui").attr("style", "display:inline");
+                    }
+                    else {
+                   //     $("#clickAqui").attr("style", "display:none");
+                        $("#clickSalir").attr("style", "display:inline");
+                    }
+                }
+            });
+
+
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "/Account/ItemsQuantity",
+                data: $(this).serializeArray(),
+                success: function (data) {
+                    parent.$("#itens_sacola").text(data.Value + " item");
+                }
+            });
+        });
+
+        function OnComboRequiredValidation(s, e) {
+
+            if (s.GetValue() == null)
+                e.isValid = false;
+
+            if (s.GetValue() == "0")
+                e.isValid = false;
+        }
+
+        function OnRequiredValidation(s, e) {
+
+            if (e.value == null)
+                e.isValid = false;
+            var name = String(e.value);
+            if (name == "")
+                e.isValid = false;
+        }
+    </script>
+
+</head>
+<body class="home">        
+        
+        <!-- INÍCIO DO CABEÇALHO -->
+		<div id="header_bg" style="height:87px !important;">
+        
+         
+			<div id="header_container" style="height:67px !important;">
+				<div class="divLogo">
+					<a href="/">
+					    <img src="/Content/imgs/logo.gif" id="Logo" alt="" AlternateText="Hope" />
+					</a>
+				</div>
+		        <p id="new_user" style="display:none;">
+			        <span id="identificacao" name="identificacao"></span>
+		        </p>
+                <!-- FORMULARIO DE BUSQUEDA -->
+                <%using (Html.BeginForm("Buscar", "Catalogo")){%>
+                <fieldset id="busca_container">
+					<legend>Buscar</legend>
+	                <input name="Name" type="text" value="Buscar" maxlength="50" id="Name" value="Buscar" onblur="if(this.value==''){this.value='Buscar'}" onclick="this.value=''" onkeydown="javascript:BuscarEnter('Rodape', event);" />
+				</fieldset>
+                <%}%>
+				<p id="itens_sacola"></p>
+				<!-- MENU USUARIO -->
+	                <dl id="header_menu_user">
+				        <dt class="dn">Menu de Usuario</dt>
+                        <dd id="clickSalir" style="display:none" class="meu_cadastro fst">
+					        <a href="/Account/LogOff">> Salir</a>
+				        </dd>
+				        <dd class="meu_cadastro fst">
+					        <a href="/Account/CustomerLogOn">> Mi Cuenta</a>
+				        </dd>
+				        <dd class="lista_desejos">
+					        <a href="/Institutional/OurStores">> Ver Sucursales</a>
+				        </dd>						
+                        <dd class="lista_desejos">
+					        <a href="/Institutional/ContactUs">> Contacto</a>
+				        </dd>
+				        <dd class="meu_carrinho">
+					        <a href="/ShoppingCart/Step1">Mi carrito</a>
+				        </dd>
+			        </dl>
+                    <% 
+                        Html.RenderAction("RenderMenu", "Home");
+                    %>
+		        <!-- FIM DO MENU USUARIO -->
+			</div>
+		</div>
+   
+    
+    <div id="body_bg">
+        <div id="body_container" style="overflow: visible;">
+            <!--MAIN CONTENT-->
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+<!-- MENU INSTITUCIONAL -->
+<div id="footer_bg" class="fc ">
+	<div id="footer_container">
+	    <dl id="lst_sobre_hope" style="display:block">
+            <dt>Sobre Hope</dt>
+            <dd><a href="/Institutional/AboutUs" >Institucional</a></dd>
+            <dd><a href="/Institutional/ContactUs" >Trabaja con nosotros</a></dd>
+            <dd><a href="/Institutional/OurStores" >Nuestros Locales</a></dd>
+        </dl>
+
+        <dl id="lst_central_atendimento" style="display:block">
+            <dt>Centro de Atención</dt>
+            <dd><a href="/Institutional/Faq" >Preguntas Frecuentes</a></dd>
+            <dd><a href="/Institutional/ChangesAndRefound" >Cambios y Devoluciones</a></dd>
+            <dd><a href="/Institutional/ContactUs" >Atenci&oacute;n Telefónica</a></dd>
+            <dd><a href="/Institutional/ContactUs" >Contáctese con nosotros</a></dd>
+        </dl>
+        
+        <dl id="lst_acompanhe">
+            <dt>Segui a Hope</dt>
+            <dd><a href="http://twitter.com/Hopeargentina" target="_blank" >En Twitter @HopeArgentina</a></dd>
+            <dd><a href="http://www.facebook.com/pages/HOPE-LiNGERIE-Argentina/106939916091739" target="_blank" >En Facebook</a></dd>
+            <dd><a href="http://www.loucasporlingerie.com.br" target="_blank">Blog Locas por Lingerie</a></dd>
+        </dl>
+       
+       <dl id="lst_compra_segura" style="display:block">
+            <dt>Compra Segura</dt>
+            <dd><img src="/content/imgs/logos.gif" alt="Logos"/></dd>    
+        </dl> 
+		
+	    <dl id="lst_franquias" style="display:block">
+		    <dt><a href="/Franquicias/GoStep?Step=5" target="_blank">Franquicias</a></dt>
+	    </dl>
+	    
+	    <dl id="lst_inspireOld" style="display:none">
+		    <dt>Inspiracion</dt>
+		    <dd><a href="javascript:;">Catálogo de Verano</a></dd>
+		    <dd><a href="javascript:;">HOPE Magazine</a></dd>
+	    </dl>
+	    
+	    <dl id="lst_inspire" style="display:block">
+		    <dt><br />Cuide su prenda HOPE</dt>
+		    <dd><img src="/content/imgs/cuidado.gif" alt="Cuidado" /></dd>
+	    </dl>
+	    
+	    <dl id="lst_news" style="display:none">
+		    <dt>Recibi nuestro newsletter</dt>
+		    <dd>
+		        <input type="text" value=""/>
+		        <a href="javascript:;" id="ok">OK</a>
+		    </dd>
+	    </dl>
+	    		
+		<p id="copy">
+		    <span class="left"></span>
+		    <span class="right">
+		        <a href="/Institutional/PrivacyPolicy">Políticas de Privacidad</a>
+		        &copy; 2011, Hope Argentina. Todos los derechos reservados.
+		    </span>
+        </p>
+	</div>		
+</div>
+</body>
+</html>
+
+
+
+		

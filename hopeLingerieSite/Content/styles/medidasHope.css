@@ -1,0 +1,45 @@
+body
+{
+	background:url(../../Content/imgs/bg_body.gif) repeat;
+}
+
+.tabelaMedidas{
+		width:auto;
+		color:#777777;
+		font-family:Tahoma,Helvetica,Verdana,Geneva,Arial,sans-serif;
+		font-size: 11px;
+		margin-left:15px;
+		}
+	.tabelaMedidas h3{
+		text-transform: uppercase}
+	.tabelaMedidas .boxSutia{
+		display: block}
+	.tabelaMedidas .boxSutia img{
+		float: left}
+	.tabelaMedidas .boxSutia ul{
+		float: left;
+		list-style: none;
+		width:280px;}
+	.tabelaMedidas .boxSutia ul li,
+	.tabelaMedidas .boxSutia ul li p{
+		color: #000}
+	.tabelaMedidas .boxSutia ul li.passo01{
+		background: url(../../Content/imgs/sutia-passo1.jpg) no-repeat;
+		padding: 0px 0px 0px 60px;
+		color: #000}
+	.tabelaMedidas .boxSutia ul li.passo02{
+		background: url(../../Content/imgs/sutia-passo2.jpg) no-repeat;
+		padding: 0px 0px 0px 60px;
+		}
+	.tabelaMedidas .boxSutia2{}
+	.tabelaMedidas .boxSutia2 img{
+		float: left}	
+	.tabelaMedidas .boxSutia2 ul{
+		float: left;
+		width:280px;
+		list-style: none;}
+	.tabelaMedidas .boxSutia2 ul li{
+		color: #000;
+		padding: 0px 0px 10px 0px}
+	.tabelaMedidas .boxSutia2 ul li strong{
+		color: #000;}

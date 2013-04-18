@@ -1,0 +1,1370 @@
+﻿#imgs {
+    background-image: url("http://www.hopelingerie.com.br/imagens/overlay.png");
+}
+* html #imgs {
+    background-color: transparent;
+    background-image: url("blank.gif");
+}
+/*
+div.ImagemAmpliadaFoto {
+    background-color: #F2F2F2;
+    left: 0;
+    padding: 1px;
+    position: absolute;
+    visibility: hidden;
+    width: 900px;
+    z-index: 115;
+}
+div.ImagemAmpliadaFoto div.ImagemAmpliada {
+    overflow: hidden;
+    text-align: center !important;
+    width: 900px;
+}
+*/
+div.FecharImagemAmpliada {
+    background-color: #F2F2F2;
+    padding: 4px;
+    text-align: right !important;
+    width: 892px;
+}
+div.FecharImagemAmpliada a {
+    color: #5D5B5C !important;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+dl.lstReference {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+dl.lstReference dt.fst {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+dl.lstReference dt, dl.lstReference dd {
+    display: inline;
+    text-transform: uppercase;
+}
+dl.lstReference dt {
+    border-left: 1px solid #666666;
+    margin-left: 15px;
+    padding: 0 0 2px 15px;
+}
+dl.lstReference dt, dl.lstReference dd, dl.lstReference dd a:link, dl.lstReference dd a:hover, dl.lstReference dd a:visited, dl.lstReference dd a:active, dl.lstReference dt a:link, dl.lstReference dt a:hover, dl.lstReference dt a:visited, dl.lstReference dt a:active {
+    color: #9B9B9B;
+}
+.detalhes ul#breadcrumbs_gb {
+    margin-left: 75px;
+    width: 90%;
+}
+.detalhes_voltar {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/btn_voltar.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 36px;
+    width: 58px;
+}
+div.product_info_container {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.info_container {
+    float: left;
+    position: relative;
+    width: 484px;
+    z-index: 1;
+}
+.info_container .header {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_info_container_header.gif") no-repeat scroll 0 0 transparent;
+    padding: 0 10px 10px;
+}
+.info_container .header .titProduto {
+    color: #3E3E3E;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    width: 387px;
+}
+.info_container .header #troca_gratis {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.info_container .main2 {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_info_container_main.gif") no-repeat scroll 0 bottom transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.info_container .main2 p {
+    color: #3E3E3E;
+    line-height: 14px;
+    margin-top: 0;
+    overflow: hidden;
+}
+.textDescricao {
+    color: #3E3E3E;
+    font-size: 12px !important;
+    padding-right: 10px;
+}
+.textDescricao a {
+    color: #5D5B5C !important;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+.textDescricao a:hover {
+    text-decoration: underline !important;
+}
+.info_container .main2 p.price {
+    margin-bottom: 10px;
+}
+.info_container .main2 p.condition {
+    margin: 0 0 10px;
+}
+.info_container .main2 p.price span, .info_container .main2 p.condition span {
+    display: inline;
+}
+.info_container .main2 p.price span.block1 {
+    padding-top: 2px;
+}
+.info_container .main2 p.price span.block1, .info_container .main2 p.condition span.block1 {
+    margin-right: 4px;
+}
+.info_container .main2 p.price span.block1, .info_container .main2 p.price span.block1 del {
+    color: #898989;
+    font-size: 12px;
+}
+.info_container .main2 p.price span.block2, .info_container .main2 p.price span.block2 strong {
+    color: #88147E;
+    font-size: 18px;
+}
+.info_container .main2 p.condition span.block1 strong, .info_container .main2 p.condition span.block2 {
+    color: #5D5B5C;
+    font-size: 13px;
+}
+.info_container .main2 p.condition_alt {
+    margin-top: 3px;
+}
+.info_container .main2 p.condition_alt span, .info_container .main2 p.economize span {
+    color: #000000;
+    font-size: 12px;
+}
+.info_container .main2 p.condition_alt span strong, .info_container .main2 p.economize span strong {
+    font-size: 12px;
+}
+.info_container .main2 p.economize {
+}
+.info_container .main2 .selos_container {
+    height: 100%;
+    overflow: hidden;
+}
+.info_container .main2 .selo_container {
+    margin-bottom: 5px;
+    width: auto;
+}
+div.footer div.rating_container {
+    border-right: 1px dotted #CCCCCC;
+    float: left;
+    height: 55px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+    overflow: hidden;
+    width: 160px;
+}
+div.footer div.rating_container dl.note_to_view {
+    display: inline;
+    float: left;
+    width: 80px;
+}
+div.footer div.rating_container dl.note_to_view dt, div.footer div.rating_container dl.note_to_view dd {
+    display: inline;
+    float: left;
+    width: auto;
+}
+div.footer div.rating_container dl.note_to_view dt {
+    display: none;
+}
+div.footer div.rating_container dl.note_to_view dd.note a span, div.footer div.rating_container dl.note_to_view dd.note a:link, div.footer div.rating_container dl.note_to_view dd.note a:hover, div.footer div.rating_container dl.note_to_view dd.note a:visited, div.footer div.rating_container dl.note_to_view dd.note a:active {
+    background-image: url("http://www.hopelingerie.com.br/locales/global/img/ico_estrela.gif");
+    background-repeat: repeat-x;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 14px;
+}
+div.footer .rating_container dl.note_to_view dd.note a {
+    margin: 0 !important;
+}
+div.footer div.rating_container dl.note_to_view a:link, div.footer div.rating_container dl.note_to_view a:hover, div.footer div.rating_container dl.note_to_view a:visited, div.footer div.rating_container dl.note_to_view a:active {
+    background-position: 0 0;
+    float: left;
+    padding-top: 14px;
+    width: 75px;
+}
+div.footer div.rating_container dl.note_to_view dd.note a span {
+    background-position: 0 -14px;
+    margin-top: -14px;
+}
+div.footer div.rating_container ul.lstAvaliacao {
+    display: inline;
+    float: left;
+    width: 150px;
+}
+div.footer ul.lstAvaliacao li a.nota {
+    cursor: text;
+}
+div.footer div.rating_container ul.lstAvaliacao li.fst {
+}
+div.footer div.rating_container ul.lstAvaliacao li {
+    float: left;
+    padding-left: 0;
+}
+div.footer div.rating_container ul.lstAvaliacao li.icoAvaliacaoCliente {
+}
+div.footer div.rating_container ul.lstAvaliacao li.icoAvalieProduto {
+}
+div.footer div.rating_container ul.lstAvaliacao li a:link, div.footer div.rating_container ul.lstAvaliacao li a:visited, div.footer div.rating_container ul.lstAvaliacao li a:active {
+    color: #5D5B5C;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.main2 div.rating_container ul.lstAvaliacao li a:hover {
+    text-decoration: underline;
+}
+#aviseMe {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_aviseme.gif") no-repeat scroll 0 0 transparent;
+    height: 88px;
+    overflow: hidden;
+    padding-left: 7px;
+    padding-top: 15px;
+    width: 195px;
+}
+#aviseMe h3 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_aviseme.gif") no-repeat scroll 0 0 transparent;
+    height: 36px;
+    margin-top: 0;
+    text-indent: -9999px;
+}
+#aviseMe label {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_email_aviseme.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+}
+#aviseMe input, #aviseMe a {
+    display: inline;
+    float: left;
+}
+#aviseMe input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    font-size: 12px;
+    margin: 0 18px 0 15px;
+    padding: 6px 0 0;
+    width: 90px !important;
+}
+.info_container .footer {
+    border-top: 1px dotted #CCCCCC;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+}
+div.infoProduct p.textDisponibilidade {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+div.infoProduct p.textDisponibilidade span {
+    color: #23A4C9;
+    font-size: 12px;
+}
+div.infoProduct p.textDisponibilidadeSaibaMais, div.infoProduct .AddThis p {
+    color: #5D5B5C !important;
+    font-size: 13px;
+    margin-top: 0;
+}
+div.infoProduct p.textDisponibilidadeSaibaMais a:link, div.infoProduct p.textDisponibilidadeSaibaMais a:visited, div.infoProduct p.textDisponibilidadeSaibaMais a:active, div.infoProduct .AddThis p {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_bullet4.gif") no-repeat scroll 0 5px transparent;
+    color: #5D5B5C;
+    font-weight: bold;
+    padding-left: 15px;
+    text-decoration: none;
+}
+div.infoProduct .AddThis p.AddThis {
+    background: none repeat scroll 0 0 transparent;
+    float: right;
+    margin-right: 15px;
+    padding-top: 1px;
+    width: 125px;
+}
+div.infoProduct p.textDisponibilidadeSaibaMais a:hover {
+    text-decoration: underline;
+}
+div.social {
+    float: left;
+    width: 150px;
+}
+div.infoProduct .AddThis {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 250px;
+}
+div.infoProduct .AddThis p, div.infoProduct .AddThis ul, div.infoProduct .AddThis li {
+    display: inline;
+    float: left;
+    width: auto;
+}
+div.infoProduct .AddThis p {
+    color: #8C7C6C;
+    margin: 0;
+}
+div.infoProduct .AddThis li {
+    margin-left: 5px;
+}
+div.infoProduct .AddThis .twitter {
+    margin-left: 10px;
+}
+div.infoProduct .AddThis li a {
+    display: block;
+    height: 16px;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 16px;
+}
+div.infoProduct .AddThis .twitter a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_twitter2.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .google a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_google.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .social1 a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_socialMedia1.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .rss a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_rss.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .facebook a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_facebook2.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .social2 a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_socialMedia2.gif") no-repeat scroll 0 0 transparent;
+}
+div.infoProduct .AddThis .delicious a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_delicious.gif") no-repeat scroll 0 0 transparent;
+}
+.info_container .footer ul.lstProductOptions {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_pontilhado_1.gif") repeat-x scroll 0 bottom transparent;
+    display: inline;
+    float: right;
+    padding: 0 0 10px !important;
+    width: 200px;
+}
+.info_container .footer #BlocoEntrega {
+    float: left;
+    width: 250px;
+}
+.info_container .footer .help {
+    padding: 10px 0 0 16px;
+}
+.info_container .footer .help li {
+    height: 23px;
+    line-height: 23px;
+}
+.info_container .footer .help li a:link, .info_container .footer .help li a:visited, .info_container .footer .help li a:active {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_bullet_seta_3.gif") no-repeat scroll 0 0 transparent;
+    color: #DCA40F;
+    font-size: 13px !important;
+    padding: 0 0 0 23px;
+    text-decoration: none;
+}
+.info_container .footer .help li a:hover {
+    text-decoration: underline;
+}
+div.product_photo_container {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_photo_container.gif") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 430px;
+    margin: 0 12px 0 0;
+    position: relative;
+    width: 474px;
+    z-index: 2;
+}
+div.big_photo_container {
+    float: left;
+    height: 391px;
+    width: 391px;
+}
+div.big_photo_container img.fst {
+    height: 362px;
+    width: 297px;
+}
+div.product_photo_container ul.lstThumbs {
+    display: inline;
+    float: left;
+    margin: 0 12px 0 0;
+    width: 71px;
+}
+div.product_photo_container ul.lstThumbs li {
+    cursor: pointer;
+    display: inline;
+    float: left;
+    margin-top: 8px;
+}
+div.product_photo_container ul.lstThumbs li.fst {
+    margin-top: 0;
+}
+div.product_photo_container ul.lstThumbs li img {
+    height: 68px;
+    width: 71px;
+}
+div.product_photo_container p.cliqueParaAmpliar {
+    bottom: 0;
+    height: 19px;
+    left: 90px;
+    position: absolute;
+    text-align: center !important;
+    width: 386px;
+}
+div.product_photo_container p.cliqueParaAmpliar a {
+    color: #5D5B5C;
+    font-size: 13px;
+    font-weight: bold;
+    height: 19px;
+    text-decoration: none;
+}
+div.product_photo_container p.AddThis {
+    padding: 0 !important;
+    text-align: center !important;
+}
+div.buy_product_container {
+    display: inline;
+    float: left;
+}
+div.buy_product_container div.price_container {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-top: 5px solid #D9D9D9;
+    margin-bottom: 5px;
+    padding: 7px;
+}
+div.buy_product_container div.price_container div.price_content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px;
+}
+div.buy_product_container div.price_container div.price_content div.condition {
+}
+div.buy_product_container div.price_container div.price_content div.price {
+    padding: 3px;
+}
+div.buy_product_container div.price_container div.price_content div.condition {
+    display: block;
+}
+div.buy_product_container div.price_container div.price_content div.condition_alt {
+    display: block;
+    padding: 3px;
+}
+div.buy_product_container div.price_container div.price_content div.condition div.block1 strong {
+    color: #B92025;
+    font-size: 24px !important;
+    font-weight: normal;
+    padding: 3px;
+}
+div.buy_product_container div.price_container div.price_content div.condition div.block2 strong {
+    color: #B92025;
+    font-size: 24px !important;
+    font-weight: normal;
+    padding: 3px;
+}
+div.buy_product_container div.price_container div.price_content div {
+    display: inline;
+}
+div.buy_product_container div.price_container div.price_content div del {
+    display: inline;
+    font-weight: bold;
+    padding-right: 5px;
+}
+div.buy_product_container div.price_container div.price_content div strong {
+    color: #B92025;
+    font-size: 11px;
+}
+div.buy_product_container div.price_container div.price_content div del {
+    color: #666666;
+}
+div.buy_product_container div.price_container div.price_content div.economize {
+    color: #666666;
+    display: block;
+    margin: 0;
+    padding: 3px;
+}
+div.buy_product_container div.price_container div.price_content p.condition_alt {
+    color: #B92025;
+    margin: 0;
+    padding-bottom: 5px;
+}
+div.buy_product_container div.price_container div.price_content p.economize strong {
+    color: #666666;
+}
+div.buy_product_container div.price_container div.price_content p.condition_alt strong {
+    color: #B92025;
+}
+div.buy_product_container p.veja_parcela {
+    color: #666666;
+    font-size: 10px;
+}
+div.buy_product_container p.veja_parcela a:link, div.buy_product_container p.veja_parcela a:hover, div.buy_product_container p.veja_parcela a:visited, div.buy_product_container p.veja_parcela a:active {
+    font-size: 10px;
+    font-weight: bold;
+}
+div.buy_product_container fieldset.form_buy {
+    display: inline;
+    float: right;
+    padding-top: 14px;
+}
+div.buy_product_container fieldset.form_buy select.comboQuantidade, div.buy_product_container fieldset.form_buy label.labelQuantidade {
+    color: #666666;
+    display: inline;
+    float: left;
+}
+div.buy_product_container fieldset.form_buy label.labelQuantidade {
+    margin-top: 8px;
+}
+div.buy_product_container fieldset.form_buy select.comboQuantidade {
+    margin: 6px 0 0 5px;
+}
+div.buy_product_container fieldset.form_buy input.nb {
+    display: inline;
+    float: right;
+}
+div.buy_product_container ul.lstProductOptions li {
+    display: inline;
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    margin-right: 10px !important;
+}
+ul.lstProductOptions li.icoIndicarAmigo a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_indique.gif") no-repeat scroll 0 center transparent;
+}
+ul.lstProductOptions li.icoListaDesejos a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_adicionar_lista.gif") no-repeat scroll 0 center transparent;
+}
+ul.lstProductOptions li.icoDuvidas a {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/ico_duvidas.gif") no-repeat scroll 0 5px transparent;
+}
+div.buy_product_container fieldset.form_buy #indisponivel label {
+    height: 30px;
+    text-indent: -9999px;
+}
+div.infoProduct {
+    height: 100%;
+    overflow: hidden;
+}
+div.infoProduct, div.infoProduct p {
+    color: #666666;
+}
+div.infoProduct p.textDescricao {
+}
+div.infoProduct p.textDescricao a:link, div.infoProduct p.textDescricao a:hover, div.infoProduct p.textDescricao a:visited, div.infoProduct p.textDescricao a:active {
+    font-weight: bold;
+}
+fieldset.opcoes_produtos {
+    float: left;
+    margin-right: 15px;
+    padding: 0;
+    width: 100%;
+}
+fieldset.opcoes_produtos dt div.thumb_off, fieldset.opcoes_produtos dt div.thumb_on, fieldset.opcoes_produtos dt div.thumb_on2 {
+    color: #4E4E4E;
+    display: inline;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 1px;
+    text-align: center !important;
+    width: 32px;
+}
+fieldset.opcoes_produtos dt div.thumb_off {
+    font-weight: normal !important;
+}
+fieldset.opcoes_produtos dt div.thumb_off a, fieldset.opcoes_produtos dt div.thumb_avise a {
+    color: #CCCCCC;
+    display: block;
+    text-align: center !important;
+    text-decoration: none;
+}
+fieldset.opcoes_produtos dt div.thumb_on a {
+    color: #8C7C6C;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    width: 100%;
+}
+fieldset.opcoes_produtos dt div.thumb_on2 {
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    width: 30px;
+}
+fieldset.opcoes_produtos dt div.thumb_on2 a.thumb {
+    background-color: #F2F2F2;
+    color: #8C7C6C;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    width: 100%;
+}
+fieldset.opcoes_produtos dt div.thumb_indisp, fieldset.opcoes_produtos dt div.thumb_avise {
+    color: #8C7C6C;
+    display: inline;
+    float: left;
+    height: 30px;
+    line-height: 24px;
+    opacity: 0.7;
+    padding: 1px;
+    text-align: center !important;
+    width: 32px;
+}
+fieldset.opcoes_produtos dt div.thumb_indisp a {
+    color: #8C7C6C;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-align: center !important;
+    text-decoration: none;
+    width: 100%;
+}
+fieldset.opcoes_produtos dt img.fst {
+}
+fieldset.opcoes_produtos select, fieldset.opcoes_produtos input {
+    border: 1px solid #C2C2C2;
+    font-size: 12px;
+    width: 180px;
+}
+fieldset.opcoes_produtos label {
+    border: medium none;
+    color: #3E3E3E;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+.economize {
+    margin: 0;
+}
+fieldset.opcoes_produtos div a, fieldset.opcoes_produtos div.thumb_on {
+    border: 1px solid #E5E5E5;
+}
+fieldset.opcoes_produtos div img, fieldset.opcoes_produtos div a img {
+    width: 30px;
+    height: 10px;
+}
+fieldset.opcoes_produtos .cor img, fieldset.opcoes_produtos .cor a img {
+    height: 10px;
+}
+fieldset.opcoes_produtos label.labelQuantidadeCor {
+}
+fieldset.opcoes_produtos label.labelQuantidade {
+}
+fieldset.opcoes_produtos label span {
+    font-size: 14px;
+}
+fieldset.opcoes_produtos dd {
+    float: left;
+    margin: 0 0 10px;
+    width: 100%;
+}
+#box_selecao {
+    border-top: 1px dotted #CCCCCC;
+    float: left;
+    width: 100%;
+}
+ul.links {
+    float: left;
+    width: 270px;
+}
+ul.links li {
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 30px;
+    margin-top: 17px;
+    width: 105px;
+}
+ul.links li a {
+    color: #3E3E3E;
+    font-size: 11px;
+    text-decoration: none;
+}
+ul.links li a span.ico {
+    border-right: 1px dotted #3E3E3E;
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding-top: 4px;
+    width: 35px;
+}
+ul.links li.lst {
+    margin-right: 0;
+}
+div.promocoes_relacionadas_produto_container .lstProdutos .info_container {
+    width: 140px;
+}
+div.promocoes_relacionadas_produto_container, div.compre_junto_produto_container {
+    clear: left;
+    margin-bottom: 30px;
+}
+div.promocoes_relacionadas_produto_container h2, div.compre_junto_produto_container h2, div.quemComprou h2 {
+    margin: 0 0 20px;
+}
+ul.lstProdutos_juntos {
+    float: left;
+    height: 100%;
+    overflow: visible;
+    padding: 0 0 20px;
+    width: 100%;
+}
+ul.lstProdutos_juntos li {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_plus.gif") no-repeat scroll 5px 37px transparent;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    padding-left: 40px;
+    width: 160px;
+}
+ul.lstProdutos_juntos li.fst {
+    background: none repeat scroll 0 0 transparent;
+    margin-left: 0;
+    padding-left: 0;
+    width: 160px;
+}
+ul.lstProdutos_juntos li div.photo_container {
+    margin-bottom: 10px;
+}
+ul.lstProdutos_juntos li div.photo_container img {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+}
+ul.lstProdutos_juntos li p.product_name {
+    margin: 0;
+    text-align: center !important;
+}
+ul.lstProdutos_juntos li p.product_name {
+    margin: 0 0 10px;
+}
+ul.lstProdutos_juntos li p.product_name {
+    height: 42px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+ul.lstProdutos_juntos li p.product_name a:link, ul.lstProdutos_juntos li p.product_name a:hover, ul.lstProdutos_juntos li p.product_name a:visited, ul.lstProdutos_juntos li p.product_name a:active {
+    color: #4F4F4F;
+    font-size: 12px;
+    text-decoration: none;
+}
+ul.lstProdutos_juntos li p.product_disp {
+    color: #88147E !important;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    margin: 6px 0 0;
+}
+ul.lstProdutos_juntos li p.product_disp span {
+    color: #88147E !important;
+}
+ul.lstProdutos_juntos li dt {
+    color: #828282;
+    display: block;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+ul.lstProdutos_juntos li dt label {
+    text-transform: uppercase;
+}
+ul.lstProdutos_juntos li dd {
+    color: #666666;
+    display: block;
+    font-size: 10px;
+    padding: 0 0 10px;
+    text-decoration: none;
+}
+ul.lstProdutos_juntos li dd select {
+    border: 1px solid #7F7F7F;
+    color: #000000;
+    display: block;
+    font-size: 12px;
+    width: 105px;
+}
+ul.lstProdutos_juntos li.result {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_equal.gif") no-repeat scroll 0 45px transparent;
+    height: 130px;
+    width: 180px;
+}
+ul.lstProdutos_juntos li.result div.result_container {
+    height: auto;
+    padding: 10px 0 0;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price span {
+    display: inline;
+    float: left;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price span.block1 {
+    margin-right: 5px;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price span.block1, ul.lstProdutos_juntos li.result div.result_container p.price span del {
+    color: #5D5B5C !important;
+    font-size: 13px !important;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price span, ul.lstProdutos_juntos li.result div.result_container p.price span del, ul.lstProdutos_juntos li.result div.result_container p.price span strong {
+    color: #D38096;
+    font-size: 15px;
+}
+ul.lstProdutos_juntos li.result div.result_container p.condition {
+    margin-top: 5px;
+}
+ul.lstProdutos_juntos li.result div.result_container p.condition span {
+    display: inline;
+    font-size: 14px;
+}
+ul.lstProdutos_juntos li.result div.result_container p.condition span, ul.lstProdutos_juntos li.result div.result_container p.condition span del, ul.lstProdutos_juntos li.result div.result_container p.condition span strong {
+    color: #D38096;
+}
+ul.lstProdutos_juntos li.result div.result_container p.price {
+}
+ul.lstProdutos_juntos li.result div.result_container p.condition {
+}
+ul.lstProdutos_juntos li.result div.result_container p.buy_all_container {
+    margin: 10px 0 0;
+}
+ul.lstProdutos_juntos li.highlight_sum {
+    background: none repeat scroll 0 0 transparent;
+    padding-left: 20px;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: table;
+    height: 128px;
+    overflow: hidden;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container p {
+    color: #666666;
+    margin: 0;
+    text-align: center !important;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container p.product1 {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_plus_white.gif") no-repeat scroll center bottom transparent;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+ul.lstProdutos_juntos li.highlight_sum, ul.lstProdutos_juntos li.highlight_sum div.highlight_container {
+    width: 340px;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container div.centerWrap, ul.lstProdutos_juntos li.highlight_sum div.highlight_container div.centerWrap2 {
+    width: 340px;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container div.centerWrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+ul.lstProdutos_juntos li.highlight_sum div.highlight_container div.centerWrapInternal {
+}
+ul.lstProdutos_juntos_noLegend li {
+    background-position: 5px 70px;
+    padding-left: 35px;
+    width: 160px !important;
+}
+ul.lstProdutos_juntos_noLegend li.result {
+    background-position: 0 70px;
+    padding-left: 50px;
+    width: 134px !important;
+}
+ul.lstProdutos_juntos_noLegend li.fst {
+    margin-left: 0;
+    padding-left: 0;
+}
+ul.lstProdutos_juntos_noLegend li div.photo_container, ul.lstProdutos_juntos_noLegend li div.info_container {
+    margin-left: 20px;
+}
+ul.lstProdutos_juntos li div.info_container, ul.lstProdutos_juntos_noLegend li div.info_container {
+    clear: left;
+    margin-left: 20px;
+    width: 140px;
+}
+ul.lstProdutos_juntos_noLegend li div.info_container h3 {
+    color: #4F4F4F;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: center !important;
+}
+ul.lstProdutos_juntos li div.info_container span {
+    display: block;
+    margin-left: 15px;
+}
+.produtos_relacionados ul.lstProdutos {
+    padding-left: 0;
+}
+.produtos_relacionados ul.lstProdutos li {
+    margin-left: 15px;
+    padding-bottom: 30px !important;
+    width: 180px;
+}
+#detalhes_produto {
+    clear: both;
+    height: 100%;
+    overflow: hidden;
+}
+#descricao h2, #caracteristicas h2, #medida_certa h2, #avaliacoes h2, #especificacoes h2 {
+    height: 18px;
+    text-indent: -9999px;
+    width: 260px;
+}
+#descricao h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_descricao.gif") no-repeat scroll 0 0 transparent;
+}
+#avaliacoes h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_avaliacaoclientes.gif") no-repeat scroll 0 0 transparent;
+}
+#medida_certa h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_medidacerta.gif") no-repeat scroll 0 0 transparent;
+}
+#especificacoes h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_especificacoes.gif") no-repeat scroll 0 0 transparent;
+}
+#detalhes_produto #descricao {
+    float: left;
+    font-size: 12px;
+    margin: 0 15px 15px 0;
+    width: 500px;
+}
+#detalhes_produto #video {
+    clear: right;
+    float: left;
+    width: 400px;
+}
+#detalhes_produto #especificacoes {
+    display: block;
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 500px;
+}
+#detalhes_produto #medida_certa {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 500px;
+}
+#medida_certa table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 412px;
+}
+#medida_certa table th {
+    color: #8C7C6C;
+    font-size: 17px;
+    font-weight: bold;
+    height: 90px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 148px;
+}
+#medida_certa table th.busto1 {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/img_medida_1.gif") no-repeat scroll center center transparent;
+}
+#medida_certa table th.busto2 {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/img_medida_2.gif") no-repeat scroll center center transparent;
+}
+#medida_certa table td {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_td_medida_certa.png") repeat-x scroll 0 0 transparent;
+    border-bottom: 1px solid #FFFFFF;
+    color: #8C7C6C;
+    font-size: 15px;
+    padding: 10px 0;
+    text-align: center;
+}
+#medida_certa table .odd td {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_td_medida_certa_odd.png") repeat-x scroll 0 0 transparent;
+}
+#avaliacoes .rating_container {
+    float: left;
+    margin: 0 25px 0 0;
+    width: 460px;
+}
+#avaliacoes .rating_container .note_to_view {
+    margin: 0;
+}
+#avaliacoes p {
+    color: #9B9B9B;
+    font-size: 10px;
+}
+#avaliacoes p strong {
+    color: #3E3E3E;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+#avaliacoes p.detalhe_description {
+    color: #3E3E3E;
+    font-size: 12px;
+}
+#avaliacoes p a {
+    color: #000000;
+    font-style: italic;
+    text-decoration: none;
+}
+#avaliacoes p a:hover {
+}
+div#opiniao, #indicacao {
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+    text-align: left !important;
+    width: 528px;
+}
+div#opiniao h2, #indicacao h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_avalie_produto.gif") no-repeat scroll 0 0 transparent;
+    height: 25px;
+    margin: 0 !important;
+    text-indent: -9999px;
+}
+div#opiniao div.bg, #indicacao div.bg {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_fancy_inner.gif") no-repeat scroll left bottom transparent;
+    height: 230px;
+    padding: 15px 0;
+}
+div#opiniao p.intro_message, #indicacao p.intro_message {
+    color: #8C7C6C;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 0 5px !important;
+    padding: 0;
+}
+div#opiniao p.description, #indicacao p.description {
+    color: #8C7C6C;
+    font-size: 11px;
+    margin: 0 !important;
+    padding: 0;
+}
+div#opiniao fieldset.form_opine {
+    margin-top: 10px;
+    padding: 0;
+}
+div#opiniao fieldset.form_opine legend {
+    display: none;
+}
+div#opiniao fieldset.form_opine input, div#opiniao fieldset.form_opine textarea {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #8C7C6C;
+    height: 19px;
+    padding: 5px 0 2px 3px;
+}
+div#opiniao fieldset.form_opine input, div#opiniao fieldset.form_opine select, div#opiniao fieldset.form_opine textarea, div#opiniao fieldset.form_opine label {
+    color: #666666;
+}
+div#opiniao fieldset.form_opine select {
+    border: 1px solid #E6E6E6;
+}
+div#opiniao fieldset.form_opine label {
+    color: #8C7C6C;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+div#opiniao fieldset.form_opine div.fld_nome_container, div#opiniao fieldset.form_opine div.fld_email_container {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_input_avalie_indique.gif") no-repeat scroll 0 bottom transparent;
+    margin-right: 12px;
+    width: 255px;
+}
+div#opiniao fieldset.form_opine div.fld_email_container {
+    margin-right: 0;
+}
+div#opiniao fieldset.form_opine div.fld_comentarios_container {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_textarea.gif") no-repeat scroll 0 20px transparent;
+    float: left;
+    height: 100px;
+    width: 521px;
+}
+div#opiniao fieldset.form_opine div.fld_comentarios_container, div#opiniao fieldset.form_opine div.fld_nome_container, div#opiniao fieldset.form_opine div.fld_email_container {
+    margin-bottom: 15px;
+}
+div#opiniao fieldset.form_opine div.fld_nome_container input, div#opiniao fieldset.form_opine div.fld_email_container input {
+    font-size: 12px;
+    margin-left: 8px;
+    width: 233px;
+}
+div#opiniao fieldset.form_opine div.fld_nome_container, div#opiniao fieldset.form_opine div.fld_email_container {
+    display: inline;
+    float: left;
+}
+div#opiniao fieldset.form_opine div.fld_comentarios_container textarea {
+    font-size: 12px;
+    height: 67px;
+    padding-left: 12px;
+    width: 500px;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container {
+    display: inline;
+    float: left;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container label, div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view, div#opiniao fieldset.form_opine div.avaliacao_container select#opiniao.fldAvaliacaodiv fieldset.form_opine div.avaliacao_container input.fldAvaliacao {
+    display: inline;
+    float: left;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container label {
+    color: #8C7C6C;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view {
+    margin: 0 9px;
+    width: 70px;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view dd {
+    margin-top: 8px;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view dd a:link, div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view dd a:hover, div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view dd a:visited, div#opiniao fieldset.form_opine div.avaliacao_container dl.note_to_view dd a:active {
+    left: 0;
+    margin-left: 0;
+    position: static;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container select.fldAvaliacao {
+    margin-top: 4px;
+}
+div#opiniao fieldset.form_opine div.avaliacao_container input.fldAvaliacao {
+    margin-top: 6px;
+    width: 30px;
+}
+div#opiniao fieldset.form_opine div.button_container {
+    display: inline;
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 7px;
+}
+div#opiniao fieldset.form_opine div.button_container input.btEnviar {
+    border: medium none !important;
+}
+#indicacao {
+}
+#indicacao div.bg {
+    height: 298px;
+}
+#indicacao h2 {
+    background: url("http://www.hopelingerie.com.br/locales/pt-BR/img/tit_indique_produto.gif") no-repeat scroll 0 3px transparent;
+}
+#indicacao fieldset.form_indique {
+    margin-top: 10px;
+    padding: 0;
+}
+#indicacao fieldset.form_indique legend {
+    display: none;
+}
+#indicacao fieldset.form_indique input, #indicacao fieldset.form_indique textarea {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #777777;
+    height: 19px;
+    padding: 6px 0 2px 3px;
+}
+#indicacao fieldset.form_indique input, #indicacao fieldset.form_indique textarea, #indicacao fieldset.form_indique label {
+    color: #666666;
+}
+#indicacao fieldset.form_indique div.fld_nome_container label, #indicacao fieldset.form_indique div.fld_email_container label, #indicacao fieldset.form_indique div.fld_comentarios_container label {
+    color: #8C7C6C;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+#indicacao fieldset.form_indique div.fld_nome_container, #indicacao fieldset.form_indique div.fld_email_container {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_input_avalie_indique.gif") no-repeat scroll 0 bottom transparent;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    width: 255px;
+}
+#indicacao fieldset.form_indique div.fld_email_container {
+    margin-right: 0;
+}
+#indicacao fieldset.form_indique div.fld_comentarios_container {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_textarea.gif") no-repeat scroll 0 20px transparent;
+    float: left;
+    height: 103px;
+    margin-bottom: 10px;
+    width: 521px;
+}
+#indicacao fieldset.form_indique div.fld_nome_container input, #indicacao fieldset.form_indique div.fld_email_container input {
+    font-size: 12px;
+    margin-left: 8px;
+    width: 233px;
+}
+#indicacao fieldset.form_indique div.fld_nome_container, #indicacao fieldset.form_indique div.fld_email_container {
+    display: inline;
+    float: left;
+}
+#indicacao fieldset.form_indique div.fld_nome_container {
+}
+#indicacao fieldset.form_indique div.fld_comentarios_container textarea {
+    font-size: 12px;
+    height: 63px;
+    padding-left: 12px;
+    width: 500px;
+}
+#indicacao fieldset.form_indique div.button_container {
+    display: inline;
+    float: right;
+    margin: 3px 7px 0 0;
+}
+#indicacao fieldset.form_indique div.button_container input.btEnviar {
+    border: medium none !important;
+}
+.btn_modal {
+    clear: both;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0;
+    width: 330px;
+}
+.btn_modal li {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+    width: auto;
+}
+div.tagCloudProduto {
+    margin-bottom: 10px;
+}
+div.tagCloudProduto div.trilhaContainer {
+    display: inline;
+    float: right;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+}
+div.tagCloudProduto div.trilhaContainer dl.help {
+    display: block;
+    float: none;
+    margin-left: 0;
+    width: auto;
+}
+div.tagCloudProduto div.trilhaContainer dl.help .dn {
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+div.tagCloudProduto div.tagContainer {
+    float: left;
+    padding-bottom: 10px;
+    width: 550px;
+}
+div.tagCloudProduto div.tagContainer .titText {
+    display: inline;
+    float: left;
+}
+div.tagCloudProduto div.tagContainer ul.lstTagsMenu {
+    display: inline;
+    float: right;
+    margin-top: 7px;
+}
+div.tagCloudProduto div.tagContainer ul.lstTagsMenu li.fst {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+div.tagCloudProduto div.tagContainer ul.lstTagsMenu li {
+    border-left: 1px solid #666666;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+div.tagCloudProduto div.tagContainer ul.lstTagsMenu li a:link, div.tagCloudProduto div.tagContainer ul.lstTagsMenu li a:hover, div.tagCloudProduto div.tagContainer ul.lstTagsMenu li a:visited, div.tagCloudProduto div.tagContainer ul.lstTagsMenu li a:active {
+    color: #666666;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+div.tagCloudProduto div.tagContainer ul.tagList {
+    clear: left;
+    overflow: visible;
+    width: 540px !important;
+}
+div.info2_container p.adicioneLista_container {
+    text-align: left !important;
+}
+div#listaOpcoes_container {
+    padding: 1px;
+    position: absolute !important;
+    width: 300px !important;
+    z-index: 1000000;
+}
+div.lst_show {
+    display: block;
+}
+div.lst_hide {
+    display: none;
+}
+div#listaOpcoes_container fieldset {
+    background-color: #F2F2F2;
+    border: 1px solid #B92025;
+    padding: 8px;
+    position: absolute !important;
+}
+div#listaOpcoes_container dl.adicioneLista {
+    width: 300px;
+}
+div#listaOpcoes_container dl.adicioneLista dd {
+    float: left;
+    height: 25px;
+    margin-left: 2px;
+}
+div#listaOpcoes_container dl.adicioneLista dd.cont_fld_Lista {
+    clear: left;
+    margin-left: 0;
+}
+div#listaOpcoes_container dl.adicioneLista dd.bt_ok {
+    clear: both;
+    display: block;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+div#listaOpcoes_container dl.adicioneLista dd.bt_ok p {
+    float: right;
+}
+div#listaOpcoes_container dl.adicioneLista dd.bt_ok img {
+    cursor: pointer;
+}
+div#listaOpcoes_container dl.adicioneLista dd.cont_fld_Lista input, div#listaOpcoes_container dl.adicioneLista dd.bt_ok input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+div#listaOpcoes_container dl.adicioneLista dd.cont_fld_ListaLabel {
+    margin-left: 5px;
+    width: 90%;
+}

@@ -1,0 +1,2845 @@
+body, div, td, p, span, img, input, select, textarea {
+    color: #666666;
+    font-family: Tahoma,Helvetica,Verdana,Geneva,Arial,sans-serif;
+    font-size: 11px;
+}
+body {
+    text-align: center;
+}
+body * {
+    outline: medium none;
+}
+body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+fieldset, img, abbr, acronym {
+    border: 0 none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+}
+ul {
+    list-style-type: none;
+}
+address, caption, cite, code, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: "";
+}
+hr {
+    display: none;
+    position: absolute;
+}
+.hr_red {
+    background: none repeat scroll 0 0 #B92025;
+    height: 1px;
+    overflow: hidden;
+}
+.ns {
+    overflow: hidden;
+}
+.nb {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+}
+.dn {
+    display: none;
+}
+.fb {
+    font-weight: bold;
+}
+.fc {
+    height: 100%;
+    overflow: hidden;
+}
+.sc {
+    margin-bottom: -1000000px;
+    padding-bottom: 1000000px;
+}
+.ie_cb {
+    height: 1px !important;
+    margin: -1px 0 30px !important;
+    padding: 0 !important;
+}
+.al {
+    text-align: left !important;
+}
+.ac {
+    text-align: center !important;
+}
+.ar {
+    text-align: right !important;
+}
+.txtErro {
+    color: red;
+}
+input, select, textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #B92025;
+    color: #000000;
+}
+textarea {
+    overflow: auto;
+}
+.fixSelect {
+    vertical-align: 0 !important;
+}
+.fixRadio {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 13px !important;
+    margin: 0;
+    padding: 0;
+    vertical-align: -2px;
+    width: 13px !important;
+}
+a:link {
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.noDec:link, a.noDec:visited, a.noDec:active, a.noDec:hover {
+    text-decoration: none !important;
+}
+a:link, a:visited, a:active, a:hover, a.lnkRed:link, a.lnkRed:visited, a.lnkRed:active, a.lnkRed:hover {
+    color: #B92025;
+}
+a.lnkGray:link, a.lnkGray:visited, a.lnkGray:active, a.lnkGray:hover {
+    color: #666666;
+}
+a.lnkSeta:link, a.lnkSeta:hover, a.lnkSeta:visited, a.lnkSeta:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet_seta.gif") no-repeat scroll 0 6px transparent;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.fl {
+    display: inline;
+    float: left;
+}
+.fr {
+    display: inline;
+    float: right;
+}
+.cb {
+    clear: both;
+}
+.cl {
+    clear: left;
+}
+.cr {
+    clear: right;
+}
+.mb0 {
+    margin-bottom: 0 !important;
+}
+.ml0 {
+    margin-left: 0 !important;
+}
+.titSection {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_title.gif") repeat-x scroll 0 0 transparent;
+    height: 34px;
+    margin-top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.titSection span {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_seta.gif") no-repeat scroll 0 center transparent;
+    color: #FFFFFF;
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px 0 5px 27px;
+    text-transform: uppercase;
+}
+.titText {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 0;
+}
+.titProduto {
+    color: #B92025;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+.boxTitle {
+    color: #666666 !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    margin: 0 0 10px !important;
+    text-transform: uppercase !important;
+}
+ul.lstProdutos {
+    height: 100%;
+    overflow: hidden;
+}
+ul.lstProdutos li {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 225px;
+}
+ul.lstProdutos li.fst {
+    clear: left;
+    margin: 0 !important;
+}
+ul.lstProdutos li p.photo_container {
+    margin: 0;
+}
+p.selo_container {
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+p.selo_container_vitrine {
+    margin: 0;
+    overflow: hidden;
+    width: 140px;
+}
+ul.lstProdutos li p.photo_container a:link, ul.lstProdutos li p.photo_container a:hover, ul.lstProdutos li p.photo_container a:visited, ul.lstProdutos li p.photo_container a:active {
+    display: block;
+    text-decoration: none;
+}
+ul.lstProdutos li p.photo_container a img, ul.lstProdutos li a img.imgOfertas {
+    height: 200px;
+    width: 200px;
+}
+.detalhes ul.lstProdutos li p.photo_container a img, .detalhes ul.lstProdutos li a img.imgOfertas {
+    display: block;
+    height: 145px;
+    margin: 0 auto;
+    width: 155px;
+}
+ul.lstProdutos li p.frete_container {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+ul.lstProdutos li h3.prodName {
+    color: #8C7C6C;
+    line-height: 18px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center !important;
+}
+ul.lstProdutos li h3.prodName a {
+    color: #4F4F4F !important;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.home ul.lstProdutos li h3.prodName {
+    height: auto;
+    margin-top: 10px;
+}
+.home ul.lstProdutos li h3.prodName a {
+    font-weight: bold;
+}
+ul.lstProdutos li p.price {
+    margin: 0 0 10px;
+}
+.home ul.lstProdutos li p.price {
+    height: auto;
+}
+ul.lstProdutos li p.indisponivel {
+    color: #88147E;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+ul.lstProdutos li p.price a:link, ul.lstProdutos li p.price a:hover, ul.lstProdutos li p.price a:visited, ul.lstProdutos li p.price a:active {
+    color: #88147E;
+    font-size: 14px;
+}
+ul.lstProdutos li p.price span.block1 {
+    color: #828282;
+}
+ul.lstProdutos li p.price span.block1, ul.lstProdutos li p.price span.block2 {
+    font-size: 9px;
+    text-align: center !important;
+    text-transform: uppercase;
+}
+ul.lstProdutos li p.price span.block1 {
+    margin-bottom: 3px;
+}
+ul.lstProdutos li p.price span.block1 del {
+    font-size: 11px;
+}
+ul.lstProdutos li p.price span.block2 {
+    color: #666666;
+}
+ul.lstProdutos li p.price span.block2 strong {
+    font-size: 13px;
+}
+ul.lstProdutos li p.price span.block1 del {
+    color: #898989;
+}
+ul.lstProdutos li p.price span.block2 strong {
+    color: #666666;
+    font-weight: normal;
+    white-space: nowrap;
+}
+ul.lstProdutos li p.condition {
+    margin: 0 0 10px;
+}
+ul.lstProdutos li p.condition a:link, ul.lstProdutos li p.condition a:hover, ul.lstProdutos li p.condition a:visited, ul.lstProdutos li p.condition a:active {
+    text-decoration: none;
+}
+ul.lstProdutos li p.condition span.block1, ul.lstProdutos li p.condition span.block2 {
+    color: #8C7C6C;
+    display: block;
+    font-size: 12px;
+}
+ul.lstProdutos li p.condition span.block1 {
+    margin-bottom: 3px;
+}
+ul.lstProdutos li p.condition span.block1 strong, ul.lstProdutos li p.condition span.block2 strong {
+    color: #88147E;
+}
+ul.lstProdutos li dl.note_to_view {
+    padding-bottom: 0;
+}
+dl.menuVejaMais {
+    font-size: 10px;
+}
+dl.menuVejaMais dt {
+    color: #8C7C6C;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+dl.menuVejaMais dd {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet2.gif") no-repeat scroll 0 center transparent;
+    color: #8C7C6C;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+dl.menuVejaMais dd a {
+    color: #8C7C6C !important;
+    text-decoration: none !important;
+}
+dl.menuVejaMais dd a:hover {
+    text-decoration: underline !important;
+}
+ul.listaSeta {
+}
+ul.listaSeta li {
+}
+ul.listaSeta li a:link, ul.listaSeta li a:hover, ul.listaSeta li a:visited, ul.listaSeta li a:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet_seta.gif") no-repeat scroll 0 6px transparent;
+    color: #B92025;
+    margin-bottom: 3px;
+    padding-left: 10px;
+}
+ul.lstProduto_promocao li {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 380px;
+}
+ul.lstProduto_promocao li.fst {
+    margin: 0 0 10px !important;
+}
+ul.lstProduto_promocao li div.photo_container {
+    background: none repeat scroll 0 0 #EFEFEF;
+    display: inline;
+    float: left;
+    margin: 0;
+    width: 146px;
+}
+ul.lstProduto_promocao li div.photo_container a.photo:link, ul.lstProduto_promocao li div.photo_container a.photo:hover, ul.lstProduto_promocao li div.photo_container a.photo:visited, ul.lstProduto_promocao li div.photo_container a.photo:active {
+    display: block;
+    padding: 13px;
+    text-decoration: none;
+}
+ul.lstProduto_promocao li div.photo_container a.photo img {
+    height: 120px;
+    width: 120px;
+}
+ul.lstProduto_promocao li div.photo_container dl.note_to_view dd.note {
+    padding: 0 0 8px;
+}
+ul.lstProduto_promocao li div.txt_container {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+}
+ul.lstProduto_promocao li div.txt_container .prodName, ul.lstProduto_promocao li div.txt_container .prodName * {
+}
+ul.lstProduto_promocao li div.txt_container p.price {
+    padding: 0;
+}
+ul.lstProdutos li div.txt_container p.price a:link, ul.lstProdutos li div.txt_container p.price a:hover, ul.lstProdutos li div.txt_container p.price a:visited, ul.lstProdutos li div.txt_container p.price a:active {
+    text-decoration: none;
+}
+ul.lstProdutos li div.txt_container p.price span.block1, ul.lstProdutos li div.txt_container p.price span.block2 {
+    color: #666666;
+    display: block;
+}
+ul.lstProdutos li div.txt_container p.price span.block1 del, ul.lstProdutos li div.txt_container p.price span.block2 strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+ul.lstProdutos li div.txt_container p.price span.block1 del {
+    color: #000000;
+}
+ul.lstProdutos li div.txt_container p.price span.block2 strong {
+    color: #B92025;
+    white-space: nowrap;
+}
+ul.lstProdutos li div.txt_container p.condition {
+}
+ul.lstProdutos li div.txt_container p.condition a:link, ul.lstProdutos li div.txt_container p.condition a:hover, ul.lstProdutos li div.txt_container p.condition a:visited, ul.lstProdutos li div.txt_container p.condition a:active {
+    text-decoration: none;
+}
+ul.lstProdutos li div.txt_container p.condition span.block1, ul.lstProdutos li div.txt_container p.condition span.block2 {
+}
+ul.lstProdutos li div.txt_container p.condition span.block1 strong {
+}
+ul.lstProdutos li div.txt_container p.condition span.block2 strong {
+}
+ul.lstProdutos li div.txt_container dl.note_to_view {
+    margin-bottom: 10px;
+}
+ul.lstProduto_mais_vendidos {
+    clear: both;
+    height: 100%;
+    overflow: hidden;
+    padding: 30px 0 0 50px;
+}
+ul.lstProduto_mais_vendidos li {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    padding: 0 0 25px;
+    position: relative;
+    width: 330px;
+}
+ul.lstProduto_mais_vendidos li.fst {
+    margin: 0 !important;
+    padding-left: 0;
+}
+ul.lstProduto_mais_vendidos li.ie_cb {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll 0 0 transparent;
+    float: left;
+    padding-top: 0 !important;
+    width: 100%;
+}
+ul.lstProduto_mais_vendidos div.images_container {
+    float: left;
+    height: 100%;
+    width: 156px;
+}
+ul.lstProduto_mais_vendidos p.photo_container {
+    height: 180px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    width: 220px;
+}
+ul.lstProduto_mais_vendidos p.photo_container img {
+    height: 136px;
+    width: 136px;
+}
+ul.lstProduto_mais_vendidos p.indisponivel {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #0D84C8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ul.lstProduto_mais_vendidos div.images_container p.frete_container img {
+    display: block;
+    margin: 0 auto;
+}
+ul.lstProduto_mais_vendidos li div.txt_container {
+    display: inline;
+    float: left;
+    width: 174px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container .menuVejaMais {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll left top transparent;
+    padding-top: 15px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container .prodName {
+    color: #8C7C6C !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    height: 54px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+ul.lstProduto_mais_vendidos li div.txt_container .prodName a {
+    color: #5A5545;
+    text-decoration: none;
+}
+ul.lstProduto_mais_vendidos li div.txt_container .prodName a:hover {
+    text-decoration: underline;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.description {
+    color: #B6B6B6;
+    font-size: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+ul.lstProduto_mais_vendidos li div.txt_container dl.note_to_view {
+    height: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+ul.lstProduto_mais_vendidos li div.txt_container dl.note_to_view dd.note a {
+    float: left;
+}
+ul.lstProduto_mais_vendidos li div.txt_container dl.note_to_view dd.note span.num {
+    display: inline;
+    float: left;
+    margin-left: 8px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price {
+    height: 35px;
+    margin-bottom: 10px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price span.block1, ul.lstProduto_mais_vendidos li div.txt_container p.price span.block2 {
+    color: #D38096;
+    font-size: 12px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price span.block1, ul.lstProduto_mais_vendidos li div.txt_container p.condition span.block1 {
+    margin-bottom: 3px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price span.block1 del {
+    font-size: 12px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price span.block2, ul.lstProduto_mais_vendidos li div.txt_container p.price span.block2 strong {
+    color: #D38096;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.price span.block2 strong {
+    font-size: 12px;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.condition {
+    margin-top: 0;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.condition span.block1, ul.lstProduto_mais_vendidos li div.txt_container p.condition span.block2 {
+    display: block;
+    font-size: 12px !important;
+}
+ul.lstProduto_mais_vendidos li div.txt_container p.condition span.block2 strong, ul.lstProduto_mais_vendidos li div.txt_container p.condition span.block1 strong {
+    color: #88147E;
+}
+ul.lstProductOptions {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left;
+}
+ul.lstProductOptions li {
+    float: none !important;
+    height: 23px;
+    line-height: 23px;
+    margin: 0 !important;
+    width: auto !important;
+}
+ul.lstProductOptions li a:link, ul.lstProductOptions li a:visited, ul.lstProductOptions li a:active {
+    color: #5D5B5C;
+    display: block;
+    font-size: 12px !important;
+    padding: 0 0 0 23px;
+    text-decoration: none;
+}
+ul.lstProductOptions li a:hover {
+    text-decoration: underline;
+}
+div.tagCloudContainer {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll 0 0 transparent;
+    padding: 36px 0 43px;
+}
+div.tagCloudContainer h3 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_mais_buscados.gif") no-repeat scroll 8px 0 transparent;
+    height: 30px;
+    margin: 0;
+    text-indent: -9999px;
+}
+div.tagCloudContainer ul.tagList {
+    height: 100%;
+    overflow: hidden;
+    padding: 10px 10px 0;
+}
+div.tagCloudContainer ul.tagList li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+div.tagCloudContainer ul.tagList a:link, div.tagCloudContainer ul.tagList a:visited, div.tagCloudContainer ul.tagList a:active {
+    color: #8C7C6C;
+    display: block;
+    font-size: 14px;
+    padding: 0 8px;
+    text-decoration: none;
+}
+div.tagCloudContainer ul.tagList li.f1, div.tagCloudContainer ul.tagList li.f1 a:link, div.tagCloudContainer ul.tagList li.f1 a:visited, div.tagCloudContainer ul.tagList li.f1 a:active {
+    font-size: 15px;
+}
+div.tagCloudContainer ul.tagList li.f2, div.tagCloudContainer ul.tagList li.f2 a:link, div.tagCloudContainer ul.tagList li.f2 a:visited, div.tagCloudContainer ul.tagList li.f2 a:active {
+    font-size: 19px;
+}
+div.tagCloudContainer ul.tagList li.f3, div.tagCloudContainer ul.tagList li.f3 a:link, div.tagCloudContainer ul.tagList li.f3 a:visited, div.tagCloudContainer ul.tagList li.f3 a:active {
+    font-size: 24px;
+}
+div.tagCloudContainer ul.tagList li.f4, div.tagCloudContainer ul.tagList li.f4 a:link, div.tagCloudContainer ul.tagList li.f4 a:visited, div.tagCloudContainer ul.tagList li.f4 a:active {
+    font-size: 29px;
+}
+div.tagCloudContainer ul.tagList a:hover {
+    text-decoration: underline;
+}
+div#breadcrumbs_container {
+    margin-bottom: 7px;
+}
+.vitrine div#breadcrumbs_container {
+    margin-bottom: 20px;
+}
+.detalhes ul#breadcrumbs_gb, ul#breadcrumbs {
+    height: 100%;
+    overflow: hidden;
+}
+.detalhes ul#breadcrumbs_gb li, ul#breadcrumbs li {
+    color: #3E3E3E;
+    display: inline;
+    float: left;
+    font-size: 16px;
+    font-weight: normal !important;
+    height: 24px;
+    line-height: 24px;
+}
+.detalhes ul#breadcrumbs_gb li.fst, ul#breadcrumbs li.fst {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+}
+.detalhes ul#breadcrumbs_gb li, ul#breadcrumbs li {
+    color: #3E3E3E;
+    font-weight: bold;
+}
+.detalhes ul#breadcrumbs_gb li a, ul#breadcrumbs li a:link, ul#breadcrumbs li a:visited, ul#breadcrumbs li a:active {
+    font-weight: normal;
+    text-decoration: none;
+}
+.detalhes ul#breadcrumbs_gb li a:hover, ul#breadcrumbs li a:hover {
+    text-decoration: underline;
+}
+p.vitrineTxt {
+    font-size: 9px;
+    margin: 5px 0 0;
+}
+p.vitrineTxt, p.vitrineTxt a:link, p.vitrineTxt a:hover, p.vitrineTxt a:visited, p.vitrineTxt a:active {
+    color: #666666;
+}
+p.vitrineTxt a:link, p.vitrineTxt a:hover, p.vitrineTxt a:visited, p.vitrineTxt a:active {
+    text-decoration: underline;
+}
+.mais_vendidos_vitrine_container dl.note_to_view {
+    margin: 0;
+}
+dl.note_to_view {
+    margin: 0 auto;
+    width: 146px;
+}
+dl.note_to_view dd.note {
+    height: 100%;
+    overflow: hidden;
+    padding: 5px 5px 5px 0;
+    text-align: center;
+}
+dl.note_to_view dd.note a.nota, dl.note_to_view dd.note a.nota span {
+    cursor: text !important;
+}
+dl.note_to_view dd.note span.num {
+    color: #8C7C6C;
+    display: inline;
+    float: left;
+    font-size: 11px;
+    margin-left: 10px;
+    text-align: center !important;
+}
+dl.note_to_view dd.note a span, dl.note_to_view dd.note a:link, dl.note_to_view dd.note a:hover, dl.note_to_view dd.note a:visited, dl.note_to_view dd.note a:active {
+    background-image: url("http://www.hopeonline.com.br/locales/global/img/ico_estrela.gif");
+    background-repeat: repeat-x;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 17px;
+}
+.detalhe_container .detalhe_content .rating_container dl.note_to_view dd.note a {
+    margin: 0 !important;
+}
+dl.note_to_view dd.note a:link, dl.note_to_view dd.note a:hover, dl.note_to_view dd.note a:visited, dl.note_to_view dd.note a:active {
+    background-position: 0 0;
+    float: left;
+    padding-top: 14px;
+    width: 75px;
+}
+dl.note_to_view dd.note a span {
+    background-position: 0 -11px;
+    margin-top: -17px;
+}
+.prodName, .prodName * {
+}
+p.price {
+}
+p.price a:link, p.price a:hover, p.price a:visited, p.price a:active {
+    text-decoration: none;
+}
+p.price span.block1 {
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+p.price span.block1, p.price span.block2 {
+    color: #666666;
+    display: block;
+    text-transform: uppercase;
+}
+p.price span.block1 del {
+    font-size: 11px;
+    font-weight: normal;
+}
+p.price span.block2 strong {
+    color: #D38096;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p.price span.block1 del {
+    color: #666666;
+}
+p.condition {
+}
+p.condition a:link, p.condition a:hover, p.condition a:visited, p.condition a:active {
+    text-decoration: none;
+}
+p.condition span.block1, p.condition span.block2 {
+    color: #666666;
+    display: block;
+}
+p.condition span.block1 strong {
+}
+p.condition span.block2 strong {
+}
+div#header_container, div#body_container, div#main_content, div#main_content_container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    min-height:150px;
+}
+div#header_container, div#menu_user_container, div#header_caterory_container, div#body_container, div#footer_search_container, div#footer_container, div#footer_copy_container {
+    margin: 0 auto;
+    width: 970px;
+}
+div#header_container *, div#menu_user_container *, div#body_container *, div#footer_search_container *, div#footer_container *, div#footer_copy_container * {
+    text-align: left;
+}
+.banner {
+    margin-bottom: 10px;
+    text-align: center !important;
+}
+.bannerTopo, .bannerSuperior {
+    clear: both;
+    height: 100%;
+    margin: 0 !important;
+    overflow: hidden;
+    width: auto;
+}
+.home .bannerSuperior {
+}
+.bannerTopo1, .bannerSuperior1 {
+    padding: 0;
+}
+.bannerTopo2, .bannerSuperior2, .bannerTopo3, .bannerSuperior3, .bannerTopo4, .bannerSuperior4, .bannerTopo5, .bannerSuperior5, .bannerTopo6, .bannerSuperior6, .bannerTopo7, .bannerSuperior7, .bannerTopo8, .bannerSuperior8, .bannerTopo9, .bannerSuperior9, .bannerTopo10, .bannerSuperior10 {
+    display: inline;
+    float: left;
+    margin-right: 29px;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 304px;
+}
+.last {
+    margin-right: 0;
+}
+.bannerLateralDireita {
+    width: 141px;
+}
+.bannerLateralEsquerda {
+    width: 180px;
+}
+.bannerLojasEspeciais {
+    width: 180px;
+}
+.home .bannerLojasEspeciais {
+    width: auto;
+}
+.home .tit_lojas_especiais {
+    display: none;
+}
+.bannerLateralDireita_Ban {
+    padding-bottom: 10px;
+    text-align: right;
+}
+.bannerLateralEsquerda_Ban {
+    padding-bottom: 10px;
+    text-align: center;
+}
+.bannerLojasEspeciais_Ban {
+    padding-bottom: 10px;
+    text-align: center;
+}
+div#header_bg {
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+div.gbintimates {
+    background: none repeat scroll 0 0 #F2F2F2 !important;
+}
+.divLogo {
+    display: inline;
+    float: left;
+    margin: 17px 0 0 0;
+}
+.gbintimates .divLogo {
+    margin: 26px 0 0 16px;
+}
+div#header_container {
+    height: 87px;
+    overflow: visible;
+}
+.gbintimates div#header_container {
+    height: 97px;
+}
+h1 {
+    display: inline;
+    float: left;
+    margin: 26px 0 0 16px;
+}
+h1 a:link, h1 a:hover, h1 a:visited, h1 a:active {
+    height: 42px;
+    text-indent: -9999px;
+    width: 173px;
+}
+#new_user {
+    font-size: 12px;
+    left: 310px;
+    position: absolute;
+    top: 45px;
+}
+#new_user a, #new_user strong, #new_user span {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+}
+.gbintimates #new_user a, .gbintimates #new_user strong, .gbintimates #new_user span {
+    color: #747474;
+}
+#new_user a:hover {
+    text-decoration: none;
+}
+fieldset#busca_container {
+    height: 24px;
+    left: 227px;
+    position: absolute;
+    top: 22px;
+    width: 265px;
+}
+fieldset#busca_container legend {
+    display: none;
+}
+fieldset#busca_container label, fieldset#busca_container input, fieldset#busca_container span, fieldset#busca_container select {
+    display: inline;
+    float: left;
+}
+fieldset#busca_container a#Buscar_Topo img {
+    display: block;
+    padding: 10px 0 0 10px;
+}
+fieldset#busca_container a#Buscar_Rodape {
+    display: block;
+    float: right;
+}
+fieldset#busca_container input {
+    border: 1px solid #E1E1E1;
+    color: #9B9B9B;
+    font-size: 12px;
+    padding: 5px;
+    width: 206px;
+}
+fieldset#busca_container label {
+}
+#footer_bg #busca_container {
+    right: 10px;
+    top: 29px;
+}
+#footer_bg #busca_container label {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_buscar_bottom.gif") no-repeat scroll 0 0 transparent;
+}
+.gbintimates #itens_sacola {
+    color: #747474;
+}
+#itens_sacola {
+    color: #9B9B9B;
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    z-index: 3;
+}
+div#menu_user_bg {
+}
+dl#header_menu_user {
+    border-right: 1px dotted #9B9B9B;
+    position: absolute;
+    right: 170px;
+    top: 30px;
+}
+.gbintimates dl#header_menu_user {
+    border: 0 none;
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+dl#header_menu_user dd {
+    display: inline;
+    float: left;
+    height: 15px;
+}
+.gbintimates dl#header_menu_user dd {
+    margin: 6px 0 0 10px;
+}
+.gbintimates dl#header_menu_user dd a {
+    text-indent: -9999px;
+}
+.gbintimates dl#header_menu_user .meu_cadastro {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/bt_meu_cadastro_gb.png") no-repeat scroll 17px 0 transparent;
+    width: 105px;
+}
+dl#header_menu_user .meu_carrinho {
+    background: url("/Content/imgs/shoppingcart/micarrito.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    position: absolute;
+    right: -110px;
+    top: -2px;
+}
+dl#header_menu_user .meu_carrinho a {
+    font-weight: bold;
+    padding: 3px 0 0 20px;
+}
+.gbintimates dl#header_menu_user .meu_carrinho {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/bt_minha_sacola_gb.png") no-repeat scroll 0 0 transparent;
+}
+.gbintimates dl#header_menu_user .meus_pedidos {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/bt_meus_pedidos_gb.png") no-repeat scroll 17px 0 transparent;
+    width: 98px;
+}
+.gbintimates dl#header_menu_user .indentificar {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/bt_indentificacao_gb.png") no-repeat scroll 0 0 transparent;
+}
+dl#header_menu_user .meu_carrinho a {
+    height: 32px;
+}
+.gbintimates dl#header_menu_user .meu_carrinho {
+    height: 41px;
+    margin: 0 0 0 56px;
+    position: absolute;
+    right: -8px;
+    top: 27px;
+    width: 181px;
+}
+.gbintimates #header_container #itens_sacola {
+    position: absolute;
+    right: 25px;
+    top: 57px;
+}
+dl#header_menu_user dd a:link, dl#header_menu_user dd a:hover, dl#header_menu_user dd a:visited, dl#header_menu_user dd a:active {
+    color: #9B9B9B;
+    display: block;
+    font-size: 10px;
+    height: 100%;
+    padding-right: 10px;
+    text-decoration: none;
+}
+.gbintimates dl#header_menu_user .meu_cadastro a {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_meu_cadastro_gb.gif") no-repeat scroll 0 0 transparent;
+}
+.gbintimates dl#header_menu_user .indentificar a {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_indentificacao_gb.gif") no-repeat scroll 0 0 transparent;
+}
+.gbintimates dl#header_menu_user .meus_pedidos a {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_meus_pedidos_gb.gif") no-repeat scroll 0 0 transparent;
+}
+.gbintimates fieldset#busca_container {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_input_busca_gb.png") no-repeat scroll 20px 0 transparent;
+}
+.gbintimates fieldset#busca_container {
+    height: 24px;
+    left: 531px;
+    position: absolute;
+    top: 50px;
+    width: 231px;
+}
+.gbintimates fieldset#busca_container input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    font-size: 12px;
+    padding-left: 0;
+    padding-top: 5px;
+    width: 149px;
+}
+.gbintimates fieldset#busca_container label {
+    background: url("http://www.hopeonline.com.br/locales/global/img/tit_buscar.png") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    margin-right: 20px;
+    text-indent: -9999px;
+    width: 13px;
+}
+.gbintimates fieldset#busca_container a#Buscar_Topo, .gbintimates fieldset#busca_container a#Buscar_Rodape {
+    float: right;
+}
+.gbintimates fieldset#busca_container a#Buscar_Topo img {
+    padding: 0;
+}
+div#header_caterory_bg {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_header_caterory.gif") repeat-x scroll 0 0 transparent;
+    overflow: visible;
+    position: relative;
+    z-index: 3;
+}
+.passos div#header_caterory_bg {
+    display: none;
+}
+div#header_caterory_container {
+    background: none repeat scroll 0 0 #000000;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 62px;
+}
+dl#header_menu_category {
+    position: relative;
+    text-align: center;
+}
+dl#header_menu_category dd {
+    display: inline-block;
+    padding-top: 6px;
+}
+dl#header_menu_category dd a:link, dl#header_menu_category dd a:visited, dl#header_menu_category dd a:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bull.gif") no-repeat scroll 0 7px transparent;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 19px;
+    margin-right: 25px;
+    padding-left: 27px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+}
+dl#header_menu_category dd.hover dl.subMenu {
+    visibility: visible;
+    width: 1000px;
+}
+dl#header_menu_category .alcas, dl#header_menu_category .parte_de_baixo {
+    display: none;
+}
+dl#header_menu_category .novidades a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_novidades.gif") no-repeat scroll 0 0 transparent;
+    width: 124px;
+}
+dl#header_menu_category .calcinhas a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_calcinhas.gif") no-repeat scroll 0 0 transparent;
+    width: 124px;
+}
+dl#header_menu_category .lounge a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_lounge.gif") no-repeat scroll 0 0 transparent;
+    width: 95px;
+}
+dl#header_menu_category .cintas_e_corpetes a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_cintas.gif") no-repeat scroll 0 0 transparent;
+    width: 186px;
+}
+dl#header_menu_category .extras a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_extra.gif") no-repeat scroll 0 0 transparent;
+    width: 88px;
+}
+dl#header_menu_category .por_colecao a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_colecao.gif") no-repeat scroll 0 0 transparent;
+    width: 145px;
+}
+dl#header_menu_category .por_ocasiao a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_ocasiao.gif") no-repeat scroll 0 0 transparent;
+    width: 134px;
+}
+dl#header_menu_category .sutias a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_sutias.gif") no-repeat scroll 0 0 transparent;
+    width: 76px;
+}
+dl#header_menu_category .swim a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_swin.gif") no-repeat scroll 0 0 transparent;
+    width: 66px;
+}
+dl#header_menu_category .outlet a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_outlet.gif") no-repeat scroll 0 0 transparent;
+    width: 76px;
+}
+dl#header_menu_category .dicaspresente a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_dicas.gif") no-repeat scroll 0 0 transparent;
+    width: 186px;
+}
+dl#header_menu_category .julianajabour a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_Juliana.gif") no-repeat scroll 0 0 transparent;
+    width: 186px;
+}
+dl#header_menu_category .nudeday a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_NudeDay.gif") no-repeat scroll 0 0 transparent;
+    width: 102px;
+}
+dl#header_menu_category .vale_presente a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_vale_presente.gif") no-repeat scroll 0 0 transparent;
+    width: 151px;
+}
+dl#header_menu_category .mnu_diamaes a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_diamaes.gif") no-repeat scroll 0 0 transparent;
+    width: 151px;
+}
+dl#header_menu_category .dia_dos_namorados a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_dianamorados.gif") no-repeat scroll 0 0 transparent;
+    width: 200px;
+}
+dl#header_menu_category .liquidahope a {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/mnu_liquidacao.gif") no-repeat scroll 0 0 transparent;
+    width: 182px;
+}
+#header_caterory_container dd dl {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_submenu.png") repeat-x scroll 0 0 transparent;
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 49px;
+    visibility: hidden;
+    width: 0;
+    z-index: 1;
+}
+dl#header_menu_category dd dl dd {
+    display: inline;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 8px;
+    width: auto;
+}
+dl#header_menu_category dd dl a {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    height: auto !important;
+    text-decoration: none;
+    text-indent: 0 !important;
+    width: auto !important;
+}
+dl#header_menu_category dd dl a:hover {
+    text-decoration: underline;
+}
+div#banner_bg {
+    background: none repeat scroll 0 0 #A2988D;
+}
+div#banner_container {
+    margin: 0 auto;
+    width: 970px;
+}
+div#body_bg {
+    background: none repeat scroll 0 0 #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+.paddingTop div#body_container {
+    padding-top: 30px;
+}
+div#main_navigation_container {
+    display: inline;
+    float: left;
+    margin-right: 25px;
+    padding: 30px 0 0;
+    width: 180px;
+}
+.lista_desejos div#main_navigation_container {
+    padding-top: 33px;
+}
+.vitrine div#main_navigation_container {
+    margin-right: 0;
+}
+dl#main_navigation_categorias {
+    margin: 0;
+    padding-top: 5px;
+}
+dl#main_navigation_categorias dt, dl#main_navigation_categorias .filtros dt {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet3.gif") no-repeat scroll left 5px transparent;
+    color: #5D5B5C;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 12px;
+}
+dl#main_navigation_categorias dt.tit_lojas_especiais {
+    border-bottom: 1px dotted #AAAAAA;
+    height: 27px;
+    margin-top: 20px;
+}
+dl#main_navigation_categorias dt.tit_departamentos {
+}
+dl#main_navigation_categorias dt.tit_parametizados {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_minha_navegacao.gif") no-repeat scroll left top transparent;
+    height: 21px;
+    text-indent: -9999px;
+}
+dl#main_navigation_categorias dt.tit_lojas_especiais {
+    margin-top: 20px;
+}
+dl#main_navigation_categorias dd {
+    font-weight: bold !important;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+dl#main_navigation_categorias dd.banner {
+    padding: 0;
+}
+dl#main_navigation_categorias dd dl {
+    margin-left: -5px;
+    margin-right: 0;
+    padding: 0 0 10px 10px;
+}
+dl#main_navigation_categorias dd dl dt {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_border.gif") repeat-x scroll 0 bottom transparent;
+    color: #3E3E3E !important;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 0 0 5px;
+    text-transform: none;
+}
+dl#main_navigation_categorias dd .filtros dt {
+    color: #5D5B5C !important;
+}
+dl#main_navigation_categorias dd dl dd {
+    color: #666666;
+    margin: 10px 0;
+    padding: 0;
+}
+dl#main_navigation_categorias dd dl.filtros {
+    padding-left: 0;
+}
+dl#main_navigation_categorias dd dl.filtros dd.tit {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet3.gif") no-repeat scroll left top transparent;
+    color: #5D5B5C;
+}
+dl#main_navigation_categorias dd dl dt, dl#main_navigation_categorias dd dl dt a:link, dl#main_navigation_categorias dd dl dt a:hover, dl#main_navigation_categorias dd dl dt a:visited, dl#main_navigation_categorias dd dl dt a:active, dl#main_navigation_categorias dd dl dd, dl#main_navigation_categorias dd dl dd a:link, dl#main_navigation_categorias dd dl dd a:hover, dl#main_navigation_categorias dd dl dd a:visited, dl#main_navigation_categorias dd dl dd a:active {
+    color: #666666;
+    text-decoration: none;
+}
+dl#main_navigation_categorias dd dl dd a:link, dl#main_navigation_categorias dd dl dd a:visited, dl#main_navigation_categorias dd dl dd a:active {
+    color: #3E3E3E;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+dl#main_navigation_categorias dd dl dd a:hover {
+    text-decoration: underline;
+}
+dl#main_navigation_categorias dd .filtros dd a:link, dl#main_navigation_categorias dd .filtros dd a:visited, dl#main_navigation_categorias dd .filtros dd a:active {
+    background: none repeat scroll 0 0 transparent;
+    padding-left: 0;
+}
+dl#main_navigation_categorias dd dl dd a.excluir:link, dl#main_navigation_categorias dd dl dd a.excluir:hover, dl#main_navigation_categorias dd dl dd a.excluir:visited, dl#main_navigation_categorias dd dl dd a.excluir:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bt_excluir4.gif") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: right;
+    height: 16px;
+    margin: 8px 10px 0;
+    text-indent: -9999px;
+    width: 16px;
+}
+dl#main_navigation_categorias dd dl dd a.vejamais:link, dl#main_navigation_categorias dd dl dd a.vejamais:visited, dl#main_navigation_categorias dd dl dd a.vejamais:active {
+    background: none repeat scroll 0 0 transparent;
+    color: #88147E;
+    display: block;
+    font-size: 11px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+dl#main_navigation_categorias dd dl dd a.vejamais:hover {
+    text-decoration: underline;
+}
+div#receba_newsletter_container {
+    padding: 25px 0 0;
+}
+div#receba_newsletter_container h3 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_ofertas_mail.gif") no-repeat scroll 0 0 transparent;
+    height: 19px;
+    margin: 0 0 10px;
+    text-indent: -9999px;
+}
+div#receba_newsletter_container label {
+    color: #8C7C6C;
+    display: block;
+    font-size: 13px;
+    margin: 0 0 15px;
+    padding-left: 5px;
+}
+div#receba_newsletter_container p.field_container {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_input_ofertas_email.gif") no-repeat scroll left top transparent;
+    height: 25px;
+    margin: 0 0 8px;
+}
+div#receba_newsletter_container p.field_container .field {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #4D453E;
+    font-size: 12px;
+    margin-left: 11px;
+    padding-top: 6px;
+    width: 147px;
+}
+div#receba_newsletter_container p.btEnviar_container {
+    margin: 0;
+    padding-right: 8px;
+    text-align: right;
+}
+div#receba_newsletter_container p.btEnviar_container input.btEnviar {
+}
+div#main_content_container {
+    padding: 33px 0 10px;
+}
+.vitrine div#main_content_container, .lista_desejos div#main_content_container {
+    float: right;
+    width: 765px;
+}
+.home div#main_content_container {
+    padding: 17px 0 10px;
+}
+.home div#main_content_container_detail {
+    padding: 0px 0 10px;
+}
+#prazoEntrega div#main_content_container {
+    padding-top: 0;
+}
+div#banner_content_topo {
+}
+div.banner_main {
+    margin-bottom: 0;
+}
+div#banner_column_container {
+    clear: left;
+    display: inline;
+    float: right;
+    margin-left: 3px;
+    width: 146px;
+}
+div#banner_column_container .banners_group_container {
+    margin-bottom: 2px;
+}
+div#servicos_container {
+    background: none repeat scroll 0 0 #EFEFEF;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+div#servicos_container dl.servicoes_lista {
+    margin-bottom: -10px;
+}
+div#servicos_container dl.servicoes_lista dt {
+    border-bottom: 1px solid #B92025;
+    color: #B92025;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+div#servicos_container dl.servicoes_lista dd a:link, div#servicos_container dl.servicoes_lista dd a:hover, div#servicos_container dl.servicoes_lista dd a:visited, div#servicos_container dl.servicoes_lista dd a:active, div#servicos_container dl.servicoes_lista dd {
+    color: #666666;
+    text-decoration: none;
+}
+div#servicos_container dl.servicoes_lista dd.highlight {
+    font-weight: bold;
+}
+div#servicos_container dl.servicoes_lista dd {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet_seta.gif") no-repeat scroll 0 6px transparent;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+div#servicos_container dl.servicoes_lista dd dl {
+    margin-bottom: 0;
+}
+div#servicos_container dl.servicoes_lista dd dl dt {
+    border: medium none;
+    color: #666666;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+div#servicos_container dl.servicoes_lista dd dl dd {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+}
+div#main_content {
+    position: relative;
+    width: 100%;
+}
+.paddingTop div#main_content {
+    padding-top: 35px;
+}
+.home div#main_content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 21px;
+}
+div#footer_search_bg {
+    background: none repeat scroll 0 0 #666666;
+}
+.passos div#footer_search_bg {
+    display: none;
+}
+div#footer_search_container {
+}
+fieldset#footer_busca_container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px 0 10px;
+    width: 420px;
+}
+fieldset#footer_busca_container legend {
+    display: none;
+}
+fieldset#footer_busca_container label, fieldset#footer_busca_container span {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+fieldset#footer_busca_container label, fieldset#footer_busca_container input, fieldset#footer_busca_container span, fieldset#footer_busca_container select {
+    display: inline;
+    float: left;
+}
+fieldset#footer_busca_container input, fieldset#footer_busca_container select {
+    border: 1px solid #B92025;
+}
+fieldset#footer_busca_container select {
+    margin-top: -1px;
+    width: 150px;
+}
+fieldset#footer_busca_container label {
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+fieldset#footer_busca_container span {
+    margin: 0 5px;
+}
+fieldset#footer_busca_container .nb {
+    border: medium none;
+    margin: -1px 0 0 5px;
+    padding: 0;
+}
+div#footer_bg {
+    background: none repeat scroll 0 0 #E8E8E8;
+    height: auto;
+}
+div#footer_container {
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+}
+.gbintimates_footer div#footer_container {
+    height: 189px;
+}
+.gbintimates_footer div#footer_container dl dt {
+    display: none;
+}
+.gbintimates_footer div#footer_container #lst_site_seguro {
+    padding-top: 30px;
+}
+div#footer_container dl {
+    display: inline;
+    float: left;
+    height: auto;
+    width: 230px;
+}
+div#forma_pagamento_container {
+    left: 12px;
+    position: absolute;
+    top: 31px;
+}
+dl#lst_sobre_hope {
+    left: 0;
+    position: absolute;
+    top: 15px;
+}
+dl#lst_central_atendimento {
+    left: 240px;
+    position: absolute;
+    top: 15px;
+}
+dl#lst_acompanhe {
+    left: 480px;
+    position: absolute;
+    top: 15px;
+}
+dl#lst_compra_segura {
+    left: 720px;
+    position: absolute;
+    top: 15px;
+}
+dl#lst_franquias {
+    left: 0;
+    position: absolute;
+    top: 126px;
+}
+dl#lst_franquias dt a {
+    color: #A36776 !important;
+    text-decoration: none;
+}
+dl#lst_inspire {
+    left: 0;
+    position: absolute;
+    top: 170px;
+}
+dl#lst_cuidado {
+    left: 240px;
+    position: absolute;
+    top: 154px;
+}
+dl#lst_news {
+    left: 480px;
+    position: absolute;
+    top: 146px;
+}
+dl#lst_news dt {
+    border: medium none !important;
+    padding: 0 !important;
+}
+dl#lst_news input {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #E8E8E8;
+    border-color: -moz-use-text-color -moz-use-text-color #A9A9A9;
+    border-style: none none dotted;
+    border-width: medium medium 1px;
+    color: #5D5D5D;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 200px;
+}
+dl#lst_news a {
+    background: none repeat scroll 0 0 transparent !important;
+}
+p#copy {
+    position: absolute;
+    top: 280px;
+}
+p#copy a.logo_rakuten {
+    clear: both;
+    float: right;
+}
+div#footer_container dl dt {
+    border-bottom: 1px dotted #A9A9A9;
+    color: #403F3F;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+div#footer_container dl dd {
+    margin-bottom: 5px;
+}
+div#footer_container dl dd a {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet.gif") no-repeat scroll 0 center transparent;
+    color: #5D5D5D;
+    font-size: 12px;
+    padding-left: 6px;
+    text-decoration: none;
+}
+p#copy {
+    border-top: 1px dotted #A9A9A9;
+    bottom: 24px;
+    height: 77px;
+    margin: 0;
+    overflow: hidden;
+    width: 946px;
+}
+p#copy span, p#copy span a {
+    color: #3F3F3F;
+    font-size: 9px;
+    font-weight: bold;
+    padding-top: 12px;
+    text-transform: uppercase;
+}
+p#copy span a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+p#copy span.left {
+    float: left;
+    padding-left: 22px;
+}
+p#copy span.right {
+    float: right;
+}
+p#copy img {
+    float: right;
+    margin-top: 10px;
+    width: auto;
+}
+div.highlightProductList {
+    margin-bottom: 40px;
+}
+div.highlightProductList ul {
+}
+div.ofertas_container {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll 0 bottom transparent;
+    margin-bottom: 30px !important;
+}
+div.ofertas_container ul {
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+div.ofertas_container h2, div.promocoes h2 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_ofertas_semana.gif") no-repeat scroll 0 0 transparent;
+    height: 37px;
+    text-indent: -9999px;
+}
+div.highlightProductList ul li {
+    margin-bottom: 28px;
+    margin-left: 30px;
+}
+.home div.highlightProductList ul li {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 10px;
+}
+.home div.highlightProductList ul li.fst {
+    margin-right: 27px;
+}
+div.promocoes h2 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_promocoes.gif") no-repeat scroll 0 0 transparent;
+}
+div.lancamentos_container {
+    float: left;
+    width: 730px;
+}
+div.loucas {
+    left: 730px;
+    position: absolute;
+    top: -80px;
+    width: 225px;
+    z-index: 1;
+}
+div.loucas ul li {
+    margin: 10px 0 10px 10px;
+}
+div.loucas ul li a {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_loucas.gif") no-repeat scroll 0 3px transparent;
+    color: #3E3E3E;
+    display: block;
+    font-size: 12px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#vitrine_container {
+    height: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.geral_vitrine_container {
+}
+div.geral_vitrine_container h2 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_vitrine_outros.gif") no-repeat scroll 0 0 transparent;
+    height: 40px;
+    margin: 0 0 20px;
+    text-indent: -9999px;
+}
+div.geral_vitrine_container li {
+    margin: 0 0 30px 42px !important;
+}
+div.geral_vitrine_container li.ie_cb {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll left bottom transparent;
+    height: 2px;
+    margin-left: 0 !important;
+    width: 700px;
+}
+#vitrine_container div#banner_column_container {
+    clear: none;
+    display: inline;
+    float: left;
+    margin: 0 20px 0 1px;
+    width: 314px;
+}
+#vitrine_container .bannerLateralDireita {
+    width: 100%;
+}
+#vitrine_container .bannerLateralDireita_Ban {
+    padding-bottom: 0;
+}
+div.promo_container {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_promo_container.gif") no-repeat scroll 0 bottom transparent;
+    float: left;
+    height: auto !important;
+    min-height: 245px;
+    padding: 0;
+    width: 430px;
+}
+div.promo_container h2 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_lancamentos_vitrine.gif") no-repeat scroll 0 0 transparent;
+    height: 40px;
+    margin: 0 0 20px;
+    text-indent: -9999px;
+}
+div.promo_container ul {
+    padding: 0 9px 0 0;
+}
+div.promo_container ul li {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado_1.gif") repeat-x scroll 0 0 transparent;
+    margin-top: 40px;
+    overflow: hidden;
+}
+div.promo_container ul p.indisponivel {
+    color: #0D84C8;
+    font-weight: bold;
+    overflow: hidden;
+}
+div.promo_container ul li.fst {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding-top: 0;
+}
+div.promo_container ul li div.photo_container {
+    display: inline;
+    float: left;
+    height: 111px;
+    margin-right: 10px;
+    width: 111px;
+}
+div.promo_container ul li div.photo_container img {
+    height: 111px;
+    width: 111px;
+}
+div.promo_container ul li div.txt_container {
+    display: inline;
+    float: left;
+    height: auto !important;
+    min-height: 65px;
+    padding: 0 0 25px;
+    position: relative;
+    width: 300px;
+}
+div.promo_container ul li div.txt_container .prodName {
+    margin: 0 0 10px;
+}
+div.promo_container ul li div.txt_container .prodName, div.promo_container ul li div.txt_container .prodName a:link, div.promo_container ul li div.txt_container .prodName a:hover, div.promo_container ul li div.txt_container .prodName a:visited, div.promo_container ul li div.txt_container .prodName a:active {
+    color: #8C7C6C;
+    font-size: 13px;
+    font-weight: normal !important;
+    text-decoration: none;
+}
+div.promo_container ul li div.txt_container p.description {
+    color: #666666;
+    font-size: 10px;
+    margin: 0 0 10px;
+}
+div.promo_container ul li div.txt_container p.price {
+    height: 17px;
+    margin: 0 0 5px;
+    overflow: hidden;
+    padding: 0;
+}
+div.promo_container ul li div.txt_container p.price, div.promo_container ul li div.txt_container p.price a:link, div.promo_container ul li div.txt_container p.price a:hover, div.promo_container ul li div.txt_container p.price a:visited, div.promo_container ul li div.txt_container p.price a:active {
+    color: #666666;
+    text-decoration: none;
+}
+div.promo_container ul li div.txt_container p.price span {
+    color: #666666;
+    display: inline;
+    float: left;
+}
+div.promo_container ul li div.txt_container p.price span.block1 {
+    margin: 3px 8px 0 0;
+}
+div.promo_container ul li div.txt_container p.price span.block1, div.promo_container ul li div.txt_container p.price span.block1 del {
+    color: #898989;
+    font-size: 12px !important;
+}
+div.promo_container ul li div.txt_container p.price span.block2, div.promo_container ul li div.txt_container p.price span.block2 strong {
+    color: #88147E;
+    font-size: 14px !important;
+}
+div.promo_container ul li div.txt_container p.condition {
+    margin: 0 0 5px;
+}
+div.promo_container ul li div.txt_container p.condition, div.promo_container ul li div.txt_container p.condition a:link, div.promo_container ul li div.txt_container p.condition a:hover, div.promo_container ul li div.txt_container p.condition a:visited, div.promo_container ul li div.txt_container p.condition a:active {
+    text-decoration: none;
+}
+div.promo_container ul li div.txt_container p.condition span {
+    color: #8C7C6C;
+    display: inline;
+    font-size: 13px;
+}
+div.promo_container ul li div.txt_container p.condition span.block1 strong, div.promo_container ul li div.txt_container p.condition span.block2 strong {
+    color: #88147E;
+    font-weight: normal;
+}
+div.promo_container ul li .selos_container {
+    bottom: 0;
+    height: 22px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+div.promo_container ul li .selos_container p {
+    display: inline;
+    float: left;
+    margin: 0 3px 0 0;
+}
+div.promo_container ul li.selos_container p.frete_container {
+    margin-right: 0 !important;
+}
+div.lancamentos_vitrine_container {
+    clear: left;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+div.lancamentos_vitrine_container ul.lstProdutos li {
+    margin-left: 10px;
+}
+div.promocao_vitrine_container {
+    clear: both;
+    margin-bottom: 20px;
+}
+div.mais_vendidos_vitrine_container {
+    margin-bottom: 10px;
+}
+div.mais_vendidos_vitrine_container h2 {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_mais_vendidos.gif") no-repeat scroll 0 0 transparent;
+    height: 37px;
+    text-indent: -9999px;
+}
+div.mais_vendidos_vitrine_container .titSection {
+    float: left;
+    margin-bottom: 0;
+    width: 770px;
+}
+div.mais_vendidos_vitrine_container .titSection span {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_mais_vendidos.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    text-indent: -9999px;
+}
+div.historico_container {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_pontilhado.gif") repeat-x scroll 0 0 transparent;
+    clear: both;
+    padding: 0 0 10px;
+}
+div.historico_container ul.historico_list {
+    height: auto !important;
+    min-height: 120px;
+    padding: 22px 0 0 10px;
+    width: 961px;
+}
+div.historico_container ul.historico_list li.fst {
+    float: left;
+    margin: 0;
+}
+div.historico_container ul.historico_list li {
+    float: left;
+    margin-left: 10px;
+    width: 225px;
+}
+div.historico_container ul.historico_list li dl {
+    padding: 8px 8px 20px;
+}
+div.historico_container ul.historico_list li dl dt {
+    color: #666666;
+    font-size: 11px;
+    height: 24px;
+    text-indent: -9999px;
+}
+div.historico_container ul.historico_list li dl dt.prodVistos {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_produtos_vistos.gif") no-repeat scroll left top transparent;
+}
+div.historico_container ul.historico_list li dl dt.termosPesquisados {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_termos_pesquisados.gif") no-repeat scroll left top transparent;
+}
+div.historico_container ul.historico_list li dl dt.adionadosCarrinho {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_adicionados_carrinho.gif") no-repeat scroll left top transparent;
+}
+div.historico_container ul.historico_list li dl dt.secoesVisitadas {
+    background: url("http://www.hopeonline.com.br/locales/pt-BR/img/tit_secoes_visitadas.gif") no-repeat scroll left top transparent;
+}
+div.historico_container ul.historico_list li dl dd.fst, div.historico_container ul.historico_list li dl dd {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet2.gif") no-repeat scroll 6px 3px transparent;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 15px;
+    width: 184px;
+}
+div.historico_container ul.historico_list li dl dd a:link, div.historico_container ul.historico_list li dl dd a:visited, div.historico_container ul.historico_list li dl dd a:active {
+    color: #5A5545;
+    text-decoration: none;
+}
+div.historico_container ul.historico_list li dl dd a.central:link, div.historico_container ul.historico_list li dl dd a.central:visited, div.historico_container ul.historico_list li dl dd a.central:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/ico_bullet_seta.gif") no-repeat scroll 0 5px transparent;
+    color: #666666;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+div.historico_container ul.historico_list li dl dd a:hover, div.historico_container ul.historico_list li dl dd a.central:hover {
+    text-decoration: underline;
+}
+div.historico_container ul.historico_list li dl dd span {
+    color: #666666;
+    display: block;
+    margin-top: 3px;
+    padding-left: 25px;
+    text-decoration: none;
+}
+.head_content {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_border.gif") repeat-x scroll 0 top transparent;
+    height: 100%;
+    overflow: visible;
+    padding-top: 14px;
+    width: 100%;
+}
+fieldset#ordena_produtos {
+    float: left;
+    margin: 10px 0 20px;
+    width: 400px;
+}
+fieldset#ordena_produtos select, fieldset#ordena_produtos label {
+    color: #3E3E3E;
+    font-size: 9px;
+}
+fieldset#ordena_produtos legend {
+    display: none;
+}
+fieldset#ordena_produtos select, fieldset#ordena_produtos input, fieldset#ordena_produtos label {
+    float: left;
+    margin-right: 4px;
+}
+fieldset#ordena_produtos select {
+    margin-top: 2px;
+}
+fieldset#ordena_produtos label {
+    color: #3E3E3E;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+}
+fieldset#ordena_produtos label, fieldset#ordena_produtos .checkOrdenaSelecionar {
+    margin-top: 4px;
+}
+fieldset#ordena_produtos .checkOrdenaSelecionar {
+}
+fieldset#ordena_produtos #ordena_produtos_comparar {
+    display: inline;
+    float: right;
+}
+fieldset#ordena_produtos #ordena_produtos_filtrar {
+    display: inline;
+    float: left;
+}
+fieldset#ordena_produtos #ordena_produtos_filtrar label {
+}
+fieldset#ordena_produtos .btOrdenaFiltrar, fieldset#ordena_produtos .btOrdenaComparar {
+}
+p.txtOrbemBusca {
+    color: #666666;
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-left: 6px;
+}
+div.barra_paginacao {
+    float: right;
+    height: 100%;
+    margin: 0 0 20px;
+    overflow: hidden;
+}
+#tblResultado div.barra_paginacao {
+    padding-left: 780px;
+    padding-top: 20px;
+}
+.fabricante div.barra_paginacao, .busca div.barra_paginacao {
+    padding-left: 390px;
+}
+div.barra_paginacao ul {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_border_vert.gif") repeat-y scroll left 0 transparent;
+    display: inline;
+    float: right;
+    padding-left: 13px;
+}
+#tblResultado div.barra_paginacao ul li {
+    width: 90px;
+}
+div.barra_paginacao ul li {
+    display: inline;
+    float: left;
+    padding: 7px 0;
+    width: 18px;
+}
+div.barra_paginacao ul li a:link, div.barra_paginacao ul li a:visited {
+    color: #3E3E3E;
+    text-decoration: none;
+}
+div.barra_paginacao ul li a.selected {
+    color: #5D5B5C;
+    font-weight: bold;
+    text-decoration: underline;
+}
+div.barra_paginacao ul li a:hover, div.barra_paginacao ul li a:visited:hover {
+    text-decoration: underline;
+}
+#tblResultado div.barra_paginacao ul li.btAnteriores, #tblResultado div.barra_paginacao ul li.btProximos, #tblResultado div.barra_paginacao ul li.btAnterior, #tblResultado div.barra_paginacao ul li.btProximo {
+    width: 20px;
+}
+div.barra_paginacao ul li.btAnteriores, div.barra_paginacao ul li.btProximos, div.barra_paginacao ul li.btAnterior, div.barra_paginacao ul li.btProximo {
+    background: none repeat scroll 0 0 transparent;
+    margin-left: 1px;
+    padding-left: 1px;
+}
+div.barra_paginacao ul li.btProximos {
+    margin-left: 2px;
+}
+#Comparar {
+    display: inline;
+    float: right;
+    height: 28px;
+    margin-left: 10px;
+}
+.fabricante #Comparar, .busca #Comparar {
+    display: none;
+}
+#ListaSKUCategoria {
+    margin: 0 auto;
+    width: 103px;
+}
+#ListaSKUCategoria li {
+    display: inline-block;
+    float: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 33px;
+}
+#ListaSKUCategoria li a img {
+    border: 1px solid #E5E5E5;
+}
+#lstProdutosCategorias ul, #lstProdutosVP ul {
+    padding: 15px 0 0 25px;
+}
+#lstProdutosCategorias ul li, #lstProdutosVP ul li {
+    margin: 0 0 0 20px;
+    padding: 0 0 20px;
+}
+#lstProdutosCategorias ul li.ie_cb, .ofertas_container .ie_cb, #lstProdutosVP ul li.ie_cb {
+    height: 2px;
+    width: 700px;
+}
+.ofertas_container .ie_cb {
+    width: 663px;
+}
+fieldset.opcoes_produtos legend {
+    display: none;
+}
+fieldset.opcoes_produtos dl {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+fieldset.opcoes_produtos label, fieldset.opcoes_produtos select, fieldset.opcoes_produtos dt, fieldset.opcoes_produtos dd {
+    color: #666666;
+    font-size: 9px;
+}
+fieldset.opcoes_produtos dt, fieldset.opcoes_produtos dd {
+    margin: 2px 0;
+    min-height: 20px;
+}
+fieldset.opcoes_produtos dt {
+    clear: left;
+    display: inline;
+    float: left;
+    padding-bottom: 8px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+fieldset.opcoes_produtos dd {
+}
+fieldset.opcoes_produtos p.opcoesProdutosComparar {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+fieldset.opcoes_produtos p.opcoesProdutosComparar input {
+    float: left;
+    height: 14px;
+    margin-top: 2px;
+    width: 14px;
+}
+fieldset.opcoes_produtos p.opcoesProdutosComparar label {
+    color: #8C7C6C;
+    display: inline;
+    float: left;
+    font-size: 12px;
+    margin-left: 5px;
+}
+div#breadcrumbs_carrinho_container {
+    margin-bottom: 23px;
+}
+dl#breadcrumbs_carrinho {
+    border-bottom: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 39px;
+}
+dl#breadcrumbs_carrinho dd, dl#breadcrumbs_carrinho dt {
+    display: inline;
+    float: left;
+}
+dl#breadcrumbs_carrinho dt {
+    display: none;
+}
+dl#breadcrumbs_carrinho dd.fst {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+}
+dl#breadcrumbs_carrinho dd span, dl#breadcrumbs_carrinho dd a:link, dl#breadcrumbs_carrinho dd a:hover, dl#breadcrumbs_carrinho dd a:visited, dl#breadcrumbs_carrinho dd a:active, dl#breadcrumbs_carrinho dd {
+    background-image: url("/content/imgs/shoppingcart/carrinho_passos.gif");
+    background-repeat: no-repeat;
+    display: block;
+}
+dl#breadcrumbs_carrinho dd span, dl#breadcrumbs_carrinho dd a:link, dl#breadcrumbs_carrinho dd a:hover, dl#breadcrumbs_carrinho dd a:visited, dl#breadcrumbs_carrinho dd a:active {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 43px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso1 span.selected, dl#breadcrumbs_carrinho dd.icoPasso1 a.selected:link, dl#breadcrumbs_carrinho dd.icoPasso1 a.selected:hover, dl#breadcrumbs_carrinho dd.icoPasso1 a.selected:visited, dl#breadcrumbs_carrinho dd.icoPasso1 a.selected:active {
+    background-position: 0 -31px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso1 span, dl#breadcrumbs_carrinho dd.icoPasso1 a:link, dl#breadcrumbs_carrinho dd.icoPasso1 a:hover, dl#breadcrumbs_carrinho dd.icoPasso1 a:visited, dl#breadcrumbs_carrinho dd.icoPasso1 a:active {
+    background-position: 0 5px;
+    width: 175px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso2 span.selected, dl#breadcrumbs_carrinho dd.icoPasso2 a.selected:link, dl#breadcrumbs_carrinho dd.icoPasso2 a.selected:hover, dl#breadcrumbs_carrinho dd.icoPasso2 a.selected:visited, dl#breadcrumbs_carrinho dd.icoPasso2 a.selected:active {
+    background-position: -172px -31px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso2 span, dl#breadcrumbs_carrinho dd.icoPasso2 a:link, dl#breadcrumbs_carrinho dd.icoPasso2 a:hover, dl#breadcrumbs_carrinho dd.icoPasso2 a:visited, dl#breadcrumbs_carrinho dd.icoPasso2 a:active {
+    background-position: -172px 5px;
+    width: 247px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso3 span.selected, dl#breadcrumbs_carrinho dd.icoPasso3 a.selected:link, dl#breadcrumbs_carrinho dd.icoPasso3 a.selected:hover, dl#breadcrumbs_carrinho dd.icoPasso3 a.selected:visited, dl#breadcrumbs_carrinho dd.icoPasso3 a.selected:active {
+    background-position: -417px -31px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso3 span, dl#breadcrumbs_carrinho dd.icoPasso3 a:link, dl#breadcrumbs_carrinho dd.icoPasso3 a:hover, dl#breadcrumbs_carrinho dd.icoPasso3 a:visited, dl#breadcrumbs_carrinho dd.icoPasso3 a:active {
+    background-position: -417px 5px;
+    width: 247px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso4 span.selected, dl#breadcrumbs_carrinho dd.icoPasso4 a.selected:link, dl#breadcrumbs_carrinho dd.icoPasso4 a.selected:hover, dl#breadcrumbs_carrinho dd.icoPasso4 a.selected:visited, dl#breadcrumbs_carrinho dd.icoPasso4 a.selected:active {
+    background-position: -664px -31px;
+}
+dl#breadcrumbs_carrinho dd.icoPasso4 span, dl#breadcrumbs_carrinho dd.icoPasso4 a:link, dl#breadcrumbs_carrinho dd.icoPasso4 a:hover, dl#breadcrumbs_carrinho dd.icoPasso4 a:visited, dl#breadcrumbs_carrinho dd.icoPasso4 a:active {
+    background-position: -664px 5px;
+    width: 189px;
+}
+dl#breadcrumbs_carrinho dd {
+    background-position: -40px -250px;
+}
+dl#breadcrumbs_carrinho dd span, dl#breadcrumbs_carrinho dd a:link, dl#breadcrumbs_carrinho dd a:hover, dl#breadcrumbs_carrinho dd a:visited, dl#breadcrumbs_carrinho dd a:active, dl#breadcrumbs_carrinho dd {
+    background-image: url("/content/imgs/shoppingcart/carrinho_passos.gif");
+}
+dl#breadcrumbs_carrinho dd.icoPasso5 span, dl#breadcrumbs_carrinho dd.icoPasso5 a:link, dl#breadcrumbs_carrinho dd.icoPasso5 a:hover, dl#breadcrumbs_carrinho dd.icoPasso5 a:visited, dl#breadcrumbs_carrinho dd.icoPasso5 a:active {
+    width: 105px;
+}
+h2#tit_login_parceiro {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/tit_parceiro_restrito.gif") no-repeat scroll 0 0 transparent;
+    margin: 0 0 20px 20px;
+}
+div#login_parceiro_container {
+    padding: 35px 0 90px;
+}
+div#login_parceiro_container p.msg_erro {
+    margin-bottom: 20px;
+}
+div#login_parceiro_container p.msg_erro span {
+    font-size: 12px;
+    padding: 0 0 0 20px;
+}
+div#login_parceiro_container fieldset.alteracaoSenha {
+    margin: 0 20px;
+}
+div#login_parceiro_container fieldset.alteracaoSenha dl dd {
+    display: inline;
+    float: left;
+    margin: 0 0 10px;
+}
+div#login_parceiro_container fieldset.alteracaoSenha dl dd label {
+    display: inline;
+    float: left;
+    font-size: 12px;
+    padding: 2px 8px 0 0;
+    text-align: right !important;
+    width: 180px;
+}
+div#login_parceiro_container fieldset.alteracaoSenha dl dd.fld_bt_continuar {
+    margin: 0;
+    padding-right: 226px;
+    text-align: right !important;
+}
+div#login_parceiro_container fieldset.alteracaoSenha dl dd.fld_bt_solicitar_senha {
+    margin-bottom: 0;
+    padding-right: 228px;
+    text-align: right !important;
+}
+div#login_parceiro_container fieldset.alteracaoSenha dl dd input.fldEmail, div#login_parceiro_container fieldset.alteracaoSenha dl dd input.fldSenhaAtual, div#login_parceiro_container fieldset.alteracaoSenha dl dd input.fldNovaSenha, div#login_parceiro_container fieldset.alteracaoSenha dl dd input.fldConfirmeNovaSenha {
+    width: 220px;
+}
+.tabelaMedidas {
+    background: url("../imagens/medidas/bg_body.gif") repeat scroll 0 0 transparent;
+    color: #777777;
+    font-family: Tahoma,Helvetica,Verdana,Geneva,Arial,sans-serif;
+    font-size: 11px;
+    margin-left: 15px;
+    width: auto;
+}
+.tabelaMedidas h3 {
+    text-transform: uppercase;
+}
+.tabelaMedidas .boxSutia {
+    display: block;
+}
+.tabelaMedidas .boxSutia img {
+    float: left;
+}
+.tabelaMedidas .boxSutia ul {
+    float: left;
+    list-style: none outside none;
+    margin-left: 30px;
+    width: 280px;
+}
+.tabelaMedidas .boxSutia ul li, .tabelaMedidas .boxSutia ul li p {
+    color: #000000;
+}
+.tabelaMedidas .boxSutia ul li.passo01 {
+    background: url("../imagens/medidas/sutia-passo1.jpg") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    padding: 0 0 0 60px;
+}
+.tabelaMedidas .boxSutia ul li.passo02 {
+    background: url("../imagens/medidas/sutia-passo2.jpg") no-repeat scroll 0 0 transparent;
+    padding: 0 0 0 60px;
+}
+.tabelaMedidas .boxSutia2 {
+}
+.tabelaMedidas .boxSutia2 img {
+    float: left;
+}
+.tabelaMedidas .boxSutia2 ul {
+    float: left;
+    list-style: none outside none;
+    margin-left: 30px;
+    width: 280px;
+}
+.tabelaMedidas .boxSutia2 ul li {
+    color: #000000;
+    padding: 0 0 10px;
+}
+.tabelaMedidas .boxSutia2 ul li strong {
+    color: #000000;
+}
+#divAcompanhe {
+    display: table;
+    float: left;
+    margin: 0 0 18px 5px;
+}
+div.box_240_container {
+    margin: 0 auto;
+    width: 240px;
+}
+div.box_240_container div.box_240_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_240_container div.box_240_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_240_container div.box_240_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_240_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_300_container {
+    margin: 0 auto;
+    width: 300px;
+}
+div.box_300_container div.box_300_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_300_container div.box_300_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_300_container div.box_300_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_300_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_450_container {
+    margin: 0 auto;
+    width: 450px;
+}
+div.box_450_container div.box_450_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_450_container div.box_450_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_450_container div.box_450_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_450_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_626_container {
+    margin: 0 auto;
+    width: 626px;
+}
+div.box_626_container div.box_626_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_626_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_626_container div.box_626_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_626_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_626_container div.box_626_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_626_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_680_container {
+    margin: 0 auto;
+    width: 680px;
+}
+div.box_680_container div.box_680_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_680_container div.box_680_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_680_container div.box_680_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_680_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_968_container {
+    margin: 0 auto;
+    width: 968px;
+}
+div.box_968_container div.box_968_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+}
+div.box_968_container div.box_968_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_968_container div.box_968_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_box_968_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 20px;
+}
+div.box_968_container div.box_tb_top {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_top.gif") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+div.box_968_container div.box_tb_mid {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_mid.gif") repeat-y scroll 0 0 transparent;
+}
+div.box_968_container div.box_tb_bot {
+    background: url("http://www.hopeonline.com.br/locales/global/img/novas/bg_tb_bot.gif") no-repeat scroll 0 0 transparent;
+    height: 10px;
+}
+.skuCores {
+    font-size: 10px !important;
+    height: 10px !important;
+    margin-bottom: 3px !important;
+    margin-right: 7px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    width: 30px !important;
+}
+.gbintimates_footer {
+    background: none repeat scroll 0 0 #000000 !important;
+}
+div#fancy_overlay {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+}
+div#fancy_loading {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    width: 40px;
+    z-index: 100;
+}
+div#fancy_loading div {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_progress.png") no-repeat scroll 0 0 transparent;
+    height: 480px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+div#fancy_outer {
+    background: none repeat scroll 0 0 transparent;
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 90;
+}
+div#fancy_inner {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+div#fancy_content {
+    background: none repeat scroll 0 0 transparent;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 486px;
+    z-index: 100;
+}
+div#fancy_div {
+    color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+img#fancy_img {
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+div#fancy_close {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_closebox.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: -36px;
+    width: 30px;
+    z-index: 181;
+}
+#fancy_frame {
+    display: none;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+#fancy_ajax {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+a#fancy_left, a#fancy_right {
+    background-image: url("data:image/gif;base64,AAAA");
+    bottom: 0;
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    outline: medium none;
+    overflow: hidden;
+    position: absolute;
+    width: 35%;
+    z-index: 111;
+}
+a#fancy_left {
+    left: 0;
+}
+a#fancy_right {
+    right: 0;
+}
+span.fancy_ico {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    z-index: 112;
+}
+span#fancy_left_ico {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_left.png") no-repeat scroll 0 0 transparent;
+    left: -9999px;
+}
+span#fancy_right_ico {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_right.png") no-repeat scroll 0 0 transparent;
+    right: -9999px;
+}
+a#fancy_left:hover, a#fancy_right:hover {
+    background-color: transparent;
+    visibility: visible;
+}
+a#fancy_left:hover span {
+    left: 20px;
+}
+a#fancy_right:hover span {
+    right: 20px;
+}
+#fancy_bigIframe {
+    background: none repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+div#fancy_bg {
+    background: none repeat scroll 0 0 #F3F4EE;
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 70;
+}
+.detalhes #fancy_bg {
+    background: none repeat scroll 0 0 transparent !important;
+}
+div.fancy_bg {
+    border: 0 none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 70;
+}
+div#fancy_bg_n, div#fancy_bg_ne, div#fancy_bg_e, div#fancy_bg_se, div#fancy_bg_s, div#fancy_bg_sw, div#fancy_bg_w, div#fancy_bg_nw {
+    display: none;
+}
+div#fancy_title {
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
+div#fancy_title div {
+    color: #FFFFFF;
+    font: bold 12px Arial;
+    padding-bottom: 3px;
+    white-space: nowrap;
+}
+div#fancy_title table {
+    display: none;
+    margin: 0 auto;
+}
+div#fancy_title table td {
+    padding: 0;
+    vertical-align: middle;
+}
+td#fancy_title_left {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_title_left.png") repeat-x scroll 0 0 transparent;
+    height: 32px;
+    width: 15px;
+}
+td#fancy_title_main {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_title_main.png") repeat-x scroll 0 0 transparent;
+    height: 32px;
+}
+td#fancy_title_right {
+    background: url("http://www.hopeonline.com.br/locales/global/img/fancy_title_right.png") repeat-x scroll 0 0 transparent;
+    height: 32px;
+    width: 15px;
+}
+.jcarousel-container {
+    position: relative;
+}
+.jcarousel-clip {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+.jcarousel-list {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.jcarousel-list li, .jcarousel-item {
+    float: left;
+    font-size: 13px;
+    list-style: none outside none;
+    padding: 0;
+    width: auto;
+}
+.jcarousel-list li a:link, .jcarousel-list li a:visited, .jcarousel-list li a:active {
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+}
+.jcarousel-list li a:hover {
+}
+.jcarousel-next, .jcarousel-prev {
+    display: none;
+    z-index: 3;
+}
+.jcarousel-skin-tango .jcarousel-container {
+    background: url("../img/bg_carousel.gif") no-repeat scroll 0 0 transparent;
+}
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    position: relative;
+    width: 905px;
+}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    height: 100%;
+    width: 905px;
+}
+.jcarousel-skin-tango .jcarousel-item {
+}
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+}
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    background: url("http://www.hopeonline.com.br/locales/global/img/next-horizontal.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 9px;
+    position: absolute;
+    right: 8px;
+    top: -44px;
+    width: 28px;
+    z-index: 15;
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover {
+}
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/next-horizontal-disabled.gif") no-repeat scroll 0 0 transparent;
+    cursor: default;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    background: url("http://www.hopeonline.com.br/locales/global/img/prev-horizontal.gif") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 9px;
+    position: absolute;
+    right: 25px;
+    top: -44px;
+    width: 30px;
+    z-index: 15;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover {
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+}
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+    background: url("http://www.hopeonline.com.br/locales/global/img/prev-horizontal-disabled.gif") no-repeat scroll 0 0 transparent;
+    cursor: default;
+}
+.jqTransformSelectWrapper {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_select.gif") no-repeat scroll left 0 transparent;
+    float: left;
+    height: 31px;
+    position: relative;
+    width: 137px !important;
+}
+.tamanho .jqTransformSelectWrapper {
+    background: url("http://www.hopeonline.com.br/locales/global/img/bg_inputtamanho.gif") no-repeat scroll left 0 transparent;
+}
+.tamanho .jqTransformSelectWrapper div span {
+    width: 50px !important;
+}
+#ordena_produtos_filtrar .jqTransformSelectWrapper div span {
+    width: 137px !important;
+}
+.tamanho .jqTransformSelectWrapper ul {
+    width: 78px !important;
+}
+.cor .jqTransformSelectWrapper div span {
+    width: 107px !important;
+}
+.cor .jqTransformSelectWrapper ul {
+    width: 131px !important;
+}
+#ordena_produtos_filtrar .jqTransformSelectWrapper {
+    margin-left: 7px;
+}
+.jqTransformSelectWrapper div span {
+    color: #3E3E3E;
+    cursor: pointer;
+    float: none;
+    font-size: 11px;
+    line-height: 15px;
+    overflow: hidden;
+    padding: 6px 30px 0 13px;
+    position: absolute;
+    white-space: nowrap;
+}
+.jqTransformSelectWrapper ul {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    height: 150px;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    width: 201px !important;
+    z-index: 10;
+}
+.jqTransformSelectWrapper ul li {
+    background: none repeat scroll 0 0 transparent !important;
+    margin-left: 5px !important;
+    padding: 0 !important;
+}
+.jqTransformSelectWrapper ul a {
+    background-color: #FFFFFF;
+    color: #333333;
+    display: block;
+    font-size: 11px;
+    padding: 5px;
+    text-decoration: none;
+}
+.jqTransformSelectWrapper ul a.selected {
+    background: none repeat scroll 0 0 #EDEDED;
+    color: #333333;
+}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+    background: none repeat scroll 0 0 #3582C4;
+    color: #FFFFFF;
+}
+.jqTransformHidden {
+    display: none !important;
+}
+BODY {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: url("sombra.png") no-repeat scroll center top transparent;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+#body_container {
+    padding-bottom: 0;
+}
+.texto {
+    position: absolute;
+}
+.video {
+    position: absolute;
+}
+.foto {
+    position: absolute;
+}
+.conheca {
+    position: absolute;
+}
+.texto {
+    right: 0;
+    top: 40px;
+}
+.foto {
+    left: 0;
+    top: 15px;
+    z-index: 1000;
+}
+.video {
+    right: 0;
+    top: 190px;
+}
+.conheca {
+    bottom: 25px;
+    left: 0;
+}
+.console {
+    display: none;
+}
+
+#ListaSKUCategoria {
+    margin: 0 auto;
+    width: 110px !important;
+}
+#ListaSKUCategoria li {
+    display: inline-block;
+    float: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 33px;
+}
+#ListaSKUCategoria li a img {
+    border: 1px solid #E5E5E5;
+}

@@ -1,0 +1,400 @@
+h3#tit_produtos_adquiridos {
+    margin: 0 0 35px;
+}
+.carrinho_container {
+    padding: 0 0 30px;
+}
+.confirmacao .carrinho_container {
+    padding-top: 30px;
+}
+ul.botoesCarrinho, ul.botoesCarrinho_bottom {
+    float: left;
+    margin-bottom: 16px;
+    padding-top: 10px;
+    text-align: left !important;
+}
+ul.botoesCarrinho li, ul.botoesCarrinho_bottom li {
+    display: inline;
+    float: left;
+    font-size: 13px;
+    margin: 0 20px 0 0;
+}
+ul.botoesCarrinho li.fst, ul.botoesCarrinho_bottom li.fst {
+    margin-left: 10px;
+}
+ul.botoesCarrinho li a#btnComprarMaisSuperior, ul.botoesCarrinho_bottom li a#btnComprarMaisInferior {
+    background: url("/Content/imgs/shoppingcart/bt_comprar_mais_produtos.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    width: 160px;
+}
+a.vaciar
+{
+    background: url("/Content/imgs/shoppingcart/bt_vaciar_carrito.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    width: 160px;
+}
+
+a.RemoveItem
+{
+    background: url("/Content/imgs/shoppingcart/bt_excluir_x.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    width: 30px;
+    margin: 10px 0 0 15px;
+}
+
+
+
+ul.botoesCarrinho li a.limpar_sacola, ul.botoesCarrinho_bottom li a.limpar_sacola {
+    background: url("http://www.hopelingerie.com.br/imagens/bt_limpar_sacola.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 22px;
+    width: 191px;
+}
+ul.botoesCarrinho_bottom {
+    padding-top: 22px;
+}
+ul.botoesCarrinho_dir {
+    float: right;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+ul.botoesCarrinho_dir li {
+    display: inline;
+    margin: 0 0 0 5px;
+}
+ul.botoesCarrinho_bottom_dir {
+    float: right;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+ul.botoesCarrinho_bottom_dir li {
+    display: inline;
+    margin: 0 0 0 5px;
+}
+table.tabelaCarrinho {
+    clear: both;
+    width: 100%;
+}
+table.tabelaCarrinho tr td {
+    padding: 10px;
+}
+table.tabelaCarrinho tr.esc td {
+}
+table.tabelaCarrinho thead tr td {
+    border-bottom: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.tabelaCarrinho thead tr td span {
+    display: block;
+    height: 15px;
+    text-indent: -9999px;
+}
+table.tabelaCarrinho thead tr td.tdProduto span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_produto.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdDescricao span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_descricao.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdQuantidade span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_quantidade.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdPresente span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_presente.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdExcluir span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_excluir.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdFrete span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_frete.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdSubTotal span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_subtotal.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdValorUnitario span {
+    background: url("http://www.hopelingerie.com.br/locales/pt-br/img/tit_valorunitario.gif") no-repeat scroll 0 0 transparent;
+}
+table.tabelaCarrinho thead tr td.tdQuantidade {
+    width: 70px;
+}
+table.tabelaCarrinho thead tr td.tdQuantidade, table.tabelaCarrinho thead tr td.tdPresente, table.tabelaCarrinho thead tr td.tdExcluir {
+}
+table.tabelaCarrinho thead tr td.tdComprarDepois, table.tabelaCarrinho thead tr td.tdGarantiaEstendida {
+}
+table.tabelaCarrinho thead tr td.tdFrete, table.tabelaCarrinho thead tr td.tdPrazo, table.tabelaCarrinho thead tr td.tdDataEntrega, table.tabelaCarrinho thead tr td.tdStatusItem {
+}
+table.tabelaCarrinho thead tr td.tdSubTotal {
+    width: 90px;
+    text-align:right !important;
+}
+table.tabelaCarrinho tfoot tr td {
+    border-bottom: 1px dotted #CCCCCC;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade, table.tabelaCarrinho tbody tr td.tdPresente, table.tabelaCarrinho tbody tr td.tdExcluir  {
+    text-align: center !important;
+}
+
+.tdValorUnitario
+{
+    text-align:right !important;
+}
+
+table.tabelaCarrinho tbody tr td.tdComprarDepois, table.tabelaCarrinho tbody tr td.tdGarantiaEstendida {
+}
+table.tabelaCarrinho tbody tr td.tdFrete {
+    width: 80px;
+}
+table.tabelaCarrinho tbody tr td.tdPrazo, table.tabelaCarrinho tbody tr td.tdDataEntrega, table.tabelaCarrinho tbody tr td.tdStatusItem {
+    text-align: right !important;
+}
+del {
+    color: #B92025;
+}
+del.no_dec {
+    color: #B92025;
+    text-decoration: none;
+}
+table.tabelaCarrinho tbody tr td.tdProduto {
+    width: 100px;
+}
+table.tabelaCarrinho tbody tr td.tdProduto img {
+    height: 111px;
+    width: 111px;
+}
+table.tabelaCarrinho tbody tr td.tdDescricao {
+    width: auto;
+}
+table.tabelaCarrinho tbody tr td.tdDescricao .prodName {
+    margin: 0;
+}
+table.tabelaCarrinho tbody tr td.tdDescricao .prodName a {
+    color: #3E3E3E;
+    font-size: 12px;
+    text-decoration: none;
+}
+table.tabelaCarrinho tbody tr td.tdDescricao p {
+    color: #3E3E3E;
+    font-size: 12px;
+    margin: 10px 0 0;
+}
+table.tabelaCarrinho tbody tr td.tdDescricao .seloContainer {
+    margin-top: 20px;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade {
+    text-align: center !important;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade div.btnContainer {
+    height: 22px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 76px;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade a {
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 7px;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade a img {
+    display: block;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade .mais {
+    left: 52px;
+    top: 0;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade .menos {
+    left: 52px;
+    top: 15px;
+}
+table.tabelaCarrinho tbody tr td.tdQuantidade input {
+    border: 1px solid #CCCCCC;
+    color: #4D453E;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    height: 15px;
+    padding: 6px 0;
+    text-align: center !important;
+    width: 35px;
+}
+table.tabelaCarrinho tbody tr td.tdPresente {
+    width: 85px !important;
+}
+table.tabelaCarrinho tbody tr td.tdPresente label, table.tabelaCarrinho tbody tr td.tdPresente input {
+    display: inline;
+    float: left;
+}
+table.tabelaCarrinho tbody tr td.tdPresente label {
+    color: #3E3E3E;
+    font-size: 13px;
+    margin-top: -2px;
+}
+table.tabelaCarrinho tbody tr td.tdPresente input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none !important;
+    height: 14px;
+    margin: 0 5px 0 25px;
+    width: 14px;
+}
+table.tabelaCarrinho tbody tr td.tdExcluir {
+    width: 60px;
+}
+table.tabelaCarrinho tbody tr td.tdComprarDepois {
+    width: 60px;
+}
+table.tabelaCarrinho tbody tr td.tdGarantiaEstendida {
+    width: 60px;
+}
+table.tabelaCarrinho tbody tr td.tdValorUnitario {
+    width: 140px;
+}
+table.tabelaCarrinho tbody tr td.tdValorUnitario {
+    color: #3E3E3E;
+    font-size: 12px;
+}
+table.tabelaCarrinho tbody tr td.tdValorUnitario span, table.tabelaCarrinho tbody tr td.tdSubTotal span {
+    color: #BFBFBF;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+table.tabelaCarrinho tbody tr td.tdSubTotal {
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.tabelaCarrinho tbody tr td input.stQtd {
+    text-align: center;
+    width: 22px;
+}
+table.tabelaCarrinho tfoot tr td {
+}
+table.tabelaCarrinho tfoot tr td.tdTitSubTotal {
+    border-top: 1px dotted #CCCCCC;
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: right !important;
+}
+table.tabelaCarrinho tfoot tr td .btCalcular {
+    margin-top: 0;
+}
+table.tabelaCarrinho tfoot tr td.tdSubTotal {
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.tabelaCarrinho tfoot tr.esc td.tdSubTotal {
+    background-color: #DBDBDB !important;
+}
+table.tabelaCarrinho tfoot tr td.tdCEP span {
+    display: block;
+    height: 26px;
+    overflow: hidden;
+}
+table.tabelaCarrinho tfoot tr td.tdCEP label, table.tabelaCarrinho tfoot tr td.tdCEP input, table.tabelaCarrinho tfoot tr td.tdCEP a {
+    display: inline;
+    float: left;
+}
+table.tabelaCarrinho tfoot tr td.tdCEP label, table.tabelaCarrinho tfoot tr td.tdCupom label {
+    color: #3E3E3E;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+table.tabelaCarrinho tfoot tr td.tdCEP input, table.tabelaCarrinho tfoot tr td.tdCupom input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #4D453E;
+    font-size: 13px;
+    margin: 0 15px 0 16px;
+    padding: 5px 3px 3px;
+    width: 65px;
+}
+table.tabelaCarrinho tfoot tr td.tdCEP span.tdTit {
+    color: #3E3E3E;
+    float: right;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 4px;
+    width: auto;
+}
+table.tabelaCarrinho tfoot tr td.tdCupom span {
+    display: block;
+    height: 26px;
+}
+table.tabelaCarrinho tfoot tr td#Selo span {
+    background: url("http://www.hopelingerie.com.br/locales/global/img/bg_td_selo.gif") no-repeat scroll 387px 0 transparent;
+}
+table.tabelaCarrinho tfoot tr td.tdCupom label, table.tabelaCarrinho tfoot tr td.tdCupom input, table.tabelaCarrinho tfoot tr td.tdCupom a {
+    display: inline;
+    float: left;
+}
+table.tabelaCarrinho tfoot tr td.tdCupom input {
+    margin-left: 11px;
+    width: 140px;
+}
+table.tabelaCarrinho tfoot tr.trTotal td {
+}
+table.tabelaCarrinho tfoot tr.trSubTotal td.tdTotal, table.tabelaCarrinho tfoot tr.trTotal td.tdTotal {
+    color: #3E3E3E;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right !important;
+}
+table.tabelaCarrinho tfoot tr.trTotal td.tdSubTotal {
+}
+table.tabelaCarrinho tfoot tr.trTotal td.tdSubTotal span.precoSemJuros {
+    color: #3E3E3E;
+    font-size: 16px;
+    font-weight: bold;
+}
+table.tabelaCarrinho tfoot tr.trTotal td.tdSubTotal span.txtComJuros {
+    font-size: 10px;
+}
+table.tabelaCarrinho tfoot tr.trTotal td.tdSubTotal span.precoComJuros {
+    color: #B92025;
+    font-size: 10px;
+    font-weight: bold;
+}
+div.pagamento_container table.tabelaCarrinho tbody td.tdTotal {
+    color: #3E3E3E;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right !important;
+    text-transform: uppercase;
+}
+.txtTaxa {
+    font-size: 10px;
+    margin: 0;
+    padding: 5px 5px 5px 0;
+    text-align: right !important;
+}
+.btAtualizarValores {
+    display: inline;
+    float: right;
+    margin: 15px 0 0 35px;
+}
+div#retorno_container {
+    margin: 50px 0;
+}
+div#retorno_container p.txtConfirmacao {
+    color: #3E3E3E;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+div#retorno_container p.btConfirmacao {
+    text-align: center;
+}

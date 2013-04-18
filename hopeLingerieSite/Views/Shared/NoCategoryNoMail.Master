@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Main.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderContent" runat="server">
+
+    <asp:ContentPlaceHolder ID="_HeaderContent" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <!-- FIN COLUMNA DE NAVEGACION PRINCIPAL (IZQUIERDA) -->
+    
+    <div id="main_content_container">
+        
+        <!-- CONTENIDO INTERNO (CENTRO) -->
+        <div id="main_content">
+        
+            <div id="lstProdutosCategorias">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <!-- FIN DE CONTENIDO INTERNO (CENTRO) -->
+    </div>
+
+</asp:Content>

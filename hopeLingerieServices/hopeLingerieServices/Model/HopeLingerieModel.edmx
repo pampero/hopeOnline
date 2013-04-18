@@ -1,0 +1,1671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HopeLingerieModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="HopeLingerieModelStoreContainer">
+          <EntitySet Name="Category" EntityType="HopeLingerieModel.Store.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="City" EntityType="HopeLingerieModel.Store.City" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Color" EntityType="HopeLingerieModel.Store.Color" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Color_Size" EntityType="HopeLingerieModel.Store.Color_Size" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Contact" EntityType="HopeLingerieModel.Store.Contact" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Coupon" EntityType="HopeLingerieModel.Store.Coupon" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Customer" EntityType="HopeLingerieModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DeliveryStatus" EntityType="HopeLingerieModel.Store.DeliveryStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ErrorLog" EntityType="HopeLingerieModel.Store.ErrorLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Franchise" EntityType="HopeLingerieModel.Store.Franchise" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Mail" EntityType="HopeLingerieModel.Store.Mail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NewsLetter" EntityType="HopeLingerieModel.Store.NewsLetter" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Order" EntityType="HopeLingerieModel.Store.Order" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderDetail" EntityType="HopeLingerieModel.Store.OrderDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderDetailStatus" EntityType="HopeLingerieModel.Store.OrderDetailStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderStatus" EntityType="HopeLingerieModel.Store.OrderStatus" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Parameter" EntityType="HopeLingerieModel.Store.Parameter" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Product" EntityType="HopeLingerieModel.Store.Product" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Size" EntityType="HopeLingerieModel.Store.Size" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="State" EntityType="HopeLingerieModel.Store.State" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Stock" EntityType="HopeLingerieModel.Store.Stock" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Category_Category" Association="HopeLingerieModel.Store.FK_Category_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Category1" EntitySet="Category" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Color_Size_Color" Association="HopeLingerieModel.Store.FK_Color_Size_Color">
+            <End Role="Color" EntitySet="Color" />
+            <End Role="Color_Size" EntitySet="Color_Size" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Color_Size_Size" Association="HopeLingerieModel.Store.FK_Color_Size_Size">
+            <End Role="Size" EntitySet="Size" />
+            <End Role="Color_Size" EntitySet="Color_Size" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Coupon_Order" Association="HopeLingerieModel.Store.FK_Coupon_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="Coupon" EntitySet="Coupon" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customer_State" Association="HopeLingerieModel.Store.FK_Customer_State">
+            <End Role="State" EntitySet="State" />
+            <End Role="Customer" EntitySet="Customer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Franchise_City" Association="HopeLingerieModel.Store.FK_Franchise_City">
+            <End Role="City" EntitySet="City" />
+            <End Role="Franchise" EntitySet="Franchise" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Franchise_State" Association="HopeLingerieModel.Store.FK_Franchise_State">
+            <End Role="State" EntitySet="State" />
+            <End Role="Franchise" EntitySet="Franchise" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Customer" Association="HopeLingerieModel.Store.FK_Order_Customer">
+            <End Role="Customer" EntitySet="Customer" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_DeliveryStatus" Association="HopeLingerieModel.Store.FK_Order_DeliveryStatus">
+            <End Role="DeliveryStatus" EntitySet="DeliveryStatus" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_OrderStatus" Association="HopeLingerieModel.Store.FK_Order_OrderStatus">
+            <End Role="OrderStatus" EntitySet="OrderStatus" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Color" Association="HopeLingerieModel.Store.FK_OrderDetail_Color">
+            <End Role="Color" EntitySet="Color" />
+            <End Role="OrderDetail" EntitySet="OrderDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Order" Association="HopeLingerieModel.Store.FK_OrderDetail_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderDetail" EntitySet="OrderDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_OrderDetailStatus" Association="HopeLingerieModel.Store.FK_OrderDetail_OrderDetailStatus">
+            <End Role="OrderDetailStatus" EntitySet="OrderDetailStatus" />
+            <End Role="OrderDetail" EntitySet="OrderDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Size" Association="HopeLingerieModel.Store.FK_OrderDetail_Size">
+            <End Role="Size" EntitySet="Size" />
+            <End Role="OrderDetail" EntitySet="OrderDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Color" Association="HopeLingerieModel.Store.FK_Stock_Color">
+            <End Role="Color" EntitySet="Color" />
+            <End Role="Stock" EntitySet="Stock" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Size" Association="HopeLingerieModel.Store.FK_Stock_Size">
+            <End Role="Size" EntitySet="Size" />
+            <End Role="Stock" EntitySet="Stock" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Name="CategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ParentCategoryId" Type="int" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Image" Type="varchar" MaxLength="100" />
+          <Property Name="DisplayOrder" Type="int" />
+          <Property Name="Enabled" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Name="CityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Name="ColorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ColorThumb" Type="varchar" MaxLength="500" />
+          <Property Name="ImageFrontFirst" Type="varchar" MaxLength="500" />
+          <Property Name="ImageFrontSecond" Type="varchar" MaxLength="500" />
+          <Property Name="ImageBackFirst" Type="varchar" MaxLength="500" />
+          <Property Name="ImageBackSecond" Type="varchar" MaxLength="500" />
+          <Property Name="ImageFrontFirstZoom" Type="varchar" MaxLength="500" />
+          <Property Name="ImageFrontSecondZoom" Type="varchar" MaxLength="500" />
+          <Property Name="ImageBackFirstZoom" Type="varchar" MaxLength="500" />
+          <Property Name="ImageBackSecondZoom" Type="varchar" MaxLength="500" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Color_Size">
+          <Key>
+            <PropertyRef Name="ColorId" />
+            <PropertyRef Name="SizeId" />
+          </Key>
+          <Property Name="ColorId" Type="int" Nullable="false" />
+          <Property Name="SizeId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Name="ContactId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="text" />
+          <Property Name="Subject" Type="varchar" MaxLength="500" />
+          <Property Name="EMail" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Telephone" Type="varchar" MaxLength="20" />
+          <Property Name="NewsLetter" Type="bit" Nullable="false" />
+          <Property Name="FromFranchise" Type="bit" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Coupon">
+          <Key>
+            <PropertyRef Name="CouponId" />
+          </Key>
+          <Property Name="CouponId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="int" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="8" />
+          <Property Name="Percentage" Type="int" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="AddedBy" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="ExpirationDate" Type="datetime" Nullable="false" />
+          <Property Name="Campaign" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="DNI" Type="varchar" MaxLength="50" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="Gender" Type="bit" />
+          <Property Name="StateId" Type="int" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="100" />
+          <Property Name="Number" Type="varchar" MaxLength="15" />
+          <Property Name="ZipCode" Type="varchar" MaxLength="50" />
+          <Property Name="Telephone1" Type="varchar" MaxLength="50" />
+          <Property Name="Telephone2" Type="varchar" MaxLength="50" />
+          <Property Name="Telephone3" Type="varchar" MaxLength="50" />
+          <Property Name="Cellular" Type="varchar" MaxLength="50" />
+          <Property Name="Fax" Type="varchar" MaxLength="50" />
+          <Property Name="Reference" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsAdmin" Type="bit" Nullable="false" />
+          <Property Name="NewsLetter" Type="bit" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="DeliveryStatus">
+          <Key>
+            <PropertyRef Name="DeliveryStatusId" />
+          </Key>
+          <Property Name="DeliveryStatusId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ErrorLog">
+          <Key>
+            <PropertyRef Name="ErrorLogId" />
+          </Key>
+          <Property Name="ErrorLogId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Message" Type="varchar" MaxLength="500" />
+          <Property Name="StackTrace" Type="varchar" />
+          <Property Name="AddedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Franchise">
+          <Key>
+            <PropertyRef Name="FranchiseId" />
+          </Key>
+          <Property Name="FranchiseId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FranchiseCityId" Type="int" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="BirthDate" Type="datetime" />
+          <Property Name="Address" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="StateId" Type="int" Nullable="false" />
+          <Property Name="City" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ZipCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Telephone1" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Telephone2" Type="varchar" MaxLength="20" />
+          <Property Name="Cellular" Type="varchar" MaxLength="20" />
+          <Property Name="EMail" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="InvestmentMoney" Type="numeric" Nullable="false" Precision="9" Scale="2" />
+          <Property Name="Why" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="How" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="When" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Mail">
+          <Key>
+            <PropertyRef Name="MailId" />
+          </Key>
+          <Property Name="MailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="From" Type="varchar" MaxLength="50" />
+          <Property Name="Code" Type="varchar" MaxLength="50" />
+          <Property Name="Subject" Type="varchar" MaxLength="500" />
+          <Property Name="Body" Type="varchar" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="NewsLetter">
+          <Key>
+            <PropertyRef Name="NewsLetterId" />
+          </Key>
+          <Property Name="NewsLetterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Name" Type="varchar" MaxLength="100" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="Discount" Type="int" Nullable="false" />
+          <Property Name="DeliveryDate" Type="datetime" />
+          <Property Name="DeliveryAddress" Type="varchar" MaxLength="200" />
+          <Property Name="DeliveryBy" Type="varchar" MaxLength="50" />
+          <Property Name="DaysShipping" Type="int" Nullable="false" />
+          <Property Name="CouponId" Type="int" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="NetAmount" Type="decimal" Scale="2" />
+          <Property Name="Amount" Type="decimal" Scale="2" />
+          <Property Name="PaymentMethod" Type="varchar" MaxLength="30" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="50" />
+          <Property Name="DeliveryStatusId" Type="int" Nullable="false" />
+          <Property Name="OrderStatusId" Type="int" Nullable="false" />
+          <Property Name="Comments" Type="varchar" MaxLength="500" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="AddedBy" Type="varchar" MaxLength="100" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="OrderDetail">
+          <Key>
+            <PropertyRef Name="OrderDetailId" />
+          </Key>
+          <Property Name="OrderDetailId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="int" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="ColorId" Type="int" Nullable="false" />
+          <Property Name="OrderDetailStatusId" Type="int" Nullable="false" />
+          <Property Name="Gift" Type="bit" Nullable="false" />
+          <Property Name="SizeId" Type="int" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="Price" Type="numeric" Nullable="false" Precision="7" Scale="2" />
+          <Property Name="GUID" Type="varchar" MaxLength="50" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="AddedDate" Type="datetime" Nullable="false" />
+          <Property Name="AddedBy" Type="varchar" MaxLength="100" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="10" />
+          <Property Name="TempCoupon" Type="varchar" MaxLength="37" />
+        </EntityType>
+        <EntityType Name="OrderDetailStatus">
+          <Key>
+            <PropertyRef Name="OrderDetailStatusId" />
+          </Key>
+          <Property Name="OrderDetailStatusId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderStatus">
+          <Key>
+            <PropertyRef Name="OrderStatusId" />
+          </Key>
+          <Property Name="OrderStatusId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Parameter">
+          <Key>
+            <PropertyRef Name="ParameterId" />
+          </Key>
+          <Property Name="ParameterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ParameterName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ParameterValue" Type="varchar" MaxLength="100" />
+          <Property Name="ParameterCode" Type="varchar" Nullable="false" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="CurrentPrice" Type="numeric" Nullable="false" Precision="5" Scale="2" />
+          <Property Name="OldPrice" Type="numeric" Precision="5" Scale="2" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Published" Type="bit" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" />
+          <Property Name="ImageDetailFirst" Type="varchar" MaxLength="500" />
+          <Property Name="ImageDetailSecond" Type="varchar" MaxLength="500" />
+          <Property Name="OnSale" Type="bit" Nullable="false" />
+          <Property Name="IsNew" Type="bit" Nullable="false" />
+          <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Size">
+          <Key>
+            <PropertyRef Name="SizeId" />
+          </Key>
+          <Property Name="SizeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+          <Property Name="Order" Type="int" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Name="StateId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="StockId" />
+          </Key>
+          <Property Name="StockId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="ColorId" Type="int" Nullable="false" />
+          <Property Name="SizeId" Type="int" Nullable="false" />
+          <Property Name="VirtualQuantity" Type="int" Nullable="false" />
+          <Property Name="RealQuantity" Type="int" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Category_Category">
+          <End Role="Category" Type="HopeLingerieModel.Store.Category" Multiplicity="0..1" />
+          <End Role="Category1" Type="HopeLingerieModel.Store.Category" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="Category1">
+              <PropertyRef Name="ParentCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Color_Size_Color">
+          <End Role="Color" Type="HopeLingerieModel.Store.Color" Multiplicity="1" />
+          <End Role="Color_Size" Type="HopeLingerieModel.Store.Color_Size" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Color">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="Color_Size">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Color_Size_Size">
+          <End Role="Size" Type="HopeLingerieModel.Store.Size" Multiplicity="1" />
+          <End Role="Color_Size" Type="HopeLingerieModel.Store.Color_Size" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Size">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="Color_Size">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Coupon_Order">
+          <End Role="Order" Type="HopeLingerieModel.Store.Order" Multiplicity="0..1" />
+          <End Role="Coupon" Type="HopeLingerieModel.Store.Coupon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="Coupon">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customer_State">
+          <End Role="State" Type="HopeLingerieModel.Store.State" Multiplicity="0..1" />
+          <End Role="Customer" Type="HopeLingerieModel.Store.Customer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="Customer">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Franchise_City">
+          <End Role="City" Type="HopeLingerieModel.Store.City" Multiplicity="1" />
+          <End Role="Franchise" Type="HopeLingerieModel.Store.Franchise" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="Franchise">
+              <PropertyRef Name="FranchiseCityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Franchise_State">
+          <End Role="State" Type="HopeLingerieModel.Store.State" Multiplicity="1" />
+          <End Role="Franchise" Type="HopeLingerieModel.Store.Franchise" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="Franchise">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Customer">
+          <End Role="Customer" Type="HopeLingerieModel.Store.Customer" Multiplicity="1" />
+          <End Role="Order" Type="HopeLingerieModel.Store.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_DeliveryStatus">
+          <End Role="DeliveryStatus" Type="HopeLingerieModel.Store.DeliveryStatus" Multiplicity="1" />
+          <End Role="Order" Type="HopeLingerieModel.Store.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliveryStatus">
+              <PropertyRef Name="DeliveryStatusId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="DeliveryStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_OrderStatus">
+          <End Role="OrderStatus" Type="HopeLingerieModel.Store.OrderStatus" Multiplicity="1" />
+          <End Role="Order" Type="HopeLingerieModel.Store.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderStatus">
+              <PropertyRef Name="OrderStatusId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OrderStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Color">
+          <End Role="Color" Type="HopeLingerieModel.Store.Color" Multiplicity="1" />
+          <End Role="OrderDetail" Type="HopeLingerieModel.Store.OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Color">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Order">
+          <End Role="Order" Type="HopeLingerieModel.Store.Order" Multiplicity="0..1" />
+          <End Role="OrderDetail" Type="HopeLingerieModel.Store.OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_OrderDetailStatus">
+          <End Role="OrderDetailStatus" Type="HopeLingerieModel.Store.OrderDetailStatus" Multiplicity="1" />
+          <End Role="OrderDetail" Type="HopeLingerieModel.Store.OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderDetailStatus">
+              <PropertyRef Name="OrderDetailStatusId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="OrderDetailStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Size">
+          <End Role="Size" Type="HopeLingerieModel.Store.Size" Multiplicity="1" />
+          <End Role="OrderDetail" Type="HopeLingerieModel.Store.OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Size">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Color">
+          <End Role="Color" Type="HopeLingerieModel.Store.Color" Multiplicity="1" />
+          <End Role="Stock" Type="HopeLingerieModel.Store.Stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Color">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Size">
+          <End Role="Size" Type="HopeLingerieModel.Store.Size" Multiplicity="1" />
+          <End Role="Stock" Type="HopeLingerieModel.Store.Stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Size">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HopeLingerieModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="HopeLingerieEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="HopeLingerieModel.Category" />
+          <EntitySet Name="Colors" EntityType="HopeLingerieModel.Color" />
+          <EntitySet Name="Franchises" EntityType="HopeLingerieModel.Franchise" />
+          <EntitySet Name="OrderDetails" EntityType="HopeLingerieModel.OrderDetail" />
+          <EntitySet Name="OrderDetailStatus" EntityType="HopeLingerieModel.OrderDetailStatu" />
+          <EntitySet Name="OrderStatus1" EntityType="HopeLingerieModel.OrderStatus" />
+          <EntitySet Name="Products" EntityType="HopeLingerieModel.Product" />
+          <EntitySet Name="States" EntityType="HopeLingerieModel.State" />
+          <EntitySet Name="Stocks" EntityType="HopeLingerieModel.Stock" />
+          <AssociationSet Name="FK_Product_Category" Association="HopeLingerieModel.FK_Product_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Color" Association="HopeLingerieModel.FK_OrderDetail_Color">
+            <End Role="Color" EntitySet="Colors" />
+            <End Role="OrderDetail" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Color" Association="HopeLingerieModel.FK_Stock_Color">
+            <End Role="Color" EntitySet="Colors" />
+            <End Role="Stock" EntitySet="Stocks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_OrderDetailStatus" Association="HopeLingerieModel.FK_OrderDetail_OrderDetailStatus">
+            <End Role="OrderDetailStatu" EntitySet="OrderDetailStatus" />
+            <End Role="OrderDetail" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Product" Association="HopeLingerieModel.FK_OrderDetail_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="OrderDetail" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Product" Association="HopeLingerieModel.FK_Stock_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Stock" EntitySet="Stocks" />
+          </AssociationSet>
+          <EntitySet Name="Customers" EntityType="HopeLingerieModel.Customer" />
+          <AssociationSet Name="FK_Customer_State" Association="HopeLingerieModel.FK_Customer_State">
+            <End Role="State" EntitySet="States" />
+            <End Role="Customer" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Franchise_State" Association="HopeLingerieModel.FK_Franchise_State">
+            <End Role="State" EntitySet="States" />
+            <End Role="Franchise" EntitySet="Franchises" />
+          </AssociationSet>
+          <EntitySet Name="NewsLetters" EntityType="HopeLingerieModel.NewsLetter" />
+          <AssociationSet Name="FK_Category_Category" Association="HopeLingerieModel.FK_Category_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Category1" EntitySet="Categories" />
+          </AssociationSet>
+          <EntitySet Name="Sizes" EntityType="HopeLingerieModel.Size" />
+          <EntitySet Name="Orders" EntityType="HopeLingerieModel.Order" />
+          <AssociationSet Name="FK_Order_Customer" Association="HopeLingerieModel.FK_Order_Customer">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_OrderStatus" Association="HopeLingerieModel.FK_Order_OrderStatus">
+            <End Role="OrderStatus" EntitySet="OrderStatus1" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Order" Association="HopeLingerieModel.FK_OrderDetail_Order">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="OrderDetail" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <EntitySet Name="Coupons" EntityType="HopeLingerieModel.Coupon" />
+          <AssociationSet Name="FK_Coupon_Order" Association="HopeLingerieModel.FK_Coupon_Order">
+            <End Role="Order" EntitySet="Orders" />
+            <End Role="Coupon" EntitySet="Coupons" />
+          </AssociationSet>
+          <AssociationSet Name="Color_Size" Association="HopeLingerieModel.Color_Size">
+            <End Role="Color" EntitySet="Colors" />
+            <End Role="Size" EntitySet="Sizes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetail_Size" Association="HopeLingerieModel.FK_OrderDetail_Size">
+            <End Role="Size" EntitySet="Sizes" />
+            <End Role="OrderDetail" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Color_Product" Association="HopeLingerieModel.FK_Color_Product">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Color" EntitySet="Colors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Stock_Size" Association="HopeLingerieModel.FK_Stock_Size">
+            <End Role="Size" EntitySet="Sizes" />
+            <End Role="Stock" EntitySet="Stocks" />
+          </AssociationSet>
+          <EntitySet Name="Mails" EntityType="HopeLingerieModel.Mail" />
+          <EntitySet Name="Cities" EntityType="HopeLingerieModel.City" />
+          <AssociationSet Name="FK_Franchise_City" Association="HopeLingerieModel.FK_Franchise_City">
+            <End Role="City" EntitySet="Cities" />
+            <End Role="Franchise" EntitySet="Franchises" />
+          </AssociationSet>
+          <EntitySet Name="ErrorLogs" EntityType="HopeLingerieModel.ErrorLog" />
+          <EntitySet Name="DeliveryStatus1" EntityType="HopeLingerieModel.DeliveryStatus" />
+          <AssociationSet Name="FK_Order_DeliveryStatus" Association="HopeLingerieModel.FK_Order_DeliveryStatus">
+            <End Role="DeliveryStatu" EntitySet="DeliveryStatus1" />
+            <End Role="Order" EntitySet="Orders" />
+          </AssociationSet>
+          <EntitySet Name="Contacts" EntityType="HopeLingerieModel.Contact" />
+          <EntitySet Name="Parameters" EntityType="HopeLingerieModel.Parameter" />
+          </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="CategoryId" />
+          </Key>
+          <Property Type="Int32" Name="CategoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ParentCategoryId" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <NavigationProperty Name="Products" Relationship="HopeLingerieModel.FK_Product_Category" FromRole="Category" ToRole="Product" />
+          <NavigationProperty Name="Category1" Relationship="HopeLingerieModel.FK_Category_Category" FromRole="Category" ToRole="Category1" />
+          <NavigationProperty Name="Category2" Relationship="HopeLingerieModel.FK_Category_Category" FromRole="Category1" ToRole="Category" />
+          <Property Type="String" Name="Image" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DisplayOrder" />
+          <Property Type="Boolean" Name="Enabled" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="ColorId" />
+          </Key>
+          <Property Type="Int32" Name="ColorId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <NavigationProperty Name="OrderDetails" Relationship="HopeLingerieModel.FK_OrderDetail_Color" FromRole="Color" ToRole="OrderDetail" />
+          <NavigationProperty Name="Stocks" Relationship="HopeLingerieModel.FK_Stock_Color" FromRole="Color" ToRole="Stock" />
+          <NavigationProperty Name="Sizes" Relationship="HopeLingerieModel.Color_Size" FromRole="Color" ToRole="Size" />
+          <Property Type="String" Name="ColorThumb" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="ProductId" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="HopeLingerieModel.FK_Color_Product" FromRole="Color" ToRole="Product" />
+          <Property Type="String" Name="ImageFrontFirstZoom" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ImageFrontSecondZoom" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ImageBackFirstZoom" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ImageBackSecondZoom" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Franchise">
+          <Key>
+            <PropertyRef Name="FranchiseId" />
+          </Key>
+          <Property Type="Int32" Name="FranchiseId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="FranchiseCityId" Nullable="false" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="BirthDate" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="StateId" Nullable="false" />
+          <Property Type="String" Name="ZipCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone1" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone2" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Cellular" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMail" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="InvestmentMoney" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="String" Name="Why" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="How" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="When" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" />
+          <NavigationProperty Name="State" Relationship="HopeLingerieModel.FK_Franchise_State" FromRole="Franchise" ToRole="State" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="City1" Relationship="HopeLingerieModel.FK_Franchise_City" FromRole="Franchise" ToRole="City" />
+        </EntityType>
+        <EntityType Name="OrderDetail">
+          <Key>
+            <PropertyRef Name="OrderDetailId" />
+          </Key>
+          <Property Type="Int32" Name="OrderDetailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="OrderId" Nullable="true" />
+          <Property Type="Int32" Name="ProductId" Nullable="false" />
+          <Property Type="Int32" Name="ColorId" Nullable="false" />
+          <Property Type="Int32" Name="OrderDetailStatusId" Nullable="false" />
+          <Property Type="Boolean" Name="Gift" Nullable="false" />
+          <Property Type="Int32" Name="Quantity" Nullable="false" />
+          <Property Type="Decimal" Name="Price" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="String" Name="GUID" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Color" Relationship="HopeLingerieModel.FK_OrderDetail_Color" FromRole="OrderDetail" ToRole="Color" />
+          <NavigationProperty Name="OrderDetailStatus" Relationship="HopeLingerieModel.FK_OrderDetail_OrderDetailStatus" FromRole="OrderDetail" ToRole="OrderDetailStatu" />
+          <NavigationProperty Name="Product" Relationship="HopeLingerieModel.FK_OrderDetail_Product" FromRole="OrderDetail" ToRole="Product" />
+          <NavigationProperty Name="Order" Relationship="HopeLingerieModel.FK_OrderDetail_Order" FromRole="OrderDetail" ToRole="Order" />
+          <Property Type="String" Name="TempCoupon" MaxLength="37" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="SizeId" Nullable="false" />
+          <NavigationProperty Name="Size" Relationship="HopeLingerieModel.FK_OrderDetail_Size" FromRole="OrderDetail" ToRole="Size" />
+          <Property Type="String" Name="AddedBy" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="OrderDetailStatu">
+          <Key>
+            <PropertyRef Name="OrderDetailStatusId" />
+          </Key>
+          <Property Type="Int32" Name="OrderDetailStatusId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <NavigationProperty Name="OrderDetails" Relationship="HopeLingerieModel.FK_OrderDetail_OrderDetailStatus" FromRole="OrderDetailStatu" ToRole="OrderDetail" />
+        </EntityType>
+        <EntityType Name="OrderStatus">
+          <Key>
+            <PropertyRef Name="OrderStatusId" />
+          </Key>
+          <Property Type="Int32" Name="OrderStatusId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="HopeLingerieModel.FK_Order_OrderStatus" FromRole="OrderStatus" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Type="Int32" Name="ProductId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CategoryId" Nullable="false" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="CurrentPrice" Nullable="false" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="OldPrice" Precision="19" Scale="4" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Category" Relationship="HopeLingerieModel.FK_Product_Category" FromRole="Product" ToRole="Category" />
+          <NavigationProperty Name="OrderDetails" Relationship="HopeLingerieModel.FK_OrderDetail_Product" FromRole="Product" ToRole="OrderDetail" />
+          <NavigationProperty Name="Stocks" Relationship="HopeLingerieModel.FK_Stock_Product" FromRole="Product" ToRole="Stock" />
+          <Property Type="String" Name="ImageDetailFirst" MaxLength="500" FixedLength="false" Unicode="false" Nullable="true" />
+          <Property Type="String" Name="ImageDetailSecond" MaxLength="500" FixedLength="false" Unicode="false" Nullable="true" />
+          <NavigationProperty Name="Colors" Relationship="HopeLingerieModel.FK_Color_Product" FromRole="Product" ToRole="Color" />
+          <Property Type="Boolean" Name="OnSale" Nullable="false" DefaultValue="False" />
+          <Property Type="Boolean" Name="IsNew" Nullable="false" DefaultValue="False" />
+          <Property Type="Boolean" Name="Published" Nullable="false" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="StateId" />
+          </Key>
+          <Property Type="Int32" Name="StateId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Customers" Relationship="HopeLingerieModel.FK_Customer_State" FromRole="State" ToRole="Customer" />
+          <NavigationProperty Name="Franchises" Relationship="HopeLingerieModel.FK_Franchise_State" FromRole="State" ToRole="Franchise" />
+        </EntityType>
+        <EntityType Name="Stock">
+          <Key>
+            <PropertyRef Name="StockId" />
+          </Key>
+          <Property Type="Int32" Name="StockId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ProductId" Nullable="false" />
+          <Property Type="Int32" Name="ColorId" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <NavigationProperty Name="Color" Relationship="HopeLingerieModel.FK_Stock_Color" FromRole="Stock" ToRole="Color" />
+          <NavigationProperty Name="Product" Relationship="HopeLingerieModel.FK_Stock_Product" FromRole="Stock" ToRole="Product" />
+          <Property Type="Int32" Name="SizeId" Nullable="false" />
+          <NavigationProperty Name="Size" Relationship="HopeLingerieModel.FK_Stock_Size" FromRole="Stock" ToRole="Size" />
+          <Property Type="Int32" Name="VirtualQuantity" Nullable="false" />
+          <Property Type="Int32" Name="RealQuantity" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Product_Category">
+          <End Type="HopeLingerieModel.Category" Role="Category" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Color">
+          <End Type="HopeLingerieModel.Color" Role="Color" Multiplicity="1" />
+          <End Type="HopeLingerieModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Color">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Color">
+          <End Type="HopeLingerieModel.Color" Role="Color" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Stock" Role="Stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Color">
+              <PropertyRef Name="ColorId" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_OrderDetailStatus">
+          <End Type="HopeLingerieModel.OrderDetailStatu" Role="OrderDetailStatu" Multiplicity="1" />
+          <End Type="HopeLingerieModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderDetailStatu">
+              <PropertyRef Name="OrderDetailStatusId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="OrderDetailStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Product">
+          <End Type="HopeLingerieModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="HopeLingerieModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Product">
+          <End Type="HopeLingerieModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Stock" Role="Stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Type="Int32" Name="CustomerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DNI" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="BirthDate" />
+          <Property Type="Boolean" Name="Gender" Nullable="false" />
+          <Property Type="Int32" Name="StateId" Nullable="false" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Number" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ZipCode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone1" Nullable="true" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone3" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Cellular" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Fax" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Reference" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="State" Relationship="HopeLingerieModel.FK_Customer_State" FromRole="Customer" ToRole="State" />
+          <Property Type="Boolean" Name="IsAdmin" Nullable="false" />
+          <Property Type="Boolean" Name="NewsLetter" Nullable="false" />
+          <NavigationProperty Name="Orders" Relationship="HopeLingerieModel.FK_Order_Customer" FromRole="Customer" ToRole="Order" />
+        </EntityType>
+        <Association Name="FK_Customer_State">
+          <End Type="HopeLingerieModel.State" Role="State" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Customer" Role="Customer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="Customer">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Franchise_State">
+          <End Type="HopeLingerieModel.State" Role="State" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Franchise" Role="Franchise" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="StateId" />
+            </Principal>
+            <Dependent Role="Franchise">
+              <PropertyRef Name="StateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="NewsLetter">
+          <Key>
+            <PropertyRef Name="NewsLetterId" />
+          </Key>
+          <Property Type="Int32" Name="NewsLetterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="true" />
+        </EntityType>
+        <Association Name="FK_Category_Category">
+          <End Type="HopeLingerieModel.Category" Role="Category" Multiplicity="0..1" />
+          <End Type="HopeLingerieModel.Category" Role="Category1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="CategoryId" />
+            </Principal>
+            <Dependent Role="Category1">
+              <PropertyRef Name="ParentCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Size">
+          <Key>
+            <PropertyRef Name="SizeId" />
+          </Key>
+          <Property Type="Int32" Name="SizeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <NavigationProperty Name="Colors" Relationship="HopeLingerieModel.Color_Size" FromRole="Size" ToRole="Color" />
+          <NavigationProperty Name="OrderDetails" Relationship="HopeLingerieModel.FK_OrderDetail_Size" FromRole="Size" ToRole="OrderDetail" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Stocks" Relationship="HopeLingerieModel.FK_Stock_Size" FromRole="Size" ToRole="Stock" />
+          <Property Type="Int32" Name="Order" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Type="Int32" Name="OrderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CustomerId" Nullable="false" />
+          <Property Type="Int32" Name="Discount" Nullable="false" />
+          <Property Type="DateTime" Name="DeliveryDate" />
+          <Property Type="String" Name="DeliveryAddress" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="DeliveryBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DaysShipping" Nullable="false" />
+          <Property Type="Int32" Name="OrderStatusId" Nullable="false" />
+          <Property Type="Int32" Name="CouponId" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Customer" Relationship="HopeLingerieModel.FK_Order_Customer" FromRole="Order" ToRole="Customer" />
+          <NavigationProperty Name="OrderStatus" Relationship="HopeLingerieModel.FK_Order_OrderStatus" FromRole="Order" ToRole="OrderStatus" />
+          <NavigationProperty Name="OrderDetails" Relationship="HopeLingerieModel.FK_OrderDetail_Order" FromRole="Order" ToRole="OrderDetail" />
+          <NavigationProperty Name="Coupons" Relationship="HopeLingerieModel.FK_Coupon_Order" FromRole="Order" ToRole="Coupon" />
+          <Property Type="String" Name="AddedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PaymentMethod" />
+          <Property Type="String" Name="PaymentType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DeliveryStatusId" Nullable="false" />
+          <NavigationProperty Name="DeliveryStatus" Relationship="HopeLingerieModel.FK_Order_DeliveryStatus" FromRole="Order" ToRole="DeliveryStatu" />
+          <Property Type="Decimal" Name="NetAmount" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="Amount" Precision="18" Scale="2" />
+          <Property Type="String" Name="Comments" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Order_Customer">
+          <End Type="HopeLingerieModel.Customer" Role="Customer" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_OrderStatus">
+          <End Type="HopeLingerieModel.OrderStatus" Role="OrderStatus" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderStatus">
+              <PropertyRef Name="OrderStatusId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OrderStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetail_Order">
+          <End Type="HopeLingerieModel.Order" Role="Order" Multiplicity="0..1" />
+          <End Type="HopeLingerieModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Coupon">
+          <Key>
+            <PropertyRef Name="CouponId" />
+          </Key>
+          <Property Type="Int32" Name="CouponId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="OrderId" />
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="37" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Percentage" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="String" Name="AddedBy" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Order" Relationship="HopeLingerieModel.FK_Coupon_Order" FromRole="Coupon" ToRole="Order" />
+          <Property Type="DateTime" Name="ExpirationDate" Nullable="false" />
+          <Property Type="String" Name="Campaign" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Coupon_Order">
+          <End Type="HopeLingerieModel.Order" Role="Order" Multiplicity="0..1" />
+          <End Type="HopeLingerieModel.Coupon" Role="Coupon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="Coupon">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Color_Size">
+          <End Type="HopeLingerieModel.Color" Role="Color" Multiplicity="*" />
+          <End Type="HopeLingerieModel.Size" Role="Size" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_OrderDetail_Size">
+          <End Type="HopeLingerieModel.Size" Role="Size" Multiplicity="1" />
+          <End Type="HopeLingerieModel.OrderDetail" Role="OrderDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Size">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="OrderDetail">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Color_Product">
+          <End Type="HopeLingerieModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Color" Role="Color" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Color">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Stock_Size">
+          <End Type="HopeLingerieModel.Size" Role="Size" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Stock" Role="Stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Size">
+              <PropertyRef Name="SizeId" />
+            </Principal>
+            <Dependent Role="Stock">
+              <PropertyRef Name="SizeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Mail">
+          <Key>
+            <PropertyRef Name="MailId" />
+          </Key>
+          <Property Type="Int32" Name="MailId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="From" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Subject" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Body" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" DefaultValue="True" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="CityId" />
+          </Key>
+          <Property Type="Int32" Name="CityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Franchises" Relationship="HopeLingerieModel.FK_Franchise_City" FromRole="City" ToRole="Franchise" />
+        </EntityType>
+        <Association Name="FK_Franchise_City">
+          <End Type="HopeLingerieModel.City" Role="City" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Franchise" Role="Franchise" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="CityId" />
+            </Principal>
+            <Dependent Role="Franchise">
+              <PropertyRef Name="FranchiseCityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ErrorLog">
+          <Key>
+            <PropertyRef Name="ErrorLogId" />
+          </Key>
+          <Property Type="Int32" Name="ErrorLogId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Message" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="StackTrace" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="AddedDate" />
+        </EntityType>
+        <EntityType Name="DeliveryStatus">
+          <Key>
+            <PropertyRef Name="DeliveryStatusId" />
+          </Key>
+          <Property Type="Int32" Name="DeliveryStatusId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Orders" Relationship="HopeLingerieModel.FK_Order_DeliveryStatus" FromRole="DeliveryStatu" ToRole="Order" />
+        </EntityType>
+        <Association Name="FK_Order_DeliveryStatus">
+          <End Type="HopeLingerieModel.DeliveryStatus" Role="DeliveryStatu" Multiplicity="1" />
+          <End Type="HopeLingerieModel.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DeliveryStatu">
+              <PropertyRef Name="DeliveryStatusId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="DeliveryStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="ContactId" />
+          </Key>
+          <Property Type="Int32" Name="ContactId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Subject" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EMail" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Telephone" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="NewsLetter" Nullable="false" />
+          <Property Type="Boolean" Name="FromFranchise" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+          <Property Type="DateTime" Name="AddedDate" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" />
+          <Property Type="String" Name="DeletedBy" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Parameter">
+          <Key>
+            <PropertyRef Name="ParameterId" />
+          </Key>
+          <Property Type="Int32" Name="ParameterId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ParameterName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ParameterCode" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ParameterValue" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HopeLingerieModelStoreContainer" CdmEntityContainer="HopeLingerieEntities">
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="DisplayOrder" ColumnName="DisplayOrder" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ParentCategoryId" ColumnName="ParentCategoryId" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Colors">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Color">
+              <MappingFragment StoreEntitySet="Color">
+                <ScalarProperty Name="ImageBackSecondZoom" ColumnName="ImageBackSecondZoom" />
+                <ScalarProperty Name="ImageBackFirstZoom" ColumnName="ImageBackFirstZoom" />
+                <ScalarProperty Name="ImageFrontSecondZoom" ColumnName="ImageFrontSecondZoom" />
+                <ScalarProperty Name="ImageFrontFirstZoom" ColumnName="ImageFrontFirstZoom" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="ColorThumb" ColumnName="ColorThumb" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Franchises">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Franchise">
+              <MappingFragment StoreEntitySet="Franchise">
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="When" ColumnName="When" />
+                <ScalarProperty Name="How" ColumnName="How" />
+                <ScalarProperty Name="Why" ColumnName="Why" />
+                <ScalarProperty Name="InvestmentMoney" ColumnName="InvestmentMoney" />
+                <ScalarProperty Name="EMail" ColumnName="EMail" />
+                <ScalarProperty Name="Cellular" ColumnName="Cellular" />
+                <ScalarProperty Name="Telephone2" ColumnName="Telephone2" />
+                <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="FranchiseCityId" ColumnName="FranchiseCityId" />
+                <ScalarProperty Name="FranchiseId" ColumnName="FranchiseId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderDetails">
+            <EntityTypeMapping TypeName="HopeLingerieModel.OrderDetail">
+              <MappingFragment StoreEntitySet="OrderDetail">
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+                <ScalarProperty Name="TempCoupon" ColumnName="TempCoupon" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="GUID" ColumnName="GUID" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Gift" ColumnName="Gift" />
+                <ScalarProperty Name="OrderDetailStatusId" ColumnName="OrderDetailStatusId" />
+                <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="OrderDetailId" ColumnName="OrderDetailId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderDetailStatus">
+            <EntityTypeMapping TypeName="HopeLingerieModel.OrderDetailStatu">
+              <MappingFragment StoreEntitySet="OrderDetailStatus">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OrderDetailStatusId" ColumnName="OrderDetailStatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderStatus1">
+            <EntityTypeMapping TypeName="HopeLingerieModel.OrderStatus">
+              <MappingFragment StoreEntitySet="OrderStatus">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OrderStatusId" ColumnName="OrderStatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Published" ColumnName="Published" />
+                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+                <ScalarProperty Name="OnSale" ColumnName="OnSale" />
+                <ScalarProperty Name="ImageDetailSecond" ColumnName="ImageDetailSecond" />
+                <ScalarProperty Name="ImageDetailFirst" ColumnName="ImageDetailFirst" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+                <ScalarProperty Name="CurrentPrice" ColumnName="CurrentPrice" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="States">
+            <EntityTypeMapping TypeName="HopeLingerieModel.State">
+              <MappingFragment StoreEntitySet="State">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stocks">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Stock">
+              <MappingFragment StoreEntitySet="Stock">
+                <ScalarProperty Name="RealQuantity" ColumnName="RealQuantity" />
+                <ScalarProperty Name="VirtualQuantity" ColumnName="VirtualQuantity" />
+                <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="StockId" ColumnName="StockId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Customer">
+              <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="NewsLetter" ColumnName="NewsLetter" />
+                <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Reference" ColumnName="Reference" />
+                <ScalarProperty Name="Fax" ColumnName="Fax" />
+                <ScalarProperty Name="Cellular" ColumnName="Cellular" />
+                <ScalarProperty Name="Telephone3" ColumnName="Telephone3" />
+                <ScalarProperty Name="Telephone2" ColumnName="Telephone2" />
+                <ScalarProperty Name="Telephone1" ColumnName="Telephone1" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="StateId" ColumnName="StateId" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="DNI" ColumnName="DNI" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NewsLetters">
+            <EntityTypeMapping TypeName="HopeLingerieModel.NewsLetter">
+              <MappingFragment StoreEntitySet="NewsLetter">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="NewsLetterId" ColumnName="NewsLetterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sizes">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Size">
+              <MappingFragment StoreEntitySet="Size">
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="NetAmount" ColumnName="NetAmount" />
+                <ScalarProperty Name="DeliveryStatusId" ColumnName="DeliveryStatusId" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+                <ScalarProperty Name="OrderStatusId" ColumnName="OrderStatusId" />
+                <ScalarProperty Name="DaysShipping" ColumnName="DaysShipping" />
+                <ScalarProperty Name="DeliveryBy" ColumnName="DeliveryBy" />
+                <ScalarProperty Name="DeliveryAddress" ColumnName="DeliveryAddress" />
+                <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Coupons">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Coupon">
+              <MappingFragment StoreEntitySet="Coupon">
+                <ScalarProperty Name="Campaign" ColumnName="Campaign" />
+                <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Color_Size" TypeName="HopeLingerieModel.Color_Size" StoreEntitySet="Color_Size">
+            <EndProperty Name="Size">
+              <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+            </EndProperty>
+            <EndProperty Name="Color">
+              <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="Mails">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Mail">
+              <MappingFragment StoreEntitySet="Mail">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="From" ColumnName="From" />
+                <ScalarProperty Name="MailId" ColumnName="MailId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="HopeLingerieModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ErrorLogs">
+            <EntityTypeMapping TypeName="HopeLingerieModel.ErrorLog">
+              <MappingFragment StoreEntitySet="ErrorLog">
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="ErrorLogId" ColumnName="ErrorLogId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DeliveryStatus1">
+            <EntityTypeMapping TypeName="HopeLingerieModel.DeliveryStatus">
+              <MappingFragment StoreEntitySet="DeliveryStatus">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DeliveryStatusId" ColumnName="DeliveryStatusId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Contact">
+              <MappingFragment StoreEntitySet="Contact">
+                <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="FromFranchise" ColumnName="FromFranchise" />
+                <ScalarProperty Name="NewsLetter" ColumnName="NewsLetter" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="EMail" ColumnName="EMail" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parameters">
+            <EntityTypeMapping TypeName="HopeLingerieModel.Parameter">
+              <MappingFragment StoreEntitySet="Parameter">
+                <ScalarProperty Name="ParameterValue" ColumnName="ParameterValue" />
+                <ScalarProperty Name="ParameterCode" ColumnName="ParameterCode" />
+                <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+                <ScalarProperty Name="ParameterId" ColumnName="ParameterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="HopeLingerieModel" ZoomLevel="80">
+        <EntityTypeShape EntityType="HopeLingerieModel.Category" Width="1.5" PointX="13.375" PointY="3.5" Height="2.2496956380208326" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Color" Width="1.875" PointX="3.625" PointY="0.625" Height="3.2357796223958331" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Franchise" Width="1.5" PointX="21.25" PointY="3.125" Height="5.2494108072916656" />
+        <EntityTypeShape EntityType="HopeLingerieModel.OrderDetail" Width="1.5" PointX="6.625" PointY="2.625" Height="4.8648079427083335" />
+        <EntityTypeShape EntityType="HopeLingerieModel.OrderDetailStatu" Width="1.5" PointX="16.5" PointY="3.625" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="HopeLingerieModel.OrderStatus" Width="1.5" PointX="6.625" PointY="8" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Product" Width="1.5" PointX="10.125" PointY="0.625" Height="4.0575162760416656" />
+        <EntityTypeShape EntityType="HopeLingerieModel.State" Width="1.5" PointX="21.25" PointY="9.25" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Stock" Width="1.5" PointX="13.375" PointY="0.5" Height="2.578390299479167" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Product_Category" >
+          <ConnectorPoint PointX="13.375" PointY="4.0912581380208328" />
+          <ConnectorPoint PointX="11.625" PointY="4.0912581380208328" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_OrderDetail_Color" >
+          <ConnectorPoint PointX="5.5" PointY="3.2428898111979167" />
+          <ConnectorPoint PointX="6.625" PointY="3.2428898111979167" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Stock_Color" >
+          <ConnectorPoint PointX="5.5" PointY="0.625" />
+          <ConnectorPoint PointX="5.875" PointY="0.25" />
+          <ConnectorPoint PointX="5.875" PointY="0.125" />
+          <ConnectorPoint PointX="13" PointY="0.125" />
+          <ConnectorPoint PointX="13.375" PointY="0.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_OrderDetail_OrderDetailStatus" >
+          <ConnectorPoint PointX="17.25" PointY="5.2173063151041665" />
+          <ConnectorPoint PointX="17.25" PointY="6.3320214843750007" />
+          <ConnectorPoint PointX="11.802083333333334" PointY="6.332021484375" />
+          <ConnectorPoint PointX="11.635416666666666" PointY="6.3320214843750007" />
+          <ConnectorPoint PointX="8.125" PointY="6.3320214843750007" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_OrderDetail_Product" >
+          <ConnectorPoint PointX="10.125" PointY="3.6537581380208328" />
+          <ConnectorPoint PointX="8.125" PointY="3.6537581380208328" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Stock_Product" >
+          <ConnectorPoint PointX="11.625" PointY="1.8516951497395837" />
+          <ConnectorPoint PointX="13.375" PointY="1.8516951497395837" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.Customer" Width="1.5" PointX="18.75" PointY="5.125" Height="6.2109179687500031" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Customer_State" >
+          <ConnectorPoint PointX="21.25" PointY="10.598084309895835" />
+          <ConnectorPoint PointX="20.25" PointY="10.598084309895835" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Franchise_State" >
+          <ConnectorPoint PointX="22" PointY="9.25" />
+          <ConnectorPoint PointX="22" PointY="8.5667122395833335" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.NewsLetter" Width="1.5" PointX="24.5" PointY="4.125" Height="1.9802864583333331" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Category_Category" >
+          <ConnectorPoint PointX="13.906923076923077" PointY="5.7496956380208326" />
+          <ConnectorPoint PointX="13.906923076923077" PointY="5.9996956380208317" />
+          <ConnectorPoint PointX="14.353461538461538" PointY="5.9996956380208317" />
+          <ConnectorPoint PointX="14.353461538461538" PointY="5.7496956380208326" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.Size" Width="1.5" PointX="1" PointY="1.375" Height="1.9802864583333353" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Order" Width="1.5" PointX="10.25" PointY="6.75" Height="4.8792529296875" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Order_Customer" >
+          <ConnectorPoint PointX="18.75" PointY="7.40625" />
+          <ConnectorPoint PointX="11.75" PointY="7.40625" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Order_OrderStatus" >
+          <ConnectorPoint PointX="8.125" PointY="8.7961531575520837" />
+          <ConnectorPoint PointX="10.25" PointY="8.7961531575520837" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_OrderDetail_Order" >
+          <ConnectorPoint PointX="11.71875" PointY="6.75" />
+          <ConnectorPoint PointX="11.71875" PointY="5.5335967138671895" />
+          <ConnectorPoint PointX="8.125" PointY="5.5335967138671895" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.Coupon" Width="1.5" PointX="13.125" PointY="8.125" Height="2.5571907552083388" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Coupon_Order" >
+          <ConnectorPoint PointX="11.75" PointY="9.2498478190104159" />
+          <ConnectorPoint PointX="13.125" PointY="9.2498478190104159" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.Color_Size" >
+          <ConnectorPoint PointX="3.625" PointY="2.4176741536458337" />
+          <ConnectorPoint PointX="2.5" PointY="2.4176741536458337" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_OrderDetail_Size" >
+          <ConnectorPoint PointX="2.40625" PointY="3.460348307291667" />
+          <ConnectorPoint PointX="2.40625" PointY="4.3053898111979167" />
+          <ConnectorPoint PointX="6.625" PointY="4.3053898111979167" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Color_Product" >
+          <ConnectorPoint PointX="10.125" PointY="1.6250025000000008" />
+          <ConnectorPoint PointX="5.5" PointY="1.6250025000000008" />
+        </AssociationConnector>
+        <AssociationConnector Association="HopeLingerieModel.FK_Stock_Size" >
+          <ConnectorPoint PointX="1.75" PointY="1.375" />
+          <ConnectorPoint PointX="1.75" PointY="0.53125" />
+          <ConnectorPoint PointX="5.510416666666667" PointY="0.53124999999999944" />
+          <ConnectorPoint PointX="5.677083333333333" PointY="0.53125" />
+          <ConnectorPoint PointX="13.375" PointY="0.53125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.Mail" Width="1.5" PointX="0.75" PointY="4.75" Height="2.1725878906250031" />
+        <EntityTypeShape EntityType="HopeLingerieModel.City" Width="1.5" PointX="3.375" PointY="6.875" Height="1.5956835937500031" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Franchise_City" >
+          <ConnectorPoint PointX="4.125" PointY="6.875" />
+          <ConnectorPoint PointX="4.125" PointY="5.4824527994791659" />
+          <ConnectorPoint PointX="6.375" PointY="5.4824527994791659" />
+          <ConnectorPoint PointX="6.375" PointY="7.2612109375" />
+          <ConnectorPoint PointX="10" PointY="7.2612109375" />
+          <ConnectorPoint PointX="10" PointY="6.5" />
+          <ConnectorPoint PointX="11.635416666666666" PointY="6.4999999999999991" />
+          <ConnectorPoint PointX="11.802083333333334" PointY="6.5" />
+          <ConnectorPoint PointX="18.5" PointY="6.5" />
+          <ConnectorPoint PointX="18.5" PointY="4.875" />
+          <ConnectorPoint PointX="20.875" PointY="4.875" />
+          <ConnectorPoint PointX="20.875" PointY="5.4824527994791659" />
+          <ConnectorPoint PointX="21.25" PointY="5.4824527994791659" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.ErrorLog" Width="1.5" PointX="0.75" PointY="7.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="HopeLingerieModel.DeliveryStatus" Width="1.5" PointX="3.375" PointY="10.125" Height="1.4279589843750031" />
+        <AssociationConnector Association="HopeLingerieModel.FK_Order_DeliveryStatus" >
+          <ConnectorPoint PointX="4.875" PointY="10.40625" />
+          <ConnectorPoint PointX="10.25" PointY="10.40625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="HopeLingerieModel.Contact" Width="1.5" PointX="24.5" PointY="6.75" Height="3.3263964843750031" />
+        <EntityTypeShape EntityType="HopeLingerieModel.Parameter" Width="1.5" PointX="5.375" PointY="10.75" Height="1.4279589843749996" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

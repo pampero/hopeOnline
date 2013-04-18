@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/Shared/Main.Master" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <link media="screen" href="/content/styles/Institucional.css" type="text/css" rel="stylesheet">
+    <div class="centralAtendimentoInterna" id="body_container">
+        <!-- COLUNA DA NAVEGACAO PRINCIPAL (DA ESQUERDA) -->
+        <div class="container_atendimento">
+            <div class="box_240_container item_container fst">
+                <div class="box_240_mid">
+                    <div class="box_240_top">
+                        <dl class="box_itemAtendimento fst">
+                            <dt id="tit_antes_compra">Antes de Comprar</dt>
+                            <dd>
+                                <a href="<%: Url.Action("HowToNavigate", "Institutional") %>">
+                                Cómo Navegar en el Sito </a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("Faq", "Institutional") %>">
+                                FAQ 
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("SafeBuy", "Institutional") %>">
+                                Compra Segura </a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("HowToBuy", "Institutional") %>">
+                                Cómo Comprar </a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("PrivacyPolicy", "Institutional") %>">
+                                Política de Privacidad </a>
+                            </dd>
+                            <dd class="televendas">
+                                <p>
+                                    SAC <span><a href="mailto:sac@hopeonline.com.ar" style="font-weight:normal;background-image:none;text-transform:lowercase;padding-left:0px;">sac@hopeonline.com.ar</a></span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="box_240_bot">
+                </div>
+            </div>
+            <div class="box_240_container item_container fst">
+                <div class="box_240_mid">
+                    <div class="box_240_top">
+                        <dl class="box_itemAtendimento">
+                            <dt id="tit_comprando">Comprando</dt>
+                            <dd>
+                                <a href="<%: Url.Action("Edit", "Account") %>">
+                                Modificar Datos Registrados</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("UpdateShippingAddress", "Institutional") %>">
+                                Modificar Direccion de Entrega</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("PaymentsMethods", "Institutional") %>">
+                                Formas de Pago</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("DeliveryService", "Institutional") %>">
+                                Servicios de Entrega</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("NotAviableProducts", "Institutional") %>">
+                                Produtos No Disponibles </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="box_240_bot">
+                </div>
+            </div>
+            <div class="box_240_container item_container fst">
+                <div class="box_240_mid">
+                    <div class="box_240_top">
+                        <dl class="box_itemAtendimento">
+                            <dt id="tit_apos_compra">Después de comprar</dt>
+                            <dd>
+                                <a href="<%: Url.Action("ChangesAndRefound", "Institutional") %>">
+                                Cambios y Devoluciones</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("DivergentdataPurchase", "Institutional") %>">
+                                Datos de Compras Divergentes</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("CollectionProblems", "Institutional") %>">
+                                Dificultades en el Pago</a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("Cancellations", "Institutional") %>">
+                                Cancelar Compra
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="box_240_bot">
+                </div>
+            </div>
+            <div class="box_240_container item_container fst">
+                <div class="box_240_mid">
+                    <div class="box_240_top">
+                        <dl class="box_itemAtendimento">
+                            <dt id="tit_outros_institucional" class="outros">Outros / Institucional </dt>
+                            <dd>
+                                <a href="<%: Url.Action("ContactUs", "Institutional") %>">
+                                    Contacto
+                                </a>
+                                <p>
+                                    Envíenos un mail de contacto con sus sugerencias y críticas.</p>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("AboutUs", "Institutional") %>">
+                                    Quiénes Somos
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="<%: Url.Action("OurStores", "Institutional") %>">
+                                    Nuestros Locales
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="box_240_bot">
+                </div>
+            </div>
+        </div>
+        <!-- FIM COLUNA DA NAVEGACAO PRINCIPAL (DA ESQUERDA) -->
+        <!-- CONTEUDO PRINCIPAL -->
+        <div id="main_content_container">
+            <asp:ContentPlaceHolder ID="RightContent" runat="server" />
+        </div>
+        <!-- FIM DO CONTEUDO PRINCIPAL -->
+    </div>
+    
+
+</asp:Content>
